@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My portal — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg">
+<header class="pro-nav"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><div class="nav-actions"><span id="who" style="font-size:13px;font-weight:750;color:#475569"></span><button id="logout" class="pbtn ghost" type="button">Log out</button></div></header>
+<main style="max-width:1000px;margin:36px auto;padding:0 18px">
+<div class="eyebrow"><span class="dot"></span> Customer portal</div><h1 style="font-size:30px;margin:10px 0 4px">Welcome back</h1><p id="sub" style="font-size:14px;color:#667085;margin-bottom:24px"></p>
+<div class="portal-home">
+<section class="glass" style="padding:26px"><h2 style="font-size:19px">Send a message to support</h2><p style="font-size:13px;color:#667085;margin:6px 0 4px;line-height:1.6">Tell us what's wrong. NetAssist AI replies right away, and you can ask for a human agent at any time.</p>
+<form id="msg" novalidate><label style="display:block;margin-top:16px;font-size:12px;font-weight:750">Issue type<select id="type" class="pinput"></select></label>
+<label style="display:block;margin-top:14px;font-size:12px;font-weight:750">Your message<textarea id="txt" class="pinput" rows="5" maxlength="1000" placeholder="Describe your issue…" required></textarea></label>
+<div id="err" class="form-error" role="alert"></div><button type="submit" class="pbtn primary" style="width:100%;margin-top:8px">Send message</button></form></section>
+<aside style="display:grid;gap:16px;align-content:start">
+<a class="glass home-card" href="customer.html"><b>Open support chat</b><span>Continue or start a conversation with NetAssist AI.</span></a>
+<a class="glass home-card" href="customer-review.html"><b>Leave a review</b><span>Share how your service or support went.</span></a>
+<div class="session-info"><b>How it works</b><br>Your message starts a support chat. If the issue isn't resolved, escalate it and our team will take over.</div></aside></div></main>
+<script src="js/api.js"></script><script src="js/app.js"></script><script>
+const $=id=>document.getElementById(id),c=JSON.parse(localStorage.getItem('netassist_customer')||'null');
+if(!c||!c.token){location.href='customer-login.html'}else{
+ $('who').textContent=(c.name?c.name+' · ':'')+'Account '+c.account;$('sub').textContent='Signed in as account '+c.account+'.';
+ $('type').innerHTML=Object.entries(COMPLAINT_TYPE_LABELS).map(([v,l])=>'<option value="'+v+'">'+escHtml(l)+'</option>').join('');
+ $('logout').onclick=()=>{localStorage.removeItem('netassist_customer');location.href='landing.html'};
+ $('msg').addEventListener('submit',e=>{e.preventDefault();const t=$('txt').value.trim();
+  if(!t){$('err').textContent='Write a message so we know how to help.';$('txt').focus();return}
+  sessionStorage.setItem('netassist_pending',JSON.stringify({type:$('type').value,text:t}));location.href='customer.html'})}
+</script></body></html>

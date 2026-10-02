@@ -1,0 +1,270 @@
+review_text,sentiment,language,source,predicted,model
+"Hi, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon. ❤️",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. 😭",negative,english,augmented,positive,Logistic Regression
+"Hello, working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, I am disappointed with the service. ❤️",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Hello,Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon. 🙄,negative,taglish,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. 😭",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon. 😩,negative,taglish,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. 😩",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 🙏",negative,taglish,augmented,positive,Logistic Regression
+"Hello, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Logistic Regression
+"Hi,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon,Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon. 🙏,negative,taglish,augmented,positive,Logistic Regression
+"Hello,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"hi, i am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+I am disappointed with the service.,negative,english,natural,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, I am disappointed with the service. 🙏",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down naooo naman ngayon.,negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down na naman ngayon. 🙄",negative,taglish,augmented,positive,Logistic Regression
+"Hi, I am disappointed with the service. 😊",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😊",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon,I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. 😤",negative,english,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. 🙏",negative,english,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. 👍",negative,english,augmented,positive,Logistic Regression
+"Hi, I am disappointed with the service. 😐",negative,english,augmented,positive,Logistic Regression
+"Hello,I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Logistic Regression
+I am disappointed with the service. 🙏,negative,english,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service. 😊",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon,The internet keeps going offline.",negative,english,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 😤",negative,taglish,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. 😩",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, I am disappointed with the service. 😩",negative,english,augmented,positive,Logistic Regression
+"SA NGAYON, WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON. 😐",negative,taglish,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service. 😤",negative,english,augmented,positive,Logistic Regression
+"Hi,I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down naoo naman ngayon.,negative,english,augmented,positive,Logistic Regression
+"UNTIL NOW,WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON.",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. ❤️",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service. ❤️",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon. 😊,negative,taglish,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon,Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. 👍",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. 🙄",negative,english,augmented,positive,Logistic Regression
+"Hi, I am disappointed with the service. 😩",negative,english,augmented,positive,Logistic Regression
+"Until now, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline. 😐",negative,english,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service. 😐",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Logistic Regression
+"Hello, I am disappointed with the service. ❤️",negative,english,augmented,positive,Logistic Regression
+"Hello, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon.,negative,taglish,hard,positive,Logistic Regression
+"Sa ngayon, I am disappointed with the service. 😤",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Logistic Regression
+I am disappointed with the service. 😐,negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, i am disappointed with the service. 😐",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, I am disappointed with the service.",negative,english,augmented,positive,Logistic Regression
+Working siya kanina pero down na naman ngayon. 👍,negative,taglish,augmented,positive,Logistic Regression
+"Until now, I am disappointed with the service. 👍",negative,english,augmented,positive,Logistic Regression
+"Sa ngayon, The internet keeps going offline.",negative,english,augmented,positive,Logistic Regression
+"Hi, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon. ❤️",negative,taglish,augmented,positive,Linear SVM
+"Hello, working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon, I am disappointed with the service. ❤️",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Hello,Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon. 🙄,negative,taglish,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. 😭",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon. 😩,negative,taglish,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 🙏",negative,taglish,augmented,positive,Linear SVM
+"Hello, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Linear SVM
+"Hi,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon,Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon. 🙏,negative,taglish,augmented,positive,Linear SVM
+"Hello,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Linear SVM
+"hi, i am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+I am disappointed with the service.,negative,english,natural,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, I am disappointed with the service. 🙏",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down naooo naman ngayon.,negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down na naman ngayon. 🙄",negative,taglish,augmented,positive,Linear SVM
+"Hi, I am disappointed with the service. 😊",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😊",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon,I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. 😤",negative,english,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. 🙏",negative,english,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Linear SVM
+"Hi, I am disappointed with the service. 😐",negative,english,augmented,positive,Linear SVM
+"Hello,I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Linear SVM
+I am disappointed with the service. 🙏,negative,english,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service. 😊",negative,english,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 😤",negative,taglish,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. 😩",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, I am disappointed with the service. 😩",negative,english,augmented,positive,Linear SVM
+"SA NGAYON, WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON. 😐",negative,taglish,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service. 😤",negative,english,augmented,positive,Linear SVM
+"Hi,I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down naoo naman ngayon.,negative,english,augmented,positive,Linear SVM
+"UNTIL NOW,WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON.",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Linear SVM
+"Sa ngayon,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service. ❤️",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon. 😊,negative,taglish,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+"Sa ngayon,Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. 👍",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Linear SVM
+"Hi, I am disappointed with the service. 😩",negative,english,augmented,positive,Linear SVM
+"Until now, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service. 😐",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Linear SVM
+"Hello, I am disappointed with the service. ❤️",negative,english,augmented,positive,Linear SVM
+"Hello, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon.,negative,taglish,hard,positive,Linear SVM
+"Sa ngayon, I am disappointed with the service. 😤",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Linear SVM
+I am disappointed with the service. 😐,negative,english,augmented,positive,Linear SVM
+"Sa ngayon, i am disappointed with the service. 😐",negative,english,augmented,positive,Linear SVM
+"Sa ngayon, I am disappointed with the service.",negative,english,augmented,positive,Linear SVM
+Working siya kanina pero down na naman ngayon. 👍,negative,taglish,augmented,positive,Linear SVM
+"Until now, I am disappointed with the service. 👍",negative,english,augmented,positive,Linear SVM
+"Hi, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon. ❤️",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. 😭",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, I am disappointed with the service. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello,Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, The internet keeps going offline.",negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon. 🙄,negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi,The internet keeps going offline. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. 😭",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+The internet keeps going offline. 😭,negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon. 😩,negative,taglish,augmented,positive,Complement Naive Bayes
+The internet keeps going offline. 🙄,negative,english,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. 😩",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 🙏",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Complement Naive Bayes
+The internet keeps going offline. 😊,negative,english,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon,Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+The internet keeps going offline.,negative,english,natural,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon. 🙏,negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"hi, i am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+I am disappointed with the service.,negative,english,natural,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, I am disappointed with the service. 🙏",negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down naooo naman ngayon.,negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down na naman ngayon. 🙄",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi, I am disappointed with the service. 😊",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😊",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon,I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. 😤",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. 🙏",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 🙏",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. 👍",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 😊",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, I am disappointed with the service. 😐",negative,english,augmented,positive,Complement Naive Bayes
+"Hello,I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down nao naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+I am disappointed with the service. 🙏,negative,english,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service. 😊",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon,The internet keeps going offline.",negative,english,augmented,positive,Complement Naive Bayes
+The internet keeps going offline. 😤,negative,english,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 😤",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. 😩",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline.",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, I am disappointed with the service. 😩",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, The internet keeps going offline. 🙄",negative,english,augmented,positive,Complement Naive Bayes
+"SA NGAYON, WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON. 😐",negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service. 😤",negative,english,augmented,positive,Complement Naive Bayes
+"Hi,I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down naoo naman ngayon.,negative,english,augmented,positive,Complement Naive Bayes
+"UNTIL NOW,WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello,The internet keeps going offline.",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello, The internet keeps going offline. 🙏",negative,english,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon. 😊,negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon,Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. 👍",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 👍",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. 🙄",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, I am disappointed with the service. 😩",negative,english,augmented,positive,Complement Naive Bayes
+"Until now, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline. 😐",negative,english,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service. 😐",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 😤",negative,english,augmented,positive,Complement Naive Bayes
+The internet keeps going offline. 🙏,negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 😩",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, I am disappointed with the service. ❤️",negative,english,augmented,positive,Complement Naive Bayes
+"Hi, The internet keeps going offline. 😭",negative,english,augmented,positive,Complement Naive Bayes
+"Hello, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon.,negative,taglish,hard,positive,Complement Naive Bayes
+"Sa ngayon, I am disappointed with the service. 😤",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented,positive,Complement Naive Bayes
+I am disappointed with the service. 😐,negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, i am disappointed with the service. 😐",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, I am disappointed with the service.",negative,english,augmented,positive,Complement Naive Bayes
+Working siya kanina pero down na naman ngayon. 👍,negative,taglish,augmented,positive,Complement Naive Bayes
+"Until now, I am disappointed with the service. 👍",negative,english,augmented,positive,Complement Naive Bayes
+"Sa ngayon, The internet keeps going offline.",negative,english,augmented,positive,Complement Naive Bayes

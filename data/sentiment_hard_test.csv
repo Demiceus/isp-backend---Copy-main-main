@@ -1,0 +1,121 @@
+review_text,sentiment,language,source_type
+Sira kahapon yung modem pero gumagana na ngayon.,positive,taglish,synthetic_hard_case
+Down kahapon pero bumalik na yung service.,positive,taglish,synthetic_hard_case
+Matagal yung wait pero naayos naman.,positive,taglish,synthetic_hard_case
+Okay yung agent pero unresolved pa rin.,negative,taglish,synthetic_hard_case
+"Noted po, i-follow ko yung steps.",neutral,taglish,synthetic_hard_case
+Nag-error kanina pero okay na ngayon.,positive,taglish,synthetic_hard_case
+"Internet was slow earlier, but it's fast now.",positive,english,synthetic_hard_case
+I haven't confirmed whether the issue is fixed.,neutral,english,synthetic_hard_case
+Okay na kahit walang technician na dumating.,positive,taglish,synthetic_hard_case
+Mabait yung kausap pero hindi pa rin okay.,negative,taglish,synthetic_hard_case
+Salamat po pero wala pa ring net.,negative,taglish,synthetic_hard_case
+"Down kanina, bumalik naman ngayon.",positive,taglish,synthetic_hard_case
+"Okay po, susundin ko muna yung instructions.",neutral,taglish,synthetic_hard_case
+"Copy po, maghihintay ako ng follow up.",neutral,taglish,synthetic_hard_case
+Pwede po bang i-confirm yung appointment?,neutral,taglish,synthetic_hard_case
+Matagal bago naayos pero okay na ngayon.,positive,taglish,synthetic_hard_case
+"Salamat po, i-monitor ko muna.",neutral,taglish,synthetic_hard_case
+Mabait yung technician pero hindi pa rin okay.,negative,taglish,synthetic_hard_case
+"Sige po, i-try ko muna yung steps.",neutral,taglish,synthetic_hard_case
+Naghihintay pa po ako ng technician.,neutral,taglish,synthetic_hard_case
+"Connection was unstable earlier, stable na ngayon.",positive,taglish,synthetic_hard_case
+Nag-disconnect kanina pero tuloy-tuloy na ngayon.,positive,english,synthetic_hard_case
+"Slow earlier but working now, salamat.",positive,taglish,synthetic_hard_case
+Okay yung kausap pero down pa rin.,negative,taglish,synthetic_hard_case
+Down kahapon pero stable na ngayon.,positive,english,synthetic_hard_case
+The agent was polite but the internet is still down.,negative,english,synthetic_hard_case
+Iche-check ko pa lang po yung linya namin.,neutral,taglish,synthetic_hard_case
+I'll confirm once I've tested the connection.,neutral,taglish,synthetic_hard_case
+Salamat sa tulong pero putol-putol pa rin.,negative,taglish,synthetic_hard_case
+Nawala kanina yung net pero bumalik din.,positive,taglish,synthetic_hard_case
+Okay yung chat pero hindi pa rin gumagana.,negative,taglish,synthetic_hard_case
+"Opo, titingnan ko po muna yung modem.",neutral,taglish,synthetic_hard_case
+"Bagal kanina, mabilis na ngayon.",positive,taglish,synthetic_hard_case
+Okay yung response pero hindi pa rin working.,negative,taglish,synthetic_hard_case
+I'll test the connection later.,neutral,taglish,synthetic_hard_case
+Salamat sa update pero wala pa ring technician.,negative,taglish,synthetic_hard_case
+The technician was late but fixed the line.,positive,english,synthetic_hard_case
+Maayos na kahit madaming issue kanina.,positive,english,synthetic_hard_case
+I'll test it when I get back home.,neutral,english,synthetic_hard_case
+Naayos din kahit matagal kami naghintay.,positive,taglish,synthetic_hard_case
+Okay yung kausap pero mabagal pa rin.,negative,taglish,synthetic_hard_case
+Ano po yung next step?,neutral,taglish,synthetic_hard_case
+"Slow dati, mabilis na ngayon.",positive,taglish,synthetic_hard_case
+Salamat sa update pero mabagal pa rin yung net.,negative,taglish,synthetic_hard_case
+"Hindi gumagana kahapon, gumagana na ngayon.",positive,taglish,synthetic_hard_case
+Nawala saglit pero bumalik naman.,positive,taglish,synthetic_hard_case
+"Hindi stable kahapon, stable na ngayon.",positive,taglish,synthetic_hard_case
+Okay yung explanation pero mabagal pa rin.,negative,taglish,synthetic_hard_case
+"Sige po, maghintay ako ng schedule.",neutral,taglish,synthetic_hard_case
+Naayos na nila kahit paulit-ulit yung issue.,positive,taglish,synthetic_hard_case
+I received the update and will test it later.,neutral,english,synthetic_hard_case
+"Salamat sa update, hintayin ko yung technician.",neutral,taglish,synthetic_hard_case
+Titingnan ko pa lang po yung connection.,neutral,taglish,synthetic_hard_case
+I thought it wouldn't be fixed but it works now.,positive,english,synthetic_hard_case
+Mabait yung support pero hindi pa rin gumagana.,negative,taglish,synthetic_hard_case
+Thanks po pero down pa rin yung linya.,negative,taglish,synthetic_hard_case
+Please let me know when the technician is scheduled.,neutral,english,synthetic_hard_case
+Okay yung response pero wala pa ring resolution.,negative,taglish,synthetic_hard_case
+Wala pa po akong nakikitang confirmation.,neutral,taglish,synthetic_hard_case
+Paki-update na lang po ako kung may schedule.,neutral,taglish,synthetic_hard_case
+"Salamat po sa instructions, susundin ko.",neutral,taglish,synthetic_hard_case
+Salamat sa response pero hindi pa rin gumagana.,negative,taglish,synthetic_hard_case
+Working na kahit nag-error kanina.,positive,english,synthetic_hard_case
+Thanks po pero hindi pa rin resolved.,negative,taglish,synthetic_hard_case
+"Thank you for the update, but the issue is not fixed.",negative,english,synthetic_hard_case
+Okay yung support pero mabagal pa rin ang internet.,negative,taglish,synthetic_hard_case
+Salamat sa steps pero hindi pa rin umaandar.,negative,taglish,synthetic_hard_case
+Okay yung agent pero unresolved pa rin yung issue.,negative,taglish,synthetic_hard_case
+I'll wait for the technician before confirming the issue.,neutral,english,synthetic_hard_case
+Wala pa akong confirmation kung resolved na.,neutral,taglish,synthetic_hard_case
+Salamat sa info pero hindi pa rin gumagana.,negative,taglish,synthetic_hard_case
+Bumalik na yung signal kahit nawala kanina.,positive,taglish,synthetic_hard_case
+Ang tagal ng paghihintay pero okay na yung net.,positive,taglish,synthetic_hard_case
+"Thank you for the assistance, but my problem is still unresolved.",negative,english,synthetic_hard_case
+I'll observe the connection for a few hours.,neutral,taglish,synthetic_hard_case
+Tignan ko pa lang po kung gagana.,neutral,taglish,synthetic_hard_case
+Gumagana na kahit nag-restart lang ako.,positive,taglish,synthetic_hard_case
+Waiting for the technician to arrive.,neutral,english,synthetic_hard_case
+Akala ko hindi maaayos pero working na ngayon.,positive,taglish,synthetic_hard_case
+Salamat pero wala pa ring linya.,negative,taglish,synthetic_hard_case
+Mabagal kanina pero okay na ngayon.,positive,taglish,synthetic_hard_case
+Hintayin ko na lang po yung update ninyo.,neutral,taglish,synthetic_hard_case
+Susubukan ko pa lang po yung WiFi namin.,neutral,taglish,synthetic_hard_case
+Okay yung instructions pero hindi pa rin naayos.,negative,taglish,synthetic_hard_case
+Hindi ko pa po alam kung okay na.,neutral,taglish,synthetic_hard_case
+Thanks po pero mabagal pa rin yung browsing.,negative,taglish,synthetic_hard_case
+Mabait yung technician pero down pa rin.,negative,taglish,synthetic_hard_case
+"Sige po, wait ko na lang yung tawag.",neutral,taglish,synthetic_hard_case
+Gumagana na kahit matagal na unresolved.,positive,taglish,synthetic_hard_case
+Mabait yung support pero mabagal pa rin.,negative,taglish,synthetic_hard_case
+I'll check the modem when I get home.,neutral,taglish,synthetic_hard_case
+Thanks po pero hindi pa rin tapos yung repair.,negative,taglish,synthetic_hard_case
+Matagal bago gumana pero okay naman.,positive,taglish,synthetic_hard_case
+Salamat sa support pero hindi pa rin gumagana.,negative,taglish,synthetic_hard_case
+Okay naman yung kausap ko pero hindi pa rin naayos.,negative,taglish,synthetic_hard_case
+Working na kahit paulit-ulit na nag-error.,positive,english,synthetic_hard_case
+"Salamat po sa abiso, maghihintay ako.",neutral,taglish,synthetic_hard_case
+Okay na kahit down kanina.,positive,taglish,synthetic_hard_case
+Pwede po bang malaman yung status ng report?,neutral,taglish,synthetic_hard_case
+Putol-putol kanina pero stable na ngayon.,positive,english,synthetic_hard_case
+"Noted po, iche-check ko muna.",neutral,taglish,synthetic_hard_case
+It was down yesterday but it's working now.,positive,english,synthetic_hard_case
+Thank you po pero hindi pa rin resolved.,negative,taglish,synthetic_hard_case
+Okay na kahit hindi agad naayos.,positive,taglish,synthetic_hard_case
+Gumagana na kahit putol-putol dati.,positive,taglish,synthetic_hard_case
+I-monitor ko po muna yung net namin.,neutral,taglish,synthetic_hard_case
+Salamat pero wala pa ring technician.,negative,taglish,synthetic_hard_case
+I appreciate the help but the connection is still slow.,negative,taglish,synthetic_hard_case
+"Thanks po sa info, hintayin ko na lang.",neutral,taglish,synthetic_hard_case
+Thanks po pero down pa rin yung net namin.,negative,taglish,synthetic_hard_case
+"Okay po, i-checheck ko yung modem.",neutral,taglish,synthetic_hard_case
+Matagal yung technician pero naayos naman.,positive,taglish,synthetic_hard_case
+Okay yung update pero wala pa ring aksyon.,negative,taglish,synthetic_hard_case
+Nag-hang kanina pero okay na ngayon.,positive,taglish,synthetic_hard_case
+Naging maayos din pagkatapos ng repair.,positive,taglish,synthetic_hard_case
+"Salamat sa update, maghihintay muna ako.",neutral,taglish,synthetic_hard_case
+Thank you po pero hindi pa rin maayos.,negative,taglish,synthetic_hard_case
+Salamat po pero hindi pa rin stable.,negative,taglish,synthetic_hard_case
+Salamat sa tulong pero wala pa ring net.,negative,taglish,synthetic_hard_case
+Hindi pa po ako sigurado kung okay na.,neutral,taglish,synthetic_hard_case

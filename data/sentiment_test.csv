@@ -1,0 +1,2001 @@
+review_text,sentiment,language,source
+"nag-file ako ng complaint tungkol sa service outage, at maghihintay muna ako! 😊",neutral,taglish,augmented
+"nag-contact ako ng customer support, at hihintayin ko yung technician!",neutral,taglish,augmented
+"nag-request ako ng installation, at hihintayin ko yung technician",neutral,taglish,augmented
+"For now, The internt is working now.",positive,english,augmented
+"For now, The internet is working now. 🙄",positive,english,augmented
+"Hello,The connection is still unstable. 😩",negative,english,augmented
+"Until now, The connection is still unstable. 🙄",negative,english,augmented
+"nag-contact ako ng customer support, pero wala pa ring connection!",negative,taglish,augmented
+"Hi, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"nag-request ako ng installation, at gumagana na ngayon",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection,at nakakapag-browse na ulit ako!",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero unresolved pa rin...",negative,tagalog,augmented
+"nag-request ako ng installation, at nakakapag-online class na ako!! 👍",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at babalik ako kapag may update.",neutral,taglish,augmented
+"nag-report ako ng red light sa modem, at mabilis na ulit ❤️",positive,tagalog,augmented
+"nag-request ako ng installation, at okay na po ngayon",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at resolved na yung concern...",positive,taglish,augmented
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin naayos... 😐",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero unresolved pa rin",negative,tagalog,augmented
+"Same pa rin po, walang pagbabago. 😊",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-report ako ng red light sa modem, at okay na po ngayon",positive,tagalog,augmented
+"nag-request ako ng plan change,at maghihintay muna ako",neutral,tagalog,augmented
+"Hi, Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-work na ulit ako",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at babalik ako kapag may update 😊",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin bumabalik yung service. 👍",negative,taglish,augmented
+"Hi, Salamat po at naayos agad. 😐",positive,tagalog,augmented
+"Hi, Okay na poooo, thank you sa assistance.",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem,pero hindi pa rin gumagana",negative,taglish,augmented
+"Nag-report ako tungkol sa walang connection, pero hindi pa rin gumagana!! 😩",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at susundin ko muna yung instructions...",neutral,taglish,augmented
+"nag-request ako ng installation, at nakakapag-browse na ulit ako 🙄",positive,tagalog,augmented
+"Hi,Okay na po ang signal.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at maghihintay muna ako!!",neutral,taglish,augmented
+"Hello, thankooo you for the update.",neutral,english,augmented
+Salamat pooo at naayos agad.,positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero mabagal pa rin.",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at okay na po ngayon 👍",positive,taglish,augmented
+"Hello, Salamat po at naayos agad. 😤",positive,tagalog,augmented
+"Until now, Working siya kanina pero down na naman ngayon. ❤️",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at monitor ko muna yung connection",neutral,taglish,augmented
+"Sa ngayon, The internt is still very slow. 😩",negative,english,augmented
+"nag-report ako tungkol sa slow internet, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng installation, at nakakapag-work na ulit ako!!",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-contact ako ng customer support, at hihintayin ko yung technician 😭",neutral,taglish,augmented
+"nag-report ako ng mahinang signal, at monitor ko muna yung connection!",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at gumagana na ngayon...",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at babalik ako kapag may update",neutral,taglish,augmented
+The internet is still very slow. 👍,negative,english,augmented
+"nag-report ako tungkol sa walang connection, at maghihintay muna ako",neutral,taglish,augmented
+"nag-contact ako ng customer support, at gumagana naoo ngayon",positive,taglish,augmented
+"Sa ngayon, The internet is still very slow. 😭",negative,english,augmented
+"hi, same pa rin po, walang pagbabago. 😐",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin naayos",negative,tagalog,augmented
+"Sa ngayon, The internet keeps going offline. 😭",negative,english,augmented
+"For now, Okay na po, thank you sa assistance.",positive,taglish,augmented
+"Hello, The internet is still very slow. 😭",negative,english,augmented
+"nag-contact ako ng customer support, pero nagdi-disconnect pa rin!!",negative,taglish,augmented
+"HELLO,THE INTERNET IS WORKING NOW.",positive,english,augmented
+"nag-report ako ng unstable WiFi, at gumagana na ngayon",positive,tagalog,augmented
+"Nag-follow up ako tungkol sa router problem, at nakakapag-online class na ako!!",positive,taglish,augmented
+"Hello, working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented
+"Hi, The intenet keeps going offline.",negative,english,augmented
+"nag-report ako ng unstable WiFi, at okay na po ngayon!",positive,tagalog,augmented
+"Salamat sa update,maghihintay ako ng technician.",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern,at wala nang problema",positive,tagalog,augmented
+"For now, Naayos na pooo yung problem.",positive,taglish,augmented
+"Hi, Thank you for the update.",neutral,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at stable na ulit",positive,taglish,augmented
+"Sige po, I'll wait. 😐",neutral,taglish,augmented
+"Hello, Noted, I'll wait for further instructions. 😩",neutral,english,augmented
+Naayos na poooo yung problema. 😤,positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero wala pa ring improvement",negative,tagalog,augmented
+"Hi, Naayos na po yung problema. 😤",positive,tagalog,augmented
+"Hello, Sige po. 👍",neutral,tagalog,augmented
+"nag-message ako tungkol sa account concern, at susundin ko muna yung instructions!",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at resolved na yung concern 😊",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero mabagal pa rin",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring connection 🙄",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-browse na ulit ako!!",positive,tagalog,augmented
+"nag-request ako ng installation, pero hindi pa rin naayos!",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge,pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Hi,Sige po,I'll wait.",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero nagdi-disconnect pa rin...",negative,taglish,augmented
+"Hello, Naayos na po yung problema.",positive,tagalog,augmented
+Salamat po at naayos agad. 🙄,positive,tagalog,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero hndi pa rin naayos...",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, at nakakapag-online class na ako...",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at monitor ko muna yung connection",neutral,taglish,augmented
+"Hello, Sige po. 😩",neutral,tagalog,augmented
+"Until now, The internet keeps going offline. 😩",negative,english,augmented
+"Sa ngayon, Still slow pa rin pooo yung internet.",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at gumagana naoo ngayon.",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-work na ulit ako.",positive,taglish,augmented
+"For now, Salamat po at naayos agad. 😩",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at wala nang problema",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero mabagal pa rin!",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at susundin ko muna yung instructions...",neutral,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at gumagana na ngayon 😤",positive,taglish,augmented
+"Hi,Noted,I'll wait for further instructions.",neutral,english,augmented
+"nag-report ako ng mabagal na upload, at wala nang problema.",positive,tagalog,augmented
+"HI, OKAY NA pooo ANG SIGNAL.",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at stable na ulit",positive,tagalog,augmented
+"Sa ngayon, I am disappointed with the service. ❤️",negative,english,augmented
+"NAG-FILE AKO NG COMPLAINT TUNGKOL SA SERVICE OUTAGE, AT NAKAKAPAG-WORK NA ULIT AKO!",positive,taglish,augmented
+"Hi, Sige poo, I'll wait.",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero nagdi-disconnect pa rin 😭",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at babalik ako kapag may update...",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-contact ako ng customer support, at susundin ko muna yung instructions",neutral,taglish,augmented
+"Hi, Same pa rin po, walang pagbabago.",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at stable na ulit",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at mabilis naooo ulit",positive,taglish,augmented
+"nag-request ako ng installation, pero unresolved pa rin.",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at iche-check ko muna!!",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at okay na po ngayon 👍",positive,taglish,augmented
+"NAG-REPORT AKO TUNGKOL SA WRONG CHARGE,AT HIHINTAYIN KO YUNG TECHNICIAN",neutral,taglish,augmented
+"nag-request ako ng installation, pero hindi pa rin naayos.",negative,tagalog,augmented
+"Sa ngayon,Maayos na po yung serbisyo.",positive,tagalog,augmented
+"For now, Naayos na po yung problema. 👍",positive,taglish,augmented
+"nag-request ako ng installation, pero wala pa ring connection!",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at nakakapag-online class na ako",positive,tagalog,augmented
+"Sa ngayon,Okay na po ang signal.",positive,tagalog,augmented
+"NAG-REPORT AKO NG RED LIGHT SA MODEM, AT RESOLVED NA YUNG CONCERN 🙄",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin gumagana",negative,taglish,augmented
+"Salamat sa update, maghihintay ako ng technician.",neutral,taglish,hard
+"Sa ngayon, Working siya kanina pero down nao naman ngayon.",negative,english,augmented
+"Nag-file ako ng complaint tungkol sa service outage, pero wala pa ring connection!!",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, at okay na po ngayon",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, pero unresolved pa rin...",negative,tagalog,augmented
+"For now, Okay na poooo, thank you sa assistance.",positive,taglish,augmented
+"Okay na po, thank you sa assistance. 😤",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin gumagana.",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at mabilis na ulit!",positive,taglish,augmented
+"Sa ngayon, Still slow pa rin po yung internet. 👍",negative,taglish,augmented
+"Nag-follow up ako tungkol sa routr problem, pero hindi pa rin naayos",negative,taglish,augmented
+"Until now, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at mabilis na ulit.",positive,tagalog,augmented
+"nag-request ako ng installation, at gumagana na ngayon!!",positive,tagalog,augmented
+"Hi, Naayos na po yung problem. 😤",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-work na ulit ako 😩",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at susundin ko muna yung instructions!! 🙄",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern,pero hindi pa rin bumabalik yung service! 😤",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, at susundin ko muna yung instructions 😭",neutral,taglish,augmented
+nag-follow up ako tungkol sa intermittent conection pero hindi pa rin gumagana,negative,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero hindi pa rin naayos...",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana na ngayon",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero mabagal pa rin 😤",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin gumagagana",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at stable naooo ulit",positive,tagalog,augmented
+"Hello, Maayos na poo yung serbisyo.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at babalik ako kapag may update...",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero same problem pa rin",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at okay na po ngayon",positive,taglish,augmented
+"Until now, The internet is still very slow. 😩",negative,english,augmented
+"Until now, The intenet is still very slow. 😩",negative,english,augmented
+"nag-request ako ng plan change, at gumagana na ngayon!",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin gumagana...",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at resolved na yung concern...",positive,taglish,augmented
+"Nag-report ako tungkol sa wrong charge, at mabilis na ulit 😊",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, pero nagdi-disconnect pa rin!!",negative,taglish,augmented
+"Hello,Working siya kanina pero down naooo naman ngayon.",negative,english,augmented
+"Hello, Naayos na po yung problem, thank you. 👍",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at susundin ko muna yung instructions",neutral,taglish,augmented
+The internet is still very slow. 😐,negative,english,augmented
+"nag-contact ako ng customer support, pero wala pa ring improvement 😐",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero same problem pa rin",negative,taglish,augmented
+The conection is still unstable. 👍,negative,english,augmented
+"Hi, The intenet is still very slow.",negative,english,augmented
+"Hi, Salamat po at naayos agad.",positive,tagalog,augmented
+"nag-contact ako ng customer support, at resolved na yung concern...",positive,taglish,augmented
+"Hello, The internet keeps going offline.",negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse naooo ulit ako!",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at resolved na yung concern",positive,taglish,augmented
+"nag-contact ako ng customer support, at nakakapag-work na ulit ako",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at gumagana na ngayon.",positive,taglish,augmented
+"For now,Okay na po ang signal.",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at hihintayin ko yung technician!",neutral,taglish,augmented
+"nag-contact ako ng customer support, at gumagana na ngayon",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, pero unresolved pa rin!",negative,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at okay na po ngayon",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-work na ulit ako.",positive,taglish,augmented
+"For now, Okay na poo, thank you sa assistance.",positive,taglish,augmented
+Working siya kanina pero down na naman ngayon. 🙄,negative,taglish,augmented
+"nag-report ako ng unstable WiFi, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+thank you for the update. 😤,neutral,english,augmented
+"Hi, The internet is working now. ❤️",positive,english,augmented
+"nag-follow up ako tungkol sa router problem, pero mabagal pa rin.",negative,taglish,augmented
+"For now, Salamat poo at naayos agad.",positive,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 😩",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero mabagal pa rin",negative,tagalog,augmented
+"sa ngayon, the internet is still very slow. ❤️",negative,english,augmented
+"Hi, Sige po. 😩",neutral,tagalog,augmented
+"Noted, I'll wait for further instructions.",neutral,english,natural
+"Hi,The internet keeps going offline. ❤️",negative,english,augmented
+"nag-contact ako ng customer support, at iche-check ko muna",neutral,taglish,augmented
+"Salamat sa update, maghihintay ako ng technician. 👍",neutral,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana na ngayon!!",positive,tagalog,augmented
+"Hello, Sige poooo, I'll wait.",neutral,taglish,augmented
+"nag-contact ako ng customer support, at gumagana na ngayon!",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at hihintayin ko yung technician 👍",neutral,taglish,augmented
+"Hello, Okay na po, thank you sa assistance. 😐",positive,taglish,augmented
+"HI, MAAYOS NA PO YUNG SERBISYO. 😩",positive,tagalog,augmented
+"nag-report ako ng mbagal na upload, at naayos naman agad.",positive,tagalog,augmented
+"nag-request ako ng plan change, at nakakapag-online class na ako",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin gumagana!!",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at maghihintay muna ako...",neutral,taglish,augmented
+"For now, The internet is working now. 😩",positive,english,augmented
+"Hi, Maayos na po yung serbisyo.",positive,tagalog,augmented
+"Hello, I am disappointed with the service. 😭",negative,english,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin gumagana ❤️",negative,tagalog,augmented
+"nag-report ako ng mabagal na upload, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-contact ako ng customer support, pero unresolved pa rin... 😭",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at okay na po ngayon!!",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at hihintayin ko yung technician",neutral,taglish,augmented
+"Hello, Salamat sa update, maghihintay ako ng technician. 😩",neutral,taglish,augmented
+"Hello, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin gumagana",negative,taglish,augmented
+"Until now, Same pa rin po, walang pagbabago. 😩",negative,taglish,augmented
+"For now, Naayos na po yung problem, thank you. 🙏",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at wala nang problem",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero same problem pa rin",negative,taglish,augmented
+The conection is still unstable.,negative,english,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+The internet keeps going offline. 😭,negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-online class na ako",positive,taglish,augmented
+"Nag-report ako ng mabagal na upload, at hihintayin ko yung technician 😤",neutral,taglish,augmented
+"Nag-report ako tungkol sa slow internet, at iche-check ko muna",neutral,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse na ulit ako...",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-contact ako ng customer support, pero wala pa ring connection",negative,taglish,augmented
+Working siya kanina pero down na naman ngayon. 😩,negative,taglish,augmented
+"For now, Maayos na po yung serbisyo. 🙄",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at gumagana na ngayon",positive,taglish,augmented
+"nag-request ako ng installation, at iche-check ko muna!",neutral,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-work na ulit ako.",positive,taglish,augmented
+"Until now,The connection is still unstable.",negative,english,augmented
+"nag-report ako ng unstable WiFi, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, at maghihintay muna ako",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at gumagana na ngayon",positive,taglish,augmented
+I will check it.,neutral,english,natural
+"Hello, The internet is working now. 😩",positive,english,augmented
+"Sa ngayon, Salamat po at naayos agad. 😐",positive,tagalog,augmented
+"nag-request ako ng installation, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Hello, Okay na pooo ang signal.",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-request ako ng plan change, pero unresolved pa rin...",negative,tagalog,augmented
+"For now, Maayos na poooo yung serbisyo.",positive,taglish,augmented
+"nag-request ako ng plan change, pero mabagal pa rin",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at susundin ko muna yung instructions",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero same problem pa rin",negative,taglish,augmented
+Sige po. 😐,neutral,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero same problem pa rin",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at hihintayin ko yung technician.",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero wala pa ring improvement",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero same problem pa rin",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero unresolved pa rin 😩",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at resolved naooo yung concern",positive,taglish,augmented
+"nag-request ako ng installation, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at babalik ako kapag may update 👍",neutral,taglish,augmented
+"Nag-follow up ako tungkol sa putol-putol nao connection, pero wala pa ring connection ❤️",negative,taglish,augmented
+The internet keeps going offline. 🙄,negative,english,augmented
+"Nag-report ako tungkol sa walang connection, at nakakapag-online class na ako!!",positive,taglish,augmented
+"Hello, The internet is still very slow.",negative,english,augmented
+"nag-request ako ng plan change,at maghihintay muna ako!",neutral,tagalog,augmented
+"nag-message ako tungkol sa billing concern,pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at resolved na yung concern!!",positive,taglish,augmented
+"Hello, The intenet is working now.",positive,english,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero unresolved pa rin...",negative,tagalog,augmented
+"nag-follow up ako tungkol sa router problem,at iche-check ko muna",neutral,taglish,augmented
+"Hello, Noted, I'll wait for further instructions. ❤️",neutral,english,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin gumagana!",negative,tagalog,augmented
+"nag-request ako ng plan change, pero wala pa ring connection!",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at gumagana na ngayon",positive,tagalog,augmented
+"Sa ngayon, The internet keeps going offline. 😩",negative,english,augmented
+"Sa ngayon, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, pero same problem pa rin 👍",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero nagdi-disconnect pa rin.",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero wala pa ring improvement",negative,taglish,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Hello, Okay na po ang signal. 🙄",positive,tagalog,augmented
+"For now, Naayos na po yung problema. 😭",positive,taglish,augmented
+"nag-request ako ng plan change, pero same problem pa rin...",negative,taglish,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 🙏",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-report ako ng mabagal naooo upload, at maghihintay muna ako",neutral,tagalog,augmented
+"Hi, The connection is still unstable. 😭",negative,english,augmented
+"nag-request ako ng installation, at stable na ulit.",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero nagdi-disconnect pa rin...",negative,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at naayos naman agad.",positive,taglish,augmented
+"Salamat sa update, maghihintay ako ng technician. 😐",neutral,taglish,augmented
+"Okay na po, thank you sa assistance.",positive,taglish,natural
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"Hello, workng siya kanina pero down na naman ngayon.",negative,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at naayos naman agad",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern,pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-work na ulit ako!",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin naayos...",negative,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-browse naoo ulit ako",positive,taglish,augmented
+"Hi, The internet is working now. 😊",positive,english,augmented
+"nag-report ako ng mabagal na upload, at naayos naman agad",positive,tagalog,augmented
+"nag-request ako ng plan change, pero wala pa ring connection",negative,taglish,augmented
+"Until now, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at monitor ko muna yung connection! 😭",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at babalik ako kapag may update 🙏",neutral,taglish,augmented
+"Nag-follow up ako tungkol sa intermittent connection,at naayos naman agad 🙏",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero wala pa ring improvement...",negative,tagalog,augmented
+"NAG-FILE AKO NG COMPLAINT TUNGKOL SA SERVICE OUTAGE, AT NAKAKAPAG-WORK NA ULIT AKO...",positive,taglish,augmented
+"UNTIL NOW, SAME PA RIN poo, WALANG PAGBABAGO.",negative,taglish,augmented
+"Hi, okay na po, thank you sa assistance. 👍",positive,taglish,augmented
+"nag-message ako tungkol sa account concern,at mabilis na ulit",positive,tagalog,augmented
+"Hi, Working siya kanina pero down nao naman ngayon.",negative,english,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented
+"FOR NOW,OKAY NA PO,THANK YOU SA ASSISTANCE.",positive,taglish,augmented
+"salamt sa update, maghihintay ako ng technician.",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at wala nang problema 👍",positive,taglish,augmented
+"Hello, The internet is working now. 🙏",positive,english,augmented
+"nag-report ako tungkol sa walang connection, at mabilis naooo ulit",positive,taglish,augmented
+"For now, Maayos na po yung serbisyo. 😤",positive,taglish,augmented
+"nag-request ako ng installation, pero mabagal pa rin",negative,tagalog,augmented
+nag-report ako ng red light sa modem at maghihintay muna ako,neutral,tagalog,augmented
+"nag-report ako tungkol sa wrong charge,at gumagana na ngayon.",positive,tagalog,augmented
+"nag-request ako ng installation, at stable na ulit!!",positive,tagalog,augmented
+"Hi, Noted, I'll wait for further instructions.",neutral,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin gumagana.",negative,taglish,augmented
+"nag-request ako ng installation, pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin naayos",negative,tagalog,augmented
+"Hello, Noted, I'll wait for further instructions.",neutral,english,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-work na ulit ako",positive,taglish,augmented
+The internet keeps going offline. 😊,negative,english,augmented
+"nag-request ako ng plan change, at wala nang problema",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue,at hihintayin ko yung technician.",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring connection!",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at stable na ulit!!",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at stable na ulit",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at gumagana na ngayon",positive,taglish,augmented
+"Hi, Salamat sa update, maghihintay ako ng technician. 😭",neutral,taglish,augmented
+"Hello, Naayos na po yung problem, thank you. 🙏",positive,taglish,augmented
+"Hello, Sige po. 😤",neutral,tagalog,augmented
+"nag-report ako ng mabagal na upload, at mabilis na ulit...",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at hihintayin ko yung technician!!",neutral,taglish,augmented
+I will check it. 😤,neutral,english,augmented
+"nag-request ako ng plan change, at monitor ko muna yung connection",neutral,taglish,augmented
+"NAG-FOLLOW UP AKO TUNGKOL SA PUTOL-PUTOL NA CONNECTION, PERO SAME PROBLEM PA RIN!! 🙏",negative,taglish,augmented
+"Hello, Salamat po at naayos agad. 😐",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at resolved na yung concern!",positive,taglish,augmented
+"nag-request ako ng plan change, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection,at wala nang problema",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, pero wala pa ring improvement",negative,tagalog,augmented
+"Sa ngayon, Salamat po at naayos agad. 😤",positive,tagalog,augmented
+"Hello, Sige po, I'll wait.",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at naayos naman agad...",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at susundin ko muna yung instructions!!",neutral,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Hi, The connection is still unstable. ❤️",negative,english,augmented
+"Hello, I am disappointed with the service.",negative,english,augmented
+"nag-request ako ng plan change, at nakakapag-browse na ulit ako!!",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng plan change, pero hindi pa rin gumagana.",negative,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero nagdi-disconnect pa rin!",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero nagdi-disconnect pa rin 🙄",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem,at nakakapag-online class na ako",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-work na ulit ako 😐",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at wala nang problema!",positive,taglish,augmented
+"For now, Naayos na po yung problem, thnak you.",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at stable na ulit!!",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-follow up ako tungkol sa routr problem, at babalik ako kapag may update",neutral,taglish,augmented
+"Hello, Okay na poooo, thank you sa assistance.",positive,taglish,augmented
+"Hi, Same pa rin pooo, walang pagbabago.",negative,tagalog,augmented
+"Hi, The internet keeps going offline. ❤️",negative,english,augmented
+"For now, the internet is working now. ❤️",positive,english,augmented
+"nag-report ako ng mahinang signal, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"Hi, noted, i'll wait for further instructions. 😭",neutral,english,augmented
+"Hello, same pa rin po, walang pagbabago. 🙏",negative,tagalog,augmented
+"Hello, Okay na po ang signal.",positive,tagalog,augmented
+Sige po. 🙏,neutral,tagalog,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin naayos!",negative,tagalog,augmented
+"Hello, Sige poo, I'll wait.",neutral,taglish,augmented
+"Sa ngayon,Okay na po,thank you sa assistance. 😩",positive,taglish,augmented
+The connection is still unstable. 🙏,negative,english,augmented
+"Hello, Salamat po at naayos agad. 👍",positive,tagalog,augmented
+"For now,Maayos na po yung serbisyo.",positive,taglish,augmented
+"Hi,I will monitor the connection.",neutral,english,augmented
+"Hello, Salamat po at naayos agad. 🙏",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at iche-check ko muna!!",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero mabagal pa rin... 😭",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin bumabalik yung service!",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"For now, Naayos na po yung problem, thank you.",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at resolved na yung concern 😤",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at okay na po ngayon!!",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at naayos naman agad",positive,tagalog,augmented
+Sige poo.,neutral,tagalog,augmented
+"Sa ngayon, The connection is still unstable. ❤️",negative,english,augmented
+"Hi, Okay na po ang signal.",positive,tagalog,augmented
+Naayos na po yung problema. 🙏,positive,tagalog,augmented
+"Sa ngayon, Naayos na po yung problem, thank you. 😩",positive,taglish,augmented
+"NAG-FOLLOW UP AKO TUNGKOL SA ROUTER PROBLEM,PERO WALA PA RING CONNECTION...",negative,taglish,augmented
+"NAG-REPORT AKO TUNGKOL SA SLOW INTERNET, AT NAKAKAPAG-ONLINE CLASS NA AKO!!",positive,taglish,augmented
+nag-follow up ako tungkol sa intermittent connection at nakakapag-online class na ako,positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at stable na ulit",positive,tagalog,augmented
+"Hello, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented
+"Hi, Still slow pa rin po yung internet. 😐",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero unresolved pa rin",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at stable na ulit",positive,taglish,augmented
+Sige po. 😊,neutral,tagalog,augmented
+"nag-follow up ako tungkol sa routr problem, at maghihintay muna ako...",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero unresolved pa rin.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at resolved na yung concern 😩",positive,taglish,augmented
+"Hello,Thank you for the update.",neutral,english,augmented
+"Until now, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented
+"Hi,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at gumagana na ngayon",positive,tagalog,augmented
+"Same pa rin po,walang pagbabago. 👍",negative,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring connection",negative,taglish,augmented
+"Sa ngayon, Salamat pooo at naayos agad.",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-online class na ako!!",positive,tagalog,augmented
+"Hi, Naayos na po yung problema.",positive,tagalog,augmented
+"nag-request ako ng installation, at maghihintay muna ako!!",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at monitor ko muna yung connection 😐",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at maghihintay muna ako",neutral,taglish,augmented
+"Hello, Okay na po, thank you sa assistance.",positive,taglish,augmented
+"nag-contact ako ng customer support,at babalik ako kapag may update",neutral,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at wala nang problema",positive,tagalog,augmented
+"nag-request ako ng plan change, at nakakapag-browse na ulit ako!! 🙄",positive,tagalog,augmented
+"NAG-REPORT AKO NG RED LIGHT SA MODEM, AT WALA NANG PROBLEMA!",positive,tagalog,augmented
+"Sa ngayon, Okay na po, thank you sa assistance. 😭",positive,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 👍",positive,taglish,augmented
+nag-follow up ako tungkol sa intermittent conection pero unresolved pa rin,negative,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin bumabalik yung service 😐",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero unresolved pa rin.",negative,taglish,augmented
+"Hi, The connection is still unstable. 😩",negative,english,augmented
+"Sa ngayon,Working siya kanina pero down naoo naman ngayon.",negative,english,augmented
+"Hello, Salamat pooo at naayos agad.",positive,tagalog,augmented
+"nag-request ako ng installation, at nakakapag-browse nao ulit ako",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at gumagana na ngayon.",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin naayos.",negative,taglish,augmented
+"nag-report ako ng mahinang signal,at nakakapag-online class na ako",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako ng mahinang signal, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, at naayos naman agad",positive,tagalog,augmented
+"Hello, I will check it.",neutral,english,augmented
+"nag-request ako ng plan change, pero hindi pa rin naayos",negative,tagalog,augmented
+"Nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana 😩",negative,tagalog,augmented
+"nag-contact ako ng customer support, at okay na po ngayon 🙄",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+"For now, The internet is working now. 😐",positive,english,augmented
+"sa ngayon, same pa rin pooo, walang pagbabago.",negative,tagalog,augmented
+"For now, The internet is working now. 👍",positive,english,augmented
+"Hello, The internet is workng now.",positive,english,augmented
+The internt is still very slow.,negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana na ngayon...",positive,tagalog,augmented
+"nag-contact ako ng customer support, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at gumagana na ngayon",positive,taglish,augmented
+"nag-request ako ng installation, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"Sa ngayon, Naayos na po yung problem, thank you. 🙄",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring improvement 👍",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at naayos naman agad",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at stable na ulit",positive,tagalog,augmented
+"For now, Okay na po ang signal. 😩",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at susundin ko muna yung instructions.",neutral,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at wala nang problema!!",positive,tagalog,augmented
+"Until now, Working siya kanina pero down nao naman ngayon.",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at naayos naman agad",positive,taglish,augmented
+"NAG-FOLLOW UP AKO TUNGKOL SA INSTALLATION DELAY, AT HIHINTAYIN KO YUNG TECHNICIAN!",neutral,taglish,augmented
+"Hi, Thank you for the update. 😭",neutral,english,augmented
+"nag-report ako tungkol sa slow internet, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero same problem pa rin 😐",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin naayos.",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero unresolved pa rin.",negative,tagalog,augmented
+"nag-request ako ng plan change, pero mabagal pa rin!",negative,tagalog,augmented
+"nag-request ako ng plan change, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at okay na po ngayon!",positive,tagalog,augmented
+"Hello, Okay na po, thank you sa assistance. 😊",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at wala nang problema",positive,tagalog,augmented
+"Sa ngayon, Okay na po, thank you sa assistance. 🙄",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at gumagana na ngayon...",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at naayos naman agad.",positive,taglish,augmented
+"Hi, Okay na pooo, thank you sa assistance.",positive,taglish,augmented
+"Hello, Same pa rin pooo, walang pagbabago.",negative,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero same problem pa rin...",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero nagdi-disconnect pa rin.",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at naayos naman agad.",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at stable na ulit...",positive,tagalog,augmented
+"Sige po,I'll wait.",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at resolved na yung concern! 👍",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern,at nakakapag-work na ulit ako",positive,tagalog,augmented
+The internet keeps going offline.,negative,english,natural
+"Hello, Naayos na po yung problema. 😐",positive,tagalog,augmented
+"Sa ngayon, The connection is still unstable. 😊",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at iche-check ko muna",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero unresolved pa rin",negative,taglish,augmented
+nag-follow up ako tungkol sa intermittent connection pero mbagal pa rin,negative,taglish,augmented
+"hi, okay na poo ang signal.",positive,tagalog,augmented
+"FOR NOW, OKAY NA PO ANG SIGNAL. 😊",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at naayos naman agad 😭",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-online class na ako",positive,taglish,augmented
+"Hello, thnak you for the update.",neutral,english,augmented
+Maayos na po yung serbisyo.,positive,tagalog,natural
+"nag-request ako ng installation, pero nagdi-disconnect pa rin.",negative,tagalog,augmented
+Working siya kanina pero down na naman ngayon. 🙏,negative,taglish,augmented
+"nag-request ako ng plan change,at iche-check ko muna",neutral,tagalog,augmented
+"Hello,Noted,I'll wait for further instructions.",neutral,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at babalik ako kapag may update 😭",neutral,taglish,augmented
+"Hi, Naayos na pooo yung problem, thank you.",positive,taglish,augmented
+"nag-request ako ng plan change,pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at stable na ulit!!",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at naayos naman agad.",positive,taglish,augmented
+"Hi, I will check it. 😤",neutral,english,augmented
+"Nag-report ako tungkol sa slow internet, at susundin ko muna yung instructions...",neutral,taglish,augmented
+"Hi, Okay na po ang signal. 🙄",positive,tagalog,augmented
+"nag-request ako ng plan change, at naayos naman agad",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero wala pa ring conection",negative,tagalog,augmented
+"nag-contact ako ng customer support, at iche-check ko muna.",neutral,taglish,augmented
+"Sa ngayon, Okay na po ang signal.",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-browse na ulit ako...",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at monitor ko muna yung connection 😊",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, at maghihintay muna ako",neutral,tagalog,augmented
+The connection is still unstable. ❤️,negative,english,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin gumagana",negative,tagalog,augmented
+"Sa ngayon, Salamat poooo at naayos agad.",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Noted,i'll wait for further instructions.",neutral,english,augmented
+"Sa ngayon, Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at monitor ko muna yung connection 😊",neutral,taglish,augmented
+"Hi, Naayos na po yung problem.",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero same problem pa rin",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at wala nang problema",positive,tagalog,augmented
+"Hi, Naayos na poo yung problema.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at okay na po ngayon",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at stable nao ulit.",positive,taglish,augmented
+"Until now, Still slow pa rin poo yung internet.",negative,taglish,augmented
+"HELLO, OKAY NA pooo, THANK YOU SA ASSISTANCE.",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"nag-report ako ng red light sa modem,pero wala pa ring improvement",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at babalik ako kapag may update.",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+"NAG-FOLLOW UP AKO TUNGKOL SA PUTOL-PUTOL NA CONNECTION, AT WALA NANG PROBLEMA. 😤",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-browse na ulit ako!!",positive,taglish,augmented
+the internet is working now. 🙄,positive,english,augmented
+"Hello,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"Hello,I will monitor the connection.",neutral,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, at mabilis na ulit... 👍",positive,taglish,augmented
+"Hi,Naayos na po yung problema.",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at wala nang problema!! 😊",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero same problem pa rin...",negative,taglish,augmented
+"Until now, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, pero mbagal pa rin!",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana na ngayon 🙄",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at gumagana na ngayon.",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-browse na ulit ako 🙄",positive,taglish,augmented
+"Same pa rin po,walang pagbabago.",negative,tagalog,augmented
+Sige po. 😩,neutral,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at gumagana na ngayon!",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work na ulit ako!",positive,tagalog,augmented
+"Nag-message ako tungkol sa account concern, at maghihintay muna ako!!",neutral,tagalog,augmented
+"nag-message ako tungkol sa account concern, at resolved na yung concern!! 😭",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at iche-check ko muna",neutral,tagalog,augmented
+"hi, i am disappointed with the service.",negative,english,augmented
+"Hi, The connection is still unstable. 🙄",negative,english,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin bumabalik yung service!",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at babalik ako kapag may update",neutral,taglish,augmented
+"HELLO, SALAMT PO AT NAAYOS AGAD.",positive,tagalog,augmented
+Maayos na poo yung serbisyo.,positive,tagalog,augmented
+"Hi, still slow pa rin po yung internet. 🙏",negative,taglish,augmented
+"For now, salamt po at naayos agad.",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin bumabalik yung service 🙏",negative,taglish,augmented
+"Hello, Same pa rin po, walang pagbabago. 😭",negative,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at gumagana naoo ngayon!",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero unresolved pa rin 😐",negative,tagalog,augmented
+"Hello, Thank you for the update. ❤️",neutral,english,augmented
+thnak you for the update.,neutral,english,augmented
+"nag-report ako ng red light sa modem, at gumagana na ngayon...",positive,tagalog,augmented
+Still slow pa rin po yung internet. 😐,negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at mabilis na ulit",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-browse naoo ulit ako",positive,tagalog,augmented
+I am disappointed with the service.,negative,english,natural
+"Hi,Salamat po at naayos agad.",positive,tagalog,augmented
+"Until now, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at nakakapag-browse na ulit ako!",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at monitor ko muna yung connection!!",neutral,taglish,augmented
+"nag-request ako ng installation, at maghihintay muna ako...",neutral,tagalog,augmented
+"Hello, I will check it. 🙄",neutral,english,augmented
+"Sa ngayon, Maayos na poo yung serbisyo.",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at stable na ulit 🙏",positive,tagalog,augmented
+NAG-FOLLOW UP AKO TUNGKOL SA INTERMITTENT CONECTION AT NAKAKAPAG-ONLINE CLASS NA AKO,positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at okay na po ngayon 😩",positive,tagalog,augmented
+"nag-contact ako ng customer support, at babalik ako kapag may update!",neutral,taglish,augmented
+"nag-request ako ng plan change, at resolved na yung concern 🙏",positive,taglish,augmented
+"nag-message ako tungkol sa account concern,at stable na ulit.",positive,tagalog,augmented
+"nag-report ako ng mahinang signal,pero hindi pa rin bumabalik yung service 😐",negative,taglish,augmented
+"Until now, The internet keeps going offline. 😭",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"Okay na po, thank you sa assistance. 😭",positive,taglish,augmented
+"Hi, Still slow pa rin po yung intenet. 👍",negative,taglish,augmented
+"For now, Okay na po, thank you sa assistance. ❤️",positive,taglish,augmented
+"Until now, Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-report ako ng mahinang signal, pero wala pa ring connection",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero unresolved pa rin 👍",negative,taglish,augmented
+"Hi, Maayos na po yung serbisyo. 😤",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring connection!!",negative,taglish,augmented
+"Nag-contact ako ng customer support, at nakakapag-work nao ulit ako.",positive,taglish,augmented
+"for now,the internet is working now.",positive,english,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin gumagana! 🙄",negative,tagalog,augmented
+"Sa ngayon,The connection is still unstable.",negative,english,augmented
+"nag-report ako ng mabagal nao upload, at resolved na yung concern",positive,taglish,augmented
+"nag-contact ako ng customer support, at naayos naman agad!",positive,taglish,augmented
+"nag-contact ako ng customer support, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Naayos na poo yung problem, thank you.",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, pero same problem pa rin!!",negative,taglish,augmented
+"Hi, The internet is still very slow.",negative,english,augmented
+"Hello, Same pa rin poo, walang pagbabago.",negative,tagalog,augmented
+"Hi, The internet is still very slow. 👍",negative,english,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring improvement",negative,taglish,augmented
+Thank you for the update.,neutral,english,natural
+"nag-report ako ng red light sa modem, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng plan change, at mabilis na ulit...",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse na ulit ako 👍",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero nagdi-disconnect pa rin!",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at mabilis na ulit",positive,tagalog,augmented
+"Sa ngayon, The internet is still very slow.",negative,english,augmented
+"NAG-REPORT AKO NG UNSTABLE WIFI,PERO SAME PROBLEM PA RIN",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, at iche-check ko muna...",neutral,taglish,augmented
+"Sa ngayon, Okay na po ang signal. 🙏",positive,tagalog,augmented
+"Sa ngayon, Still slow pa rin po yung intenet.",negative,taglish,augmented
+"nag-request ako ng installation, pero nagdi-disconnect pa rin...",negative,tagalog,augmented
+"Hello, Naayos na po yung problema. 😊",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero wala pa ring connection",negative,taglish,augmented
+"Sa ngayon, Still slow pa rin po yung internet. 🙏",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero wala pa ring connection.",negative,taglish,augmented
+Still slow pa rin pooo yung internet.,negative,taglish,augmented
+"nag-message ako tungkol sa billing concern,pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, at hihintayin ko yung technician... 😤",neutral,taglish,augmented
+"Nag-report ako ng mahinang signal,at maghihintay muna ako 😐",neutral,tagalog,augmented
+"nag-report ako ng red light sa modem, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Sa ngayon, Okay na pooo ang signal.",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, at mabilis na ulit! 😐",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at monitor ko muna yung conection",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin bumabalik yung service!!",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, at monitor ko muna yung connection 😩",neutral,taglish,augmented
+"nag-contact ako ng customer support, at stable nao ulit",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero same problem pa rin...",negative,taglish,augmented
+"Sa ngayon, Maayos na po yung serbisyo.",positive,tagalog,augmented
+"nag-request ako ng plan change, pero nagdi-disconnect pa rin!!",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at okay na po ngayon.",positive,taglish,augmented
+"nag-request ako ng installation, at okay na poooo ngayon!!",positive,tagalog,augmented
+"nag-request ako ng plan change, at okay na po ngayon",positive,tagalog,augmented
+"Sa ngayon, Okay na poooo ang signal.",positive,tagalog,augmented
+Still slow pa rin po yung internet. ❤️,negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at iche-check ko muna",neutral,taglish,augmented
+"For now, Naayos na poooo yung problem, thank you. 😩",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-browse na ulit ako 🙏",positive,tagalog,augmented
+"Hi, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented
+"Hi,Okay na pooo ang signal.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at susundin ko muna yung instructions 👍",neutral,taglish,augmented
+"Hi, Maayos na po yung serbisyo. 😐",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-report ako ng mahinang signal, at resolved na yung concern ❤️",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero unresolved pa rin",negative,taglish,augmented
+"Hi, The internet is still very slow. ❤️",negative,english,augmented
+"nag-message ako tungkol sa account concern, at mabilis na ulit",positive,tagalog,augmented
+"Hi, Salamat poooo at naayos agad.",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at nakakapag-work na ulit ako 😤",positive,tagalog,augmented
+"Hi, sige po. 😐",neutral,tagalog,augmented
+Okay na po ang signal. 😤,positive,tagalog,augmented
+"nag-request ako ng installation, at mabilis na ulit",positive,tagalog,augmented
+"Hello, The internet is working now. ❤️",positive,english,augmented
+"nag-request ako ng plan change, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"Until now, The conection is still unstable.",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at okay na poooo ngayon",positive,tagalog,augmented
+"Hello,I will check it.",neutral,english,augmented
+"For now, Naayos na po yung problem, thank you. 😤",positive,taglish,augmented
+"Hello, Still slow pa rin poo yung internet.",negative,taglish,augmented
+"NAG-REQUEST AKO NG TECHNICIAN DAHIL SA MODEM ISSUE, AT NAAYOS NAMAN AGAD",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-browse naoo ulit ako",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at babalik ako kapag may update",neutral,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 🙏",positive,taglish,augmented
+"nag-contact ako ng customer support, at nakakapag-work na ulit ako!!",positive,taglish,augmented
+"Hi, Maayos na po yung serbisyo. 😭",positive,tagalog,augmented
+I will monitor the connection.,neutral,english,natural
+"Hello, Thank you for the update. 😤",neutral,english,augmented
+"Okay na poo, thank you sa assistance.",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at mabilis na ulit!",positive,taglish,augmented
+"Sa ngayon, Naayos na po yung problem, thnak you.",positive,taglish,augmented
+the connection is still unstable. 😩,negative,english,augmented
+"Hi, Naayos na po yung problem, thank you.",positive,taglish,augmented
+"Until now, Still slow pa rin po yung internet. 😊",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero same problem pa rin",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at maghihintay muna ako",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, at iche-check ko muna",neutral,tagalog,augmented
+"nag-request ako ng plan change, at mabilis na ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero mabagal pa rin 😤",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at maghihintay muna ako!",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at susundin ko muna yung instructions",neutral,taglish,augmented
+nag-report ako ng red light sa modm pero wala pa ring connection!!,negative,taglish,augmented
+"nag-request ako ng plan change, pero unresolved pa rin.",negative,tagalog,augmented
+"Noted, I'll wait for further instructions. 😭",neutral,english,augmented
+"nag-report ako ng red light sa modem, at nakakapag-online class na ako.",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin gumagana",negative,taglish,augmented
+"Sa ngayon, Okay na po, thank you sa assistance. 😐",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring improvement 🙄",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin naayos...",negative,taglish,augmented
+nag-report ako ng red light sa modm pero hindi pa rin gumagagana!!,negative,tagalog,augmented
+"For now, Salamat po at naayos agad. 🙏",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero mabagal pa rin.",negative,taglish,augmented
+"Sa ngayon, I am disappointed with the service. 🙏",negative,english,augmented
+Naayos na po yung problema.,positive,tagalog,natural
+"Hi, I will monitor the connection.",neutral,english,augmented
+"nag-request ako ng installation, at stable naoo ulit",positive,tagalog,augmented
+Working siya kanina pero down naooo naman ngayon.,negative,english,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at babalik ako kapag may update!!",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern,at okay na po ngayon",positive,tagalog,augmented
+"nag-request ako ng plan change, pero hindi pa rin naayos!",negative,tagalog,augmented
+"Hello, I will monitor the connection.",neutral,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, at naayos naman agad",positive,taglish,augmented
+"Until now, Still slow pa rin poooo yung internet.",negative,taglish,augmented
+"nag-report ako ng mahinang signal,pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at gumagana na ngayon",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin naayos!! 🙏",negative,taglish,augmented
+"Sa ngayon, Still slow pa rin poo yung internet.",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at okay na po ngayon!",positive,tagalog,augmented
+"Hi, The connection is still unstable. 😐",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at naayos naman agad!",positive,tagalog,augmented
+"nag-follow up ako tungkol sa routr problem, pero hindi pa rin gumagana!!",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, at hihintayin ko yung technician 😩",neutral,taglish,augmented
+"nag-report ako ng red light sa modem, at okay na pooo ngayon",positive,tagalog,augmented
+"nag-contact ako ng customer support, at susundin ko muna yung instructions!!",neutral,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero same problem pa rin!!",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at resolved na yung concern!!",positive,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at naayos naman agad!",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at okay na po ngayon",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at okay na po ngayon",positive,taglish,augmented
+"sa ngayon, the connection is still unstable. 😩",negative,english,augmented
+"nag-report ako tungkol sa slow internet, pero unresolved pa rin 😭",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero wala pa ring connection!!",negative,taglish,augmented
+"For now, Naayos na po yung problema. 😤",positive,taglish,augmented
+"Hello, Working siya kanina pero down naoo naman ngayon.",negative,english,augmented
+"nag-report ako ng unstable WiFi, at mabilis na ulit 😩",positive,tagalog,augmented
+"nag-request ako ng installation, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol naooo connection, pero mabagal pa rin",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, at mabilis na ulit",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, at nakakapag-online class na ako!!",positive,tagalog,augmented
+"Hi, Still slow pa rin po yung internet. 😭",negative,taglish,augmented
+"Hello, Working siya kanina pero down na naman ngayon. 🙄",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero same problem pa rin",negative,taglish,augmented
+"Until now,The internet is still very slow.",negative,english,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin naayos 😭",negative,tagalog,augmented
+"Hi, I am disappointed with the service. 😊",negative,english,augmented
+"nag-report ako tungkol sa wrong charge, pero mabagal pa rin...",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at resolved nao yung concern",positive,taglish,augmented
+"Hello, Okay na po ang signal. 😩",positive,tagalog,augmented
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😊",negative,taglish,augmented
+"Nag-report ako tungkol sa walang connection, pero wala pa ring connection!",negative,taglish,augmented
+"Hello, I will monitor the connection. 😐",neutral,english,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero nagdi-disconnect pa rin!",negative,tagalog,augmented
+Salamat po at naayos agad. 😩,positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero mabagal pa rin...",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin gumagana!!",negative,taglish,augmented
+"Hi,Naayos na poooo yung problema.",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at mabilis na ulit",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at resolved na yung concern",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin naayos 👍",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin gumagana ❤️",negative,taglish,augmented
+"nag-report ako ng mabagal naoo upload, pero hindi pa rin naayos 😭",negative,tagalog,augmented
+"Sa ngayon,I am disappointed with the service.",negative,english,augmented
+"nag-report ako ng red light sa modem, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"Nag-request ako ng plan change, at nakakapag-online class na ako 😩",positive,tagalog,augmented
+"Until now, Same pa rin pooo, walang pagbabago.",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage,at nakakapag-online class na ako",positive,taglish,augmented
+The internet is working now.,positive,english,natural
+"nag-request ako ng technician dahil sa modem issue, at mabilis naooo ulit",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero unresolved pa rin",negative,taglish,augmented
+"Nag-message ako tungkol sa billing concern, pero same problem pa rin...",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at okay na po ngayon!!",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-work na ulit ako",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin naayos!!",negative,taglish,augmented
+"Hi, The internt keeps going offline. 🙄",negative,english,augmented
+"nag-report ako tungkol sa walang connection, at stable na ulit",positive,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero nagdi-disconnect pa rin!",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero nagdi-disconnect pa rin!!",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge,at resolved na yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring connection",negative,taglish,augmented
+"For now, Okay na po ang signal. 🙏",positive,taglish,augmented
+"nag-request ako ng plan change, at gumagana na ngayon",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at mabilis na ulit",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-online class na ako... 😩",positive,taglish,augmented
+"Hi, Okay na poo, thank you sa assistance.",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at monitor ko muna yung connection...",neutral,taglish,augmented
+"Hello, Same pa rin po, walang pagbabago. 👍",negative,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at okay na pooo ngayon!!",positive,taglish,augmented
+"Sa ngayon,Salamat po at naayos agad.",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet,pero hindi pa rin gumagana!!",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin gumagana!!",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring improvement...",negative,tagalog,augmented
+"Until now, The internet keeps going offline.",negative,english,augmented
+"Hello, I am disappointed with the service. 😤",negative,english,augmented
+"Hi, Naayos na poo yung problem, thank you.",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero mabagal pa rin",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at wala nang problema 😤",positive,tagalog,augmented
+Naayos na po yung problema. 😊,positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at iche-check ko muna",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero wala pa ring connection",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero same problem pa rin",negative,taglish,augmented
+"Nag-request ako ng technician dahil sa modem issue, at mabilis na ulit... 😐",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero nagdi-disconnect pa rin...",negative,taglish,augmented
+"Sa ngayon, Naayos na po yung problem, thank you.",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, at monitor ko muna yung connection.",neutral,taglish,augmented
+"Hello, I am disappointed with the service. 🙏",negative,english,augmented
+"nag-message ako tungkol sa account concern, at stable na ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-work na ulit ako! 🙄",positive,taglish,augmented
+"nag-request ako ng installation, pero wala pa ring connection... 😤",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol nao connection, at wala nang problema",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at stable na ulit 😊",positive,taglish,augmented
+"Hi,The internet is still very slow. 👍",negative,english,augmented
+"nag-report ako ng unstable WiFi, at maghihintay muna ako!",neutral,tagalog,augmented
+"salamat sa update, maghihintay ako ng technician. 🙏",neutral,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero nagdi-disconnect pa rin.",negative,tagalog,augmented
+"nag-contact ako ng customer support, at okay na po ngayon! 😭",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at hihintayin ko yung technician",neutral,taglish,augmented
+"Sa ngayon, Naayos na po yung problema. 😊",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at monitor ko muna yung connection... 😭",neutral,taglish,augmented
+"Hi, Same pa rin po, walang pagbabago. 🙏",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at nakakapag-online class na ako.",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin naayos!",negative,tagalog,augmented
+"Sige po, I'll wait. 🙏",neutral,taglish,augmented
+"nag-request ako ng plan change, at susundin ko muna yung instructions!",neutral,tagalog,augmented
+"Hi, Sige po.",neutral,tagalog,augmented
+"nag-request ako ng plan change, pero same problem pa rin",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at gumagana na ngayon!!",positive,tagalog,augmented
+"Hello, The internet is working now.",positive,english,augmented
+"nag-report ako ng unstable WiFi, at wala nang problema",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin bumabalik yung service 🙏",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"Nag-follow up ako tungkol sa putol-putol na connection, at monitor ko muna yung connection. 😭",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, pero same problem pa rin.",negative,taglish,augmented
+"Hi, The internt keeps going offline.",negative,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at okay na po ngayon...",positive,tagalog,augmented
+"For now, Naayos na po yung problema.",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-online class na ako",positive,tagalog,augmented
+"Hello, Salamat sa update, maghihintay ako ng technician.",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero hindi pa rin gumagana 🙄",negative,taglish,augmented
+"For now, Naayos na po yung problem, thank you. ❤️",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at resolved na yung concern",positive,taglish,augmented
+Still slow pa rin po yung internet. 👍,negative,taglish,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring connection!",negative,taglish,augmented
+"For now, Okay na poooo ang signal.",positive,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana!",negative,tagalog,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 😭",negative,taglish,augmented
+"Hi, Okay na po ang signal. 😩",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at wala nang problema",positive,tagalog,augmented
+"Hello, salamt sa update, maghihintay ako ng technician.",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero same problem pa rin!",negative,taglish,augmented
+"nag-request ako ng installation, at nakakapag-browse naooo ulit ako",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at stable na ulit.",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at babalik ako kapag may update 😤",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+Okay na po ang signal. 👍,positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, pero nagdi-disconnect pa rin!",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"Hi, salamt po at naayos agad. 😩",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, pero nagdi-disconnect pa rin!!",negative,tagalog,augmented
+"Hi, The internet keeps going offline. 🙏",negative,english,augmented
+The intenet is working now.,positive,english,augmented
+"nag-report ako ng mabagal na upload, pero mabagal pa rin.",negative,tagalog,augmented
+"Until now, The internet keeps going offline. ❤️",negative,english,augmented
+"nag-report ako ng mahinang signal, pero same problem pa rin",negative,taglish,augmented
+"Hello, Sige po, I'll wait. 😭",neutral,taglish,augmented
+"nag-report ako ng red light sa modem, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin naayos!",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at mabilis na ulit",positive,tagalog,augmented
+"Hello, Naayos na po yung problema. ❤️",positive,tagalog,augmented
+"Until now, The internt is still very slow.",negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection,at hihintayin ko yung technician 😤",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero unresolved pa rin",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin gumagana 👍",negative,taglish,augmented
+"nag-report ako ng mahinang signal, pero unresolved pa rin!",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, at nakakapag-online class na ako 👍",positive,tagalog,augmented
+"nag-request ako ng installation, at resolved na yung concern!!",positive,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero mabagal pa rin!!",negative,tagalog,augmented
+"nag-request ako ng installation, pero wala pa ring improvement 🙏",negative,tagalog,augmented
+"Nag-file ako ng complaint tungkol sa service outage, pero nagdi-disconnect pa rin 😐",negative,taglish,augmented
+"Hi, Still slow pa rin po yung internet. 😩",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero unresolved pa rin!",negative,taglish,augmented
+"nag-contact ako ng customer support, at okay na po ngayon! ❤️",positive,taglish,augmented
+"NAG-CONTACT AKO NG CUSTOMER SUPPORT, PERO WALA PA RING IMPROVEMENT!!",negative,taglish,augmented
+"nag-contact ako ng customer support, at resolved na yung concern",positive,taglish,augmented
+"Sa ngayon, The internet keeps going offline. 👍",negative,english,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-browse na ulit ako...",positive,taglish,augmented
+"nag-follow up ako tungkol sa routr problem, pero mabagal pa rin",negative,taglish,augmented
+The internet is still very slow.,negative,english,natural
+"nag-request ako ng installation, pero nagdi-disconnect pa rin 😐",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at stable na ulit",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at iche-check ko muna 😤",neutral,tagalog,augmented
+"Hello, Okay na po ang signal. 🙏",positive,tagalog,augmented
+"nag-request ako ng plan change, pero hindi pa rin gumagana",negative,tagalog,augmented
+"Okay na po,thank you sa assistance.",positive,taglish,augmented
+"Hi, The internet keeps going offline. 😊",negative,english,augmented
+"Hi,Still slow pa rin po yung internet. 😊",negative,taglish,augmented
+"Hi, Still slow pa rin pooo yung internet.",negative,taglish,augmented
+"nag-report ako ng red light sa modem,pero mabagal pa rin",negative,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-online class na ako.",positive,taglish,augmented
+"For now, Maayos na poo yung serbisyo.",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at mabilis na ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, at gumagana na ngayon!!",positive,tagalog,augmented
+"NAG-CONTACT AKO NG CUSTOMER SUPPORT, AT RESOLVED naooo YUNG CONCERN 😤",positive,taglish,augmented
+"NAG-REQUEST AKO NG TECHNICIAN DAHIL SA MODEM ISSUE, AT STABLE NA ULIT!!",positive,taglish,augmented
+"Hello, The internet is still very slow. 😩",negative,english,augmented
+"nag-report ako tungkol sa wrong charge,pero mabagal pa rin",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-browse naoo ulit ako",positive,tagalog,augmented
+"Same pa rin poo, walang pagbabago.",negative,tagalog,augmented
+I will monitor the conection.,neutral,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at gumagana na ngayon.",positive,taglish,augmented
+"nag-request ako ng plan change, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-work na ulit ako",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin naayos",negative,tagalog,augmented
+Still slow pa rin po yung internt.,negative,taglish,augmented
+"Hi, I am disappointed with the service. 😐",negative,english,augmented
+"Hello, The intenet keeps going offline.",negative,english,augmented
+"nag-report ako tungkol sa walang connection,at susundin ko muna yung instructions!",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at naayos naman agad!",positive,taglish,augmented
+The connection is still unstable.,negative,english,natural
+"Hi,Still slow pa rin poo yung internet.",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hndi pa rin naayos!",negative,taglish,augmented
+"Okay na pooo, thank you sa assistance. 😩",positive,taglish,augmented
+I will monitor the connection. 😐,neutral,english,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin naayos!!",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at nakakapag-online class naoo ako",positive,taglish,augmented
+"Hi,thankoo you for the update.",neutral,english,augmented
+"nag-follow up ako tungkol sa router problem, pero mabagal pa rin!",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero mabagal pa rin 😐",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at iche-check ko muna",neutral,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at babalik ako kapag may update 😐",neutral,taglish,augmented
+"nag-contact ako ng customer support, at monitor ko muna yung conection",neutral,taglish,augmented
+I will check it. 😊,neutral,english,augmented
+"Hello, I will check it. 😤",neutral,english,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-online class na ako!",positive,tagalog,augmented
+"nag-request ako ng installation, at nakakapag-online class na ako",positive,tagalog,augmented
+"Hi, The internt is working now.",positive,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at wala nang problema",positive,taglish,augmented
+"Hi, Okay na po, thank you sa assistance. 😊",positive,taglish,augmented
+"nag-contact ako ng customer support, pero hindi pa rin gumagana",negative,taglish,augmented
+nag-report ako tungkol sa slow intenet pero d hindi pa rin naayos,negative,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at naayos naman agad.",positive,taglish,augmented
+"Hello,I am disappointed with the service.",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at okay na po ngayon",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero unresolved pa rin...",negative,tagalog,augmented
+"Hello, Okay na po, thank you sa assistance. 👍",positive,taglish,augmented
+"nag-request ako ng installation, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero nagdi-disconnect pa rin...",negative,taglish,augmented
+"Sa ngayon, Salamat po at naayos agad. 😭",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at resolved na yung concern",positive,taglish,augmented
+"Sa ngayon, Same pa rin poooo, walang pagbabago.",negative,tagalog,augmented
+"For now, The internet is working now.",positive,english,augmented
+"nag-request ako ng technician dahil sa modem issue,at iche-check ko muna",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload,pero wala pa ring improvement",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work nao ulit ako",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at maghihintay muna ako 😤",neutral,tagalog,augmented
+"Hi,Sige po.",neutral,tagalog,augmented
+"Hello, Still slow pa rin poooo yung internet.",negative,taglish,augmented
+"nag-request ako ng installation, at naayos naman agad",positive,tagalog,augmented
+"nag-contact ako ng customer support, at susundin ko muna yung instructions!",neutral,taglish,augmented
+"Hello,Naayos na po yung problem,thank you.",positive,taglish,augmented
+"Hi,Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-work na ulit ako!!",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin naayos",negative,taglish,augmented
+"Sa ngayon, The internet is working now. 🙄",positive,english,augmented
+"Hi, I will monitor the connection. 👍",neutral,english,augmented
+"Until now, Same pa rin poooo, walang pagbabago.",negative,taglish,augmented
+thanko you for the update.,neutral,english,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-online class na ako 👍",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-browse nao ulit ako 👍",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at hihintayin ko yung technician.",neutral,taglish,augmented
+"hello, same pa rin poooo, walang pagbabago.",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at naayos naman agad!",positive,taglish,augmented
+"SAME PA RIN PO, WALANG PAGBABAGO. 😭",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, at okay na po ngayon.",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring connection.",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring improvement.",negative,taglish,augmented
+"Sa ngayon, Still slow pa rin po yung internet. 😭",negative,taglish,augmented
+"Until now, Still slow pa rin pooo yung internet.",negative,taglish,augmented
+Okay na pooo ang signal.,positive,tagalog,augmented
+"nag-report ako ng mabagal na upload,pero unresolved pa rin",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin bumabalik yung service!!",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero mabagal pa rin 😊",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at naayos naman agad",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at mabilis na ulit...",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at maghihintay muna ako",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, at gumagana na ngayon. 🙄",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at okay na po ngayon.",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at mabilis na ulit 😤",positive,tagalog,augmented
+"Hi, Naayos na po yung problem, thnak you.",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, pero wala pa ring connection ❤️",negative,taglish,augmented
+"nag-request ako ng installation, at stable na ulit 🙏",positive,tagalog,augmented
+"Hello,Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring connection!!",negative,taglish,augmented
+"Hi, I will check it. 😊",neutral,english,augmented
+"nag-message ako tungkol sa account concern, pero wala pa ring connection",negative,taglish,augmented
+"nag-contact ako ng customer support, at resolved naoo yung concern...",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at mabilis na ulit",positive,taglish,augmented
+"Hi, Maayos na po yung serbisyo. 🙄",positive,tagalog,augmented
+"Hello, The internet is working now. 😤",positive,english,augmented
+"Hello, Working siya kanina pero down nao naman ngayon.",negative,english,augmented
+"nag-request ako ng technician dahil sa modem issue, pero nagdi-disconnect pa rin!!",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at resolved na yung concern!",positive,taglish,augmented
+"Hello, Naayos na po yung problema. 😤",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero same problem pa rin!",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at wala nang problema.",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at okay na po ngayon.",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring connection",negative,taglish,augmented
+I am disappointed with the service. 🙏,negative,english,augmented
+Sige po.,neutral,tagalog,natural
+Salamat po at naayos agad. 😤,positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hndi pa rin naayos",negative,taglish,augmented
+"Hello, Still slow pa rin po yung internet. 😊",negative,taglish,augmented
+Salamat po at naayos agad.,positive,tagalog,natural
+Thank you for the update. 🙄,neutral,english,augmented
+"Hello, Okay na poooo ang signal.",positive,tagalog,augmented
+"Hello, Okay na po, thank you sa assistance. 🙄",positive,taglish,augmented
+"Hello, Okay na po ang signal. ❤️",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-online class na ako...",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero wala pa ring improvement!",negative,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at stable na ulit 😐",positive,taglish,augmented
+"Hello, Salamat sa update, maghihintay ako ng technician. 👍",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol naoo connection, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero mabagal pa rin",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at maghihintay muna ako 😩",neutral,tagalog,augmented
+"nag-report ako ng unstable WiFi,pero same problem pa rin!!",negative,taglish,augmented
+"nag-contact ako ng customer support,at stable na ulit",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin bumabalik yung service.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"Nag-request ako ng technician dahil sa modem issue, at nakakapag-online class naooo ako",positive,taglish,augmented
+"For now, Maayos na po yung serbisyo. 😩",positive,taglish,augmented
+"Hi, I will check it.",neutral,english,augmented
+"Until now, I am disappointed with the service. 😊",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at iche-check ko muna!",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection,at nakakapag-online class na ako",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at mabilis na ulit",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at okay na po ngayon 😩",positive,taglish,augmented
+"Sa ngayon,The internet keeps going offline.",negative,english,augmented
+Naayos na po yung problema. 👍,positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at wala nang problema",positive,taglish,augmented
+"Sa ngayon, Naayos na po yung problema. 👍",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at monitor ko muna yung connection.",neutral,taglish,augmented
+The internet is working now. 👍,positive,english,augmented
+nag-report ako tungkol sa slow intenet pero nagdi-disconnect pa rin,negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero same problem pa rin.",negative,taglish,augmented
+"For now, Salamat po at naayos agad.",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at maghihintay muna ako",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero same problem pa rin.",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, pero mabagal pa rin!!",negative,tagalog,augmented
+nag-report ako tungkol sa walang connection at resolved na yung concern,positive,taglish,augmented
+"For now, Salamat po at naayos agad. 🙄",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring improvement",negative,taglish,augmented
+"Same pa rin po, walang pagbabago. ❤️",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at gumagana na ngayon",positive,taglish,augmented
+"nag-contact ako ng customer support, at mabilis na ulit!",positive,taglish,augmented
+The internet is working now. 😭,positive,english,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-browse na ulit ako.",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hndi pa rin naayos.",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at maghihintay muna ako!",neutral,tagalog,augmented
+"Hello, Sige pooo.",neutral,tagalog,augmented
+"Nag-report ako ng unstable wifi, at resolved na yung concern...",positive,taglish,augmented
+Still slow pa rin po yung internet. 😤,negative,taglish,augmented
+"Hi, Okay na poooo ang signal.",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero nagdi-disconnect pa rin 🙄",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-work na ulit ako 😐",positive,taglish,augmented
+I will check it. 😩,neutral,english,augmented
+"nag-report ako ng mabagal na upload, pero hindi pa rin naayos",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at susundin ko muna yung instructions",neutral,taglish,augmented
+The internet keeps going offline. 😤,negative,english,augmented
+"Hi, Sige po, I'll wait. 😤",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, at maghihintay muna ako!",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero unresolved pa rin 😐",negative,taglish,augmented
+"nag-request ako ng installation, pero nagdi-disconnect pa rin!",negative,tagalog,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 😤",negative,taglish,augmented
+"Sa ngayon, The internet is still very slow. 👍",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at monitor ko muna yung connection...",neutral,taglish,augmented
+"nag-report ako ng red light sa modem,at maghihintay muna ako 😤",neutral,tagalog,augmented
+"Hi, Same pa rin poo, walang pagbabago.",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at iche-check ko muna!",neutral,taglish,augmented
+"Hi, Sige po, I'll wait. 😐",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, pero wala pa ring connection",negative,taglish,augmented
+"Until now, Still slow pa rin po yung internet. 😩",negative,taglish,augmented
+"Noted, I'll wait for further instructions. 😩",neutral,english,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero unresolved pa rin",negative,tagalog,augmented
+"For now, The internet is workng now.",positive,english,augmented
+"nag-request ako ng plan change, at nakakapag-work na ulit ako!!",positive,tagalog,augmented
+"Sa ngayon, The internet is still very slow. 🙄",negative,english,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-browse na ulit ako 🙏",positive,taglish,augmented
+"Hello,Same pa rin pooo,walang pagbabago.",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero same problem pa rin 😤",negative,taglish,augmented
+"nag-contact ako ng customer support, pero unresolved pa rin",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at iche-check ko muna",neutral,tagalog,augmented
+"Until now, The internet is still very slow.",negative,english,augmented
+"Hello, I am disappointed with the service. 😩",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at okay na po ngayon",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at iche-check ko muna",neutral,taglish,augmented
+"Sa ngayon, Salamat po at naayos agad. 🙄",positive,tagalog,augmented
+"nag-request ako ng installation, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at stable naooo ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring improvement",negative,tagalog,augmented
+I will check it. 😐,neutral,english,augmented
+"nag-follow up ako tungkol sa installation delay, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"Sa ngayon, Okay na po, thnak you sa assistance.",positive,taglish,augmented
+"Hi, The intenet is workng now.",positive,english,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring connection",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero unresolved pa rin",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero mabagal pa rin 🙏",negative,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero same problem pa rin",negative,taglish,augmented
+"nag-contact ako ng customer support, pero nagdi-disconnect pa rin!",negative,taglish,augmented
+"nag-request ako ng installation, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-report ako ng mabagal na upload, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-browse na ulit ako...",positive,tagalog,augmented
+"Hello, Naayos na po yung problem.",positive,taglish,augmented
+"Hello, Still slow pa rin po yung internet. ❤️",negative,taglish,augmented
+"Hi, The internet keeps going offline.",negative,english,augmented
+"Nag-request ako ng plan change,at nakakapag-work na ulit ako 👍",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at mabilis na ulit",positive,taglish,augmented
+"For now,Naayos na po yung problema.",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, pero wala pa ring connection...",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-report ako ng mahinang signal,at okay na po ngayon",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at hihintayin ko yung technician!",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, pero same problem pa rin",negative,taglish,augmented
+"Hi, Okay na po, thank you sa assistance.",positive,taglish,augmented
+nag-follow up ako tungkol sa intermittent conection at okay na po ngayon,positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at stable na ulit...",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at nakakapag-work na ulit ako",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero mabagal pa rin!!",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at monitor ko muna yung connection.",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at wala nang problema. ❤️",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero wala pa ring connection!!",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at gumagana na ngayon",positive,tagalog,augmented
+"Hi,The connection is still unstable.",negative,english,augmented
+"nag-request ako ng technician dahil sa modem issue, pero mabagal pa rin 👍",negative,taglish,augmented
+"Sa ngayon, Naayos na pooo yung problem, thank you.",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-browse na ulit ako!!",positive,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring connection ❤️",negative,taglish,augmented
+"NAG-FILE AKO NG COMPLAINT TUNGKOL SA SERVICE OUTAGE, AT NAKAKAPAG-ONLINE CLASS NA AKO...",positive,taglish,augmented
+"Hi, The internet is working now. 😤",positive,english,augmented
+"Sa ngayon, I am disappointed with the service. 😩",negative,english,augmented
+"nag-request ako ng plan change, pero unresolved pa rin",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at mabilis na ulit!!",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-request ako ng installation, pero hindi pa rin bumabalik yung service.",negative,taglish,augmented
+"Okay na po, thank you sa assistance. 🙄",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at resolved na yung concern",positive,taglish,augmented
+Still slow pa rin poooo yung internet.,negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Hello, The internet keeps going offline. 🙄",negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana nao ngayon",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, at stable naoo ulit",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at wala nang problema...",positive,tagalog,augmented
+thankoo you for the update.,neutral,english,augmented
+"nag-request ako ng plan change, at susundin ko muna yung instructions 🙄",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at okay na po ngayon",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero wala pa ring improvement",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring improvement!!",negative,taglish,augmented
+"NOTED, I'LL WAIT FOR FURTHER INSTRUCTIONS. 😐",neutral,english,augmented
+"nag-report ako ng red light sa modem, at iche-check ko muna",neutral,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at okay na poooo ngayon",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at monitor ko muna yung connection!! 😭",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero same problem pa rin",negative,taglish,augmented
+nag-report ako ng red light sa modem at stable na ulit,positive,tagalog,augmented
+"nag-report ako ng mahinang signal, pero wala pa ring improvement!",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at gumagana na ngayon...",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at monitor ko muna yung connection 👍",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at wala nang problema 😊",positive,taglish,augmented
+thankooo you for the update.,neutral,english,augmented
+"nag-report ako tungkol sa slow internet, at babalik ako kapag may update 🙏",neutral,taglish,augmented
+"nag-request ako ng installation, pero wala pa ring improvement 👍",negative,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero mabagal pa rin.",negative,tagalog,augmented
+"Until now, The connection is still unstable. 😊",negative,english,augmented
+"nag-report ako tungkol sa walang connection, at maghihintay muna ako!",neutral,taglish,augmented
+"SA NGAYON, WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON. 😐",negative,taglish,augmented
+nag-follow up ako tungkol sa intermittent connection at gumagana na ngayon,positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring connection 👍",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero wala pa ring connection!",negative,taglish,augmented
+"Hi, Sige po, I'll wait. 🙏",neutral,taglish,augmented
+"Hi, Salamat sa update, maghihintay ako ng technician.",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at wala nang problema",positive,taglish,augmented
+"Hello, Thank you for the update. 🙏",neutral,english,augmented
+"nag-report ako tungkol sa slow internet, at babalik ako kapag may update!!",neutral,taglish,augmented
+"Until now, Same pa rin po, walang pagbabago. 😐",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero unresolved pa rin 😭",negative,tagalog,augmented
+nag-report ako tungkol sa walang connection at mabilis na ulit...,positive,taglish,augmented
+"nag-contact ako ng customer support, at mabilis na ulit",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at naayos naman agad",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at okay na po ngayon.",positive,taglish,augmented
+"nag-report ako ng mabagal na upload,at stable na ulit",positive,tagalog,augmented
+"nag-request ako ng plan change, pero wala pa ring connection!!",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin gumagana",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at babalik ako kapag may update...",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero same problem pa rin ❤️",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at naayos naman agad",positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero mabagal pa rin 😩",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero unresolved pa rin.",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero same problem pa rin!!",negative,taglish,augmented
+"Nag-follow up ako tungkol sa installation delay, at nakakapag-online class na ako!",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, pero unresolved pa rin",negative,tagalog,augmented
+"Hi, The conection is still unstable.",negative,english,augmented
+"nag-request ako ng installation, at resolved na yung concern",positive,taglish,augmented
+"NAG-REPORT AKO NG RED LIGHT SA MODEM, AT NAKAKAPAG-BROWSE naoo ULIT AKO",positive,tagalog,augmented
+"NAG-REPORT AKO NG MABAGAL nao UPLOAD, AT NAKAKAPAG-ONLINE CLASS NA AKO",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin naayos!",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, pero nagdi-disconnect pa rin 😤",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero nagdi-disconnect pa rin...",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin gumagana!!",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero mabagal pa rin...",negative,tagalog,augmented
+"nag-request ako ng plan change, at wala nang problema!",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at mabilis na ulit! 😤",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-online class na ako...",positive,taglish,augmented
+"Hello,Same pa rin po,walang pagbabago.",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Until now, I am disappointed with the service. 😤",negative,english,augmented
+"nag-report ako ng red light sa modem,pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin gumagana.",negative,tagalog,augmented
+Thank you for the update. 😐,neutral,english,augmented
+"nag-report ako tungkol sa wrong charge, at maghihintay muna ako!",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero mabagal pa rin",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at naayos naman agad...",positive,tagalog,augmented
+"Nag-follow up ako tungkol sa router problem, pero unresolved pa rin 😤",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at maghihintay muna ako",neutral,tagalog,augmented
+nag-report ako tungkol sa slow internet at iche-check ko muna 🙏,neutral,taglish,augmented
+"Until now, The internet is still very slow. 😐",negative,english,augmented
+"nag-report ako tungkol sa slow internet, at mabilis na ulit...",positive,taglish,augmented
+"Hi,I am disappointed with the service.",negative,english,augmented
+The internet is still very slow. 😤,negative,english,augmented
+"Sa ngayon, Same pa rin po, walang pagbabago. 😊",negative,tagalog,augmented
+"NAG-REPORT AKO TUNGKOL SA WRONG CHARGE, AT NAKAKAPAG-BROWSE NA ULIT AKO!!",positive,tagalog,augmented
+"Naayos na po yung problem, thnak you.",positive,taglish,augmented
+"hi, thankooo you for the update.",neutral,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at babalik ako kapag may update.",neutral,taglish,augmented
+"nag-report ako ng red light sa modem,at nakakapag-work na ulit ako",positive,tagalog,augmented
+Sige pooo.,neutral,tagalog,augmented
+"Hi, Sige po, I'll wait.",neutral,taglish,augmented
+"NAG-CONTACT AKO NG CUSTOMER SUPPORT, AT ICHE-CHECK KO MUNA!!",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero mabagal pa rin!!",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring improvement 👍",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, at okay na po ngayon",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at susundin ko muna yung instructions.",neutral,tagalog,augmented
+I will check it. 😭,neutral,english,augmented
+"nag-request ako ng installation, pero wala pa ring connection",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at maghihintay muna ako",neutral,tagalog,augmented
+"Hello, Naayos na po yung problem, thank you. 😭",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at gumagana na ngayon",positive,taglish,augmented
+"Hello, Still slow pa rin po yung internt.",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring connection 😐",negative,taglish,augmented
+"Sa ngayon, Naayos na po yung problema. 😩",positive,tagalog,augmented
+I will monitor the connection. 🙄,neutral,english,augmented
+"nag-request ako ng plan change, at nakakapag-online class na ako 👍",positive,tagalog,augmented
+Working siya kanina pero down naoo naman ngayon.,negative,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, at stable nao ulit",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, at susundin ko muna yung instructions 😤",neutral,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero nagdi-disconnect pa rin!!",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at wala nang problema",positive,taglish,augmented
+"Hi, Okay na poo, thank you sa assistance. 🙄",positive,taglish,augmented
+"Sa ngayon,Naayos na po yung problema.",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, at resolved naoo yung concern",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at iche-check ko muna...",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern,pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring connection",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at maghihintay muna ako.",neutral,tagalog,augmented
+"same pa rin po, walang pagbabago. 😩",negative,tagalog,augmented
+"nag-request ako ng plan change, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"UNTIL NOW,WORKING SIYA KANINA PERO DOWN NA NAMAN NGAYON.",negative,taglish,augmented
+"NAG-FOLLOW UP AKO TUNGKOL SA PUTOL-PUTOL NA CONNECTION, AT RESOLVED NA YUNG CONCERN!!",positive,taglish,augmented
+"Sa ngayon, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"nag-contact ako ng customer support, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-online class na ako",positive,tagalog,augmented
+"Nag-follow up ako tungkol sa installation delay, at naayos naman agad 🙄",positive,tagalog,augmented
+nag-report ako ng red light sa modem at nakakapag-browse na ulit ako!,positive,tagalog,augmented
+"Hello, The connection is still unstable. 😊",negative,english,augmented
+"Hello, Naayos na pooo yung problema.",positive,tagalog,augmented
+"Sa ngayon, The intenet is still very slow.",negative,english,augmented
+"nag-report ako ng mabagal na upload, at hihintayin ko yung technician 🙄",neutral,taglish,augmented
+"hi, naayos na po yung problem, thank you. 😐",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-online class na ako",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at wala nang problema 😊",positive,tagalog,augmented
+"Hi, Maayos na po yung serbisyo. 🙏",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero nagdi-disconnect pa rin 😤",negative,taglish,augmented
+"Hi,I will check it.",neutral,english,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin bumabalik yung service.",negative,taglish,augmented
+"Hi, Sige po. 😭",neutral,tagalog,augmented
+"nag-request ako ng plan change, at nakakapag-online class nao ako",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, at mabilis na ulit. ❤️",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring connection!!",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at naayos naman agad",positive,tagalog,augmented
+"Hi, I will monitor the connection. ❤️",neutral,english,augmented
+"nag-report ako tungkol sa wrong charge, pero mabagal pa rin!",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at resolved na yung concern!!",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero unresolved pa rin.",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero mabagal pa rin...",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol nao connection, pero wala pa ring connection",negative,taglish,augmented
+"nag-request ako ng plan change, at nakakapag-work na ulit ako",positive,tagalog,augmented
+nag-report ako ng red light sa modem pero wala pa ring improvement,negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"Sige pooo, I'll wait.",neutral,taglish,augmented
+"Hello, Naayos na poooo yung problem, thank you.",positive,taglish,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-online class na ako",positive,tagalog,augmented
+"nag-request ako ng installation, at resolved naooo yung concern",positive,taglish,augmented
+"Nag-request ako ng technician dahil sa modm issue, pero unresolved pa rin",negative,taglish,augmented
+The internet is working now. 😤,positive,english,augmented
+"Nag-request ako ng installation, pero wala pa ring improvement 😩",negative,tagalog,augmented
+"Hi, still slow pa rin po yung intenet.",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at naayos naman agad",positive,tagalog,augmented
+"nag-request ako ng plan change, at resolved na yung concern",positive,taglish,augmented
+"nag-contact ako ng customer support, at iche-check ko muna!! 😊",neutral,taglish,augmented
+"nag-contact ako ng customer support, at wala nang problema",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse na ulit ako... 🙏",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero mabagal pa rin",negative,tagalog,augmented
+"Hi, I will monitor the conection.",neutral,english,augmented
+"Sa ngayon, Naayos na po yung problem, thank you. 🙏",positive,taglish,augmented
+"nag-contact ako ng customer support, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin gumagana 😭",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at iche-check ko muna!",neutral,tagalog,augmented
+"Hello, I will monitor the connection. 👍",neutral,english,augmented
+nag-follow up ako tungkol sa intermittent connection at naayos naman agad,positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero nagdi-disconnect pa rin...",negative,tagalog,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-online class na ako",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at nakakapag-work na ulit ako",positive,taglish,augmented
+"Hi, Sige po, I'll wait. 😩",neutral,taglish,augmented
+"Hello,The internet keeps going offline.",negative,english,augmented
+"nag-report ako ng red light sa modem,at wala nang problema",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at maghihintay muna ako 👍",neutral,taglish,augmented
+"nag-message ako tungkol sa billing concern, at stable na ulit...",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, at naayos naman agad",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, pero wala pa ring connection!",negative,taglish,augmented
+"For now,Naayos na po yung problem,thank you.",positive,taglish,augmented
+Okay na po ang signal. 🙄,positive,tagalog,augmented
+"NAG-REPORT AKO TUNGKOL SA SLOW INTERNET, AT NAKAKAPAG-BROWSE NA ULIT AKO!!",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Hello, Maayos na po yung serbisyo. 😩",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-online class na ako!",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero mabagal pa rin",negative,taglish,augmented
+"Hello, Noted, I'll wait for further instructions. 😊",neutral,english,augmented
+"nag-message ako tungkol sa billing concern, pero wala pa ring improvement.",negative,tagalog,augmented
+"Hi, I will monitor the connection. 😤",neutral,english,augmented
+"Until now, Still slow pa rin po yung internet. 👍",negative,taglish,augmented
+"nag-report ako ng mahinang signal,pero unresolved pa rin",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-browse na ulit ako",positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin gumagana!",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, at okay na po ngayon",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at wala nang problema",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, at iche-check ko muna",neutral,tagalog,augmented
+"Nag-message ako tungkol sa account concern,at okay na po ngayon!",positive,tagalog,augmented
+"Sa ngayon, The conection is still unstable.",negative,english,augmented
+"Hi, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented
+"nag-contact ako ng customer support, at nakakapag-online class naooo ako",positive,taglish,augmented
+"Hello, thankoo you for the update.",neutral,english,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin gumagana ❤️",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at monitor ko muna yung connection",neutral,taglish,augmented
+"Sa ngayon, The internet keeps going offline. ❤️",negative,english,augmented
+"Hello, Naayos na po yung problem, thank you.",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work na ulit ako 👍",positive,tagalog,augmented
+"Hello, Okay na po ang signal. 👍",positive,tagalog,augmented
+"Until now, The internet is still very slow. 🙏",negative,english,augmented
+"nag-report ako tungkol sa walang connection, at susundin ko muna yung instructions",neutral,taglish,augmented
+"Hello, Sige pooo, I'll wait.",neutral,taglish,augmented
+"Hello, Maayos na poooo yung serbisyo.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at stable na ulit",positive,tagalog,augmented
+"NAG-REPORT AKO NG MAHINANG SIGNAL, PERO HINDI PA RIN BUMABALIK YUNG SERVICE... 😐",negative,taglish,augmented
+"Same pa rin po, walang pagbabago.",negative,tagalog,natural
+"Sa ngayon,Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"Hello, The connection is still unstable. 😩",negative,english,augmented
+"Hi, Same pa rin po, walang pagbabago. 😭",negative,tagalog,augmented
+"Sa ngayon, Maayos na poooo yung serbisyo.",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at naayos naman agad!!",positive,tagalog,augmented
+"nag-contact ako ng customer support, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, pero same problem pa rin",negative,taglish,augmented
+"Until now, The internt keeps going offline.",negative,english,augmented
+"nag-report ako ng mabagal naoo upload, pero wala pa ring improvement!!",negative,tagalog,augmented
+"Sa ngayon,Naayos na po yung problem,thank you.",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-work na ulit ako!!",positive,taglish,augmented
+"Nag-report ako ng mahinang signal, at okay na po ngayon!",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin naayos!!",negative,taglish,augmented
+Naayos na po yung problema. 😩,positive,tagalog,augmented
+"Hello, Salamat sa update, maghihintay ako ng technician. 😤",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin bumabalik yung service!",negative,taglish,augmented
+"Hi, Sige po, I'll wait. ❤️",neutral,taglish,augmented
+"nag-report ako ng mahinang signal, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, at resolved na yung concern...",positive,taglish,augmented
+"nag-report ako ng mabagal na upload,at okay na po ngayon 😤",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero unresolved pa rin!!",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at gumagana na ngayon...",positive,tagalog,augmented
+Nag-report ako tungkol sa walang connection pero wala pa ring improvement,negative,taglish,augmented
+The internet is still very slow. 🙏,negative,english,augmented
+"nag-report ako tungkol sa walang connection, pero mabagal pa rin 😩",negative,taglish,augmented
+"for now, salamat poooo at naayos agad.",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Hello, Maayos na po yung serbisyo.",positive,tagalog,augmented
+The intenet keeps going offline.,negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at iche-check ko muna",neutral,taglish,augmented
+"Sa ngayon, Maayos na po yung serbisyo. 😐",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero wala pa ring connection 😩",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at okay na po ngayon",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at mabilis na ulit",positive,tagalog,augmented
+"nag-request ako ng installation,at stable na ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at nakakapag-browse na ulit ako! 😐",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection,at iche-check ko muna",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at mabilis na ulit...",positive,taglish,augmented
+"Sa ngayon, The internet is working now. ❤️",positive,english,augmented
+"nag-request ako ng installation, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at susundin ko muna yung instructions!",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero wala pa ring improvement!",negative,taglish,augmented
+The internet is still very slow. 😊,negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, at babalik ako kapag may update 😐",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at babalik ako kapag may update!!",neutral,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at gumagana na ngayon 😩",positive,tagalog,augmented
+"Hi,The intenet is working now.",positive,english,augmented
+"nag-report ako tungkol sa wrong charge, at resolved na yung concern",positive,taglish,augmented
+"Hello, Same pa rin po, walang pagbabago.",negative,tagalog,augmented
+"Hi, Maayos na poo yung serbisyo.",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at monitor ko muna yung connection",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero wala pa ring improvement",negative,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 😭",positive,taglish,augmented
+"For now, Okay na pooo, thank you sa assistance.",positive,taglish,augmented
+"Sa ngayon, Still slow pa rin po yung internet. ❤️",negative,taglish,augmented
+"nag-request ako ng plan change, at gumagana na ngayon.",positive,tagalog,augmented
+"Hi, Still slow pa rin po yung internet. 😊",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero same problem pa rin 😭",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero unresolved pa rin!",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin gumagana...",negative,taglish,augmented
+nag-report ako ng red light sa modm at okay na po ngayon,positive,tagalog,augmented
+"nag-contact ako ng customer support, at maghihintay muna ako",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero wala pa ring improvement!!",negative,taglish,augmented
+"Sa ngayon, Salamat poo at naayos agad.",positive,tagalog,augmented
+"Until now, The connection is still unstable. 😤",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-work na ulit ako!!",positive,taglish,augmented
+"nag-contact ako ng customer support, at okay na po ngayon",positive,taglish,augmented
+"Hello, The connection is still unstable.",negative,english,augmented
+"Hello, The internet keeps going offline. 🙏",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, at mabilis na ulit",positive,taglish,augmented
+Still slow pa rin po yung internet.,negative,taglish,natural
+"Sa ngayon, The internet is still very slow. 😩",negative,english,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work na ulit ako!!",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, pero unresolved pa rin ❤️",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at susundin ko muna yung instructions.",neutral,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at monitor ko muna yung connection 👍",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, at iche-check ko muna!!",neutral,tagalog,augmented
+"Sa ngayon, Naayos na pooo yung problema. 😤",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at susundin ko muna yung instructions!! ❤️",neutral,taglish,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin naayos 😭",negative,tagalog,augmented
+"Hello, The connection is still unstable. 😤",negative,english,augmented
+"Hello, Noted, I'll wait for further instructions. 😭",neutral,english,augmented
+"Until now, I am disappointed with the service. ❤️",negative,english,augmented
+"Hi, Salamat sa update, maghihintay ako ng technician. 😐",neutral,taglish,augmented
+Working siya kanina pero down na naman ngayon. 😊,negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin gumagana!",negative,taglish,augmented
+"Hello, Still slow pa rin po yung internet. 🙄",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at iche-check ko muna.",neutral,taglish,augmented
+"Until now, I am disappointed with the service.",negative,english,augmented
+"Sa ngayon,Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented
+"Hello, The connection is still unstable. 👍",negative,english,augmented
+"Hello, Same pa rin po, walang pagbabago. 😩",negative,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, pero wala pa ring connection",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at resolved na yung concern!",positive,taglish,augmented
+"Hello, Salamat po at naayos agad.",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako ng mabagal na upload, at naayos naman agad!",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at gumagana na ngayon 😤",positive,tagalog,augmented
+"nag-request ako ng installation, at stable na ulit",positive,tagalog,augmented
+"Hi, Sige po. ❤️",neutral,tagalog,augmented
+"Hello, Sige po.",neutral,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at wala nang problema...",positive,taglish,augmented
+"nag-request ako ng plan change, at wala nang problema.",positive,tagalog,augmented
+"Hello, Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin naayos 🙄",negative,tagalog,augmented
+"Hi, thanko you for the update.",neutral,english,augmented
+"For now, Naayos na poo yung problem, thank you.",positive,taglish,augmented
+"NAG-FILE AKO NG COMPLAINT TUNGKOL SA SERVICE OUTAGE, AT NAKAKAPAG-ONLINE CLASS NA AKO 🙏",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at stable na ulit 🙏",positive,tagalog,augmented
+"Hello, I am disappointed with the service. 👍",negative,english,augmented
+"Hello, Naayos na po yung problema. 👍",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at maghihintay muna ako!!",neutral,taglish,augmented
+"nag-contact ako ng customer support, at stable na ulit",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at wala nang problema",positive,taglish,augmented
+Nag-report ako tungkol sa slow internet pero wala pa ring improvement 😤,negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero nagdi-disconnect pa rin.",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem,pero unresolved pa rin",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero wala pa ring improvement",negative,taglish,augmented
+"nag-contact ako ng customer support, at maghihintay muna ako!",neutral,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero same problem pa rin 😭",negative,taglish,augmented
+"Okay na po, thank you sa assistance. 🙏",positive,taglish,augmented
+"NAG-CONTACT AKO NG CUSTOMER SUPPORT, AT MABILIS NA ULIT 😐",positive,taglish,augmented
+"Hi, The connection is still unstable. 🙏",negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol nao connection, pero hindi pa rin gumagana",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage,at okay na po ngayon",positive,taglish,augmented
+"Same pa rin pooo, walang pagbabago.",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-online class na ako!!",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload,at nakakapag-online class na ako",positive,tagalog,augmented
+"Sa ngayon, The internet is still very slow. 🙏",negative,english,augmented
+"For now, Naayos na po yung problema. 😩",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero wala pa ring connection",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin gumagana 😤",negative,tagalog,augmented
+nag-report ako tungkol sa walang connection at mabilis na ulit.,positive,taglish,augmented
+"Sa ngayon, salamat po at naayos agad. 👍",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem,at wala nang problema",positive,taglish,augmented
+"Sa ngayon, Okay na po, thank you sa assistance.",positive,taglish,augmented
+"NAG-MESSAGE AKO TUNGKOL SA ACCOUNT CONCERN, PERO NAGDI-DISCONNECT PA RIN!!",negative,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero hindi pa rin gumagana!",negative,tagalog,augmented
+"Hi, The internet keeps going offline. 👍",negative,english,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring improvement",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring conection",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at okay na po ngayon",positive,tagalog,augmented
+"For now, Okay na po ang signal.",positive,taglish,augmented
+SALAMT PO AT NAAYOS AGAD.,positive,tagalog,augmented
+"Hello, Still slow pa rin po yung internet. 😤",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at nakakapag-work na ulit ako",positive,taglish,augmented
+"sa ngayon, the intenet keeps going offline.",negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero nagdi-disconnect pa rin...",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-browse na ulit ako...",positive,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero hindi pa rin gumagana",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at gumagana naooo ngayon",positive,taglish,augmented
+"Hello, Thank you for the update.",neutral,english,augmented
+"nag-request ako ng installation, pero wala pa ring connection 😤",negative,taglish,augmented
+"Hello, Working siya kanina pero down na naman ngayon. 👍",negative,taglish,augmented
+"Sa ngayon, The internet keeps going offline. 🙄",negative,english,augmented
+"nag-report ako tungkol sa wrong charge, pero d hindi pa rin naayos",negative,tagalog,augmented
+"For now, Maayos na po yung serbisyo. 😐",positive,taglish,augmented
+"nag-report ako ng unstable WiFi, at okay na po ngayon",positive,tagalog,augmented
+"nag-request ako ng installation, at iche-check ko muna.",neutral,tagalog,augmented
+"nag-report ako ng unstable WiFi, at babalik ako kapag may update.",neutral,taglish,augmented
+"NAG-REQUEST AKO NG PLAN CHANGE, AT MAGHIHINTAY MUNA AKO...",neutral,tagalog,augmented
+"Hello, naayos na po yung problema. 😭",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"Sa ngayon, The internet is working now.",positive,english,augmented
+"nag-follow up ako tungkol sa intermittent connection,pero hindi pa rin gumagana",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at resolved nao yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa slow internet, at wala nang problema ❤️",positive,taglish,augmented
+"nag-contact ako ng customer support, at naayos naman agad!!",positive,taglish,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin naayos",negative,tagalog,augmented
+The internet is workng now.,positive,english,augmented
+nag-report ako tungkol sa slow internet pero nagdi-disconnect pa rin,negative,taglish,augmented
+"Hello, Naayos na po yung problem, thank you. 🙄",positive,taglish,augmented
+"nag-contact ako ng customer support, at mabilis naoo ulit",positive,taglish,augmented
+"Hello, Maayos na po yung serbisyo. 🙏",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-request ako ng installation,at mabilis naoo ulit!",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana.",negative,tagalog,augmented
+nag-report ako tungkol sa walang connection at naayos naman agad,positive,taglish,augmented
+"nag-report ako ng mahinang signal, pero same problem pa rin 😤",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at okay na po ngayon!",positive,tagalog,augmented
+"Sa ngayon,The internet is still very slow.",negative,english,augmented
+"Until now,Still slow pa rin po yung internet.",negative,taglish,augmented
+"Hi, Okay na po ang signal. ❤️",positive,tagalog,augmented
+"Hello, Still slow pa rin po yung internet. 👍",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at stable na ulit",positive,tagalog,augmented
+"nag-request ako ng installation, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at stable na ulit",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, pero hindi pa rin gumagana 😤",negative,tagalog,augmented
+"Hi, I am disappointed with the service. 😩",negative,english,augmented
+"nag-message ako tungkol sa billing concern, pero unresolved pa rin",negative,tagalog,augmented
+"Hello, Noted, I'll wait for further instructions. 😤",neutral,english,augmented
+"nag-message ako tungkol sa billing concern, pero wala pa ring connection",negative,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 😊",positive,taglish,augmented
+"Sa ngayon, Okay na po, thank you sa assistance. 😤",positive,taglish,augmented
+"For now, Maayos na po yung serbisyo.",positive,taglish,augmented
+"nag-request ako ng installation, pero mabagal pa rin 😐",negative,tagalog,augmented
+"nag-request ako ng installation, at iche-check ko muna",neutral,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin gumagana.",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at susundin ko muna yung instructions 😩",neutral,tagalog,augmented
+"Hello,Salamat po at naayos agad.",positive,tagalog,augmented
+"Sa ngayon, Same pa rin po, walang pagbabago.",negative,tagalog,augmented
+"Hi, Maayos na poooo yung serbisyo.",positive,tagalog,augmented
+Naayos na poooo yung problema.,positive,tagalog,augmented
+"nag-report ako ng unstable WiFi, pero unresolved pa rin",negative,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at monitor ko muna yung connection",neutral,taglish,augmented
+"Okay na po, thank you sa assistance. 😐",positive,taglish,augmented
+"Until now, The internet is still very slow. 😊",negative,english,augmented
+"nag-report ako ng red light sa modem, at nakakapag-online class na ako",positive,tagalog,augmented
+"nag-contact ako ng customer support, at okay na poo ngayon!!",positive,taglish,augmented
+"nag-request ako ng plan change, pero wala pa ring improvement",negative,tagalog,augmented
+"nag-contact ako ng customer support, pero hindi pa rin gumagana 👍",negative,taglish,augmented
+"Nag-file ako ng complaint tungkol sa service outage, at maghihintay muna ako!!",neutral,taglish,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-browse nao ulit ako!",positive,tagalog,augmented
+"nag-contact ako ng customer support, at resolved naooo yung concern",positive,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin gumagana",negative,taglish,augmented
+"Hello, I will check it. 🙏",neutral,english,augmented
+"Nag-file ako ng complaint tungkol sa service outage, at stable na ulit!!",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero same problem pa rin!",negative,taglish,augmented
+"Until now, Working siya kanina pero down na naman ngayon. 😐",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage,pero wala pa ring improvement",negative,taglish,augmented
+nag-report ako tungkol sa walang connection at iche-check ko muna!,neutral,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at wala nang problema",positive,tagalog,augmented
+"nag-request ako ng installation, at okay na poo ngayon",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at gumagana naooo ngayon.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin naayos",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring connection.",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at susundin ko muna yung instructions",neutral,taglish,augmented
+"nag-contact ako ng customer support, at monitor ko muna yung connection",neutral,taglish,augmented
+"Until now, The connection is still unstable. 😐",negative,english,augmented
+"Sa ngayon, The internet keeps going offline. 😐",negative,english,augmented
+"nag-report ako ng unstable WiFi, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero wala pa ring connection...",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin gumagana",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, pero nagdi-disconnect pa rin!! 😐",negative,tagalog,augmented
+"Until now,The internet keeps going offline.",negative,english,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-contact ako ng customer support, at mabilis na ulit.",positive,taglish,augmented
+"nag-contact ako ng customer support, at stable na ulit...",positive,taglish,augmented
+"Until now, The connection is still unstable.",negative,english,augmented
+"nag-report ako ng mabagal na upload, at hihintayin ko yung technician",neutral,taglish,augmented
+"Hello, Salamat po at naayos agad. 😩",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, at mabilis na ulit 😐",positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring improvement!",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at stable na ulit!",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at wala nang problema",positive,tagalog,augmented
+"hello, still slow pa rin pooo yung internet.",negative,taglish,augmented
+"nag-contact ako ng customer support, pero mabagal pa rin!! 😊",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"Until now, Still slow pa rin pooo yung internet. 😤",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, at resloved na yung concern!!",positive,tagalog,augmented
+"Until now, Same pa rin po, walang pagbabago.",negative,taglish,augmented
+"For now, Naayos na po yung problem, thank you. 😭",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at gumagana na ngayon!!",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin naayos... 😤",negative,tagalog,augmented
+"Nag-report ako ng mabagal naooo upload, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-message ako tungkol sa account concern, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana...",negative,tagalog,augmented
+"nag-request ako ng installation, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, pero hindi pa rin gumagana!!",negative,taglish,augmented
+"Okay na po, thank you sa assistance. 😊",positive,taglish,augmented
+The internet is still very slow. 😩,negative,english,augmented
+"Hi, Noted, I'll wait for further instructions. 😤",neutral,english,augmented
+"nag-report ako tungkol sa wrong charge, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"nag-request ako ng plan change, at stable na ulit",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at okay na po ngayon!",positive,taglish,augmented
+"HI, STILL SLOW PA RIN PO YUNG INTERNT.",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at gumagana na ngayon",positive,tagalog,augmented
+"Until now, I am disappointed with the service. 😐",negative,english,augmented
+"Hi, The internet is still very slow. 😤",negative,english,augmented
+"Hello, Naayos na po yung problema. 🙏",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at resolved na yung concern.",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage,at gumagana na ngayon",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, at stable na ulit.",positive,tagalog,augmented
+"Sa ngayon, Working siya kanina pero down na naman ngayon. 😩",negative,taglish,augmented
+"Hi, Salamat sa update, maghihintay ako ng technician. 🙄",neutral,taglish,augmented
+"nag-request ako ng plan change,pero wala pa ring connection",negative,taglish,augmented
+"nag-request ako ng installation, pero hindi pa rin bumabalik yung service!!",negative,taglish,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin gumagana. 😐",negative,tagalog,augmented
+"Same pa rin po, walang pagbabago. 😤",negative,tagalog,augmented
+"Nag-file ako ng complaint tungkol sa service outage, at gumagana naoo ngayon!",positive,taglish,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work na ulit ako.",positive,tagalog,augmented
+"Hi, The internet keeps going offline. 😤",negative,english,augmented
+The internet keeps going offline. 🙏,negative,english,augmented
+"nag-follow up ako tungkol sa router problem, at susundin ko muna yung instructions.",neutral,taglish,augmented
+"nag-request ako ng installation, pero nagdi-disconnect pa rin 🙄",negative,tagalog,augmented
+"nag-message ako tungkol sa billing concern, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring connection",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol nao connection, at susundin ko muna yung instructions",neutral,taglish,augmented
+"Sige poooo, I'll wait. 🙄",neutral,taglish,augmented
+"Nag-follow up ako tungkol sa putol-putol na connection, at naayos naman agad 👍",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at babalik ako kapag may update. ❤️",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at naayos naman agad! 👍",positive,taglish,augmented
+"Hi,Salamat sa update,maghihintay ako ng technician. 😐",neutral,taglish,augmented
+"nag-report ako ng mabagal na upload, pero nagdi-disconnect pa rin!!",negative,tagalog,augmented
+"Hello, Naayos na poo yung problema.",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero unresolved pa rin",negative,taglish,augmented
+"Hello,Maayos na po yung serbisyo.",positive,tagalog,augmented
+"Hi, The internet keeps going offline. 😩",negative,english,augmented
+"Hello, Naayos na po yung problem, thank you. 😐",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, at maghihintay muna ako",neutral,tagalog,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-online class na ako. ❤️",positive,tagalog,augmented
+"nag-message ako tungkol sa billing concern, at nakakapag-browse na ulit ako!",positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, at iche-check ko muna!",neutral,taglish,augmented
+"Salamat sa update, maghihintay ako ng technician. ❤️",neutral,taglish,augmented
+"Sa ngayon, Maayos na pooo yung serbisyo.",positive,tagalog,augmented
+"nag-report ako ng mahinang signal, pero unresolved pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring improvement... 😭",negative,tagalog,augmented
+"Sa ngayon, Salamat po at naayos agad. 🙏",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, at maghihintay muna ako.",neutral,taglish,augmented
+"nag-report ako ng mahinang signal, at nakakapag-browse na ulit ako...",positive,tagalog,augmented
+"nag-request ako ng plan change, at babalik ako kapag may update",neutral,taglish,augmented
+"Salamat sa update, maghihintay ako ng technician. 😩",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-online class na ako!",positive,taglish,augmented
+"Hello, Salamat poooo at naayos agad.",positive,tagalog,augmented
+"Hi, Noted, I'll wait for further instructions. 🙄",neutral,english,augmented
+"Hi, Naayos na po yung problem, thank you. 😤",positive,taglish,augmented
+"Sige po, I'll wait.",neutral,taglish,natural
+"Sa ngayon, Naayos na po yung problem, thank you. 😤",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, pero mabagal pa rin!!",negative,taglish,augmented
+"nag-report ako tungkol sa slow internet, pero hindi pa rin naayos...",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at gumagana na ngayon...",positive,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at iche-check ko muna",neutral,tagalog,augmented
+"Hi, The internet is working now. 😐",positive,english,augmented
+"Hi,Okay na po,thank you sa assistance.",positive,taglish,augmented
+"Hello, I am disappointed with the service. ❤️",negative,english,augmented
+"Hi, The internet keeps going offline. 😭",negative,english,augmented
+nag-report ako ng red light sa modem at susundin ko muna yung instructions,neutral,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection,at resolved na yung concern",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, at okay na po ngayon 🙏",positive,taglish,augmented
+"nag-report ako ng mahinang signal, at babalik ako kapag may update!",neutral,taglish,augmented
+"Hello, Working siya kanina pero down na naman ngayon.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection,pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"Sa ngayon, Okay na poooo, thank you sa assistance.",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring connection!",negative,taglish,augmented
+"HI,SALAMAT SA UPDATE,MAGHIHINTAY AKO NG TECHNICIAN.",neutral,taglish,augmented
+"NAG-REPORT AKO TUNGKOL SA WRONG CHARGE, PERO WALA PA RING CONNECTION 👍",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring connection...",negative,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero hindi pa rin bumabalik yung service!!",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at monitor ko muna yung connection.",neutral,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero hindi pa rin gumagana 😤",negative,taglish,augmented
+"nag-report ako ng mabagal nao upload, pero same problem pa rin!!",negative,taglish,augmented
+"nag-report ako ng red light sa modem, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring connection 😤",negative,taglish,augmented
+"nag-report ako ng mahinang signal, at nakakapag-online class na ako",positive,tagalog,augmented
+"For now, Naayos na poooo yung problema.",positive,taglish,augmented
+"nag-report ako ng mabagal na upload,pero wala pa ring connection",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, pero wala pa ring improvement.",negative,tagalog,augmented
+Working siya kanina pero down na naman ngayon.,negative,taglish,hard
+"nag-contact ako ng customer support,at maghihintay muna ako",neutral,taglish,augmented
+I will monitor the connection. 😊,neutral,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero wala pa ring connection 😊",negative,taglish,augmented
+NAG-FOLLOW UP AKO TUNGKOL SA INTERMITTENT CONECTION AT MABILIS NA ULIT,positive,tagalog,augmented
+"Hi, Thank you for the update. 😊",neutral,english,augmented
+"nag-follow up ako tungkol sa installation delay, at maghihintay muna ako ❤️",neutral,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, pero same problem pa rin",negative,taglish,augmented
+"Nag-follow up ako tungkol sa router problem, at resolved na yung concern!",positive,taglish,augmented
+"Hi,The internet is still very slow.",negative,english,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"Sa ngayon, Salamat po at naayos agad.",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, at monitor ko muna yung connection",neutral,taglish,augmented
+"For now, Okay na po, thank you sa assistance. 😐",positive,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at babalik ako kapag may update 😤",neutral,taglish,augmented
+"nag-message ako tungkol sa account concern, pero same problem pa rin!",negative,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, pero hindi pa rin naayos 😭",negative,tagalog,augmented
+"nag-request ako ng installation, pero hindi pa rin naayos 😤",negative,tagalog,augmented
+"Sa ngayon, I am disappointed with the service. 😤",negative,english,augmented
+"Hi, still slow pa rin poo yung internet.",negative,taglish,augmented
+"Sa ngayon, Working siya kanina pero down naooo naman ngayon.",negative,english,augmented
+"nag-report ako tungkol sa slow internet, pero wala pa ring improvement 🙄",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring improvement 👍",negative,tagalog,augmented
+"Naayos na po yung problem,thank you.",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-work na ulit ako!",positive,taglish,augmented
+"nag-report ako ng mbagal na upload, pero hindi pa rin gumagagana",negative,tagalog,augmented
+"Hi, The internet is workng now.",positive,english,augmented
+"nag-contact ako ng customer support, at hihintayin ko yung technician...",neutral,taglish,augmented
+"Until now, The internet keeps going offline. 😐",negative,english,augmented
+"nag-report ako ng mabagal na upload, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"Hello,Okay na po ang signal.",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem, at maghihintay muna ako...",neutral,taglish,augmented
+"nag-request ako ng installation, at mabilis naooo ulit!!",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, pero nagdi-disconnect pa rin.",negative,tagalog,augmented
+Okay na poo ang signal.,positive,tagalog,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin gumagana.",negative,taglish,augmented
+"Hello, still slow pa rin po yung intenet.",negative,taglish,augmented
+"NAG-REPORT AKO NG UNSTABLE WIFI, PERO HINDI PA RIN BUMABALIK YUNG SERVICE!!",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"nag-report ako ng red light sa modem, at gumagana na ngayon",positive,tagalog,augmented
+"Hi, The connection is still unstable.",negative,english,augmented
+"Sa ngayon, The internet is workng now.",positive,english,augmented
+"nag-follow up ako tungkol sa installation delay, pero unresolved pa rin",negative,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at naayos naman agad! 😭",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero mabagal pa rin",negative,taglish,augmented
+"nag-request ako ng plan change, at monitor ko muna yung connection 😊",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero unresolved pa rin...",negative,taglish,augmented
+"nag-message ako tungkol sa account concern, at nakakapag-online class na ako!!",positive,tagalog,augmented
+"Hi, Sige po, I'll wait. 😊",neutral,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at nakakapag-work na ulit ako.",positive,taglish,augmented
+"Naayos na pooo yung problem, thank you.",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at gumagana na ngayon 😤",positive,tagalog,augmented
+I am disappointed with the service. 😐,negative,english,augmented
+"Sa ngayon, Same pa rin po, walang pagbabago. ❤️",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-report ako ng red light sa modem, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako tungkol sa slow internet, pero nagdi-disconnect pa rin!",negative,taglish,augmented
+"Hello, The internet is still very slow. 🙄",negative,english,augmented
+"Naayos na po yung problem, thank you.",positive,taglish,natural
+"nag-message ako tungkol sa billing concern, pero wala pa ring connection 😊",negative,taglish,augmented
+"nag-report ako tungkol sa wrong charge, at mabilis na ulit",positive,tagalog,augmented
+"Sa ngayon, okay na poo ang signal.",positive,tagalog,augmented
+"Hello, The internet is still very slow. 🙏",negative,english,augmented
+"Sa ngayon, salamt po at naayos agad.",positive,tagalog,augmented
+"nag-report ako tungkol sa slow internet, at stable na ulit",positive,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at wala nang problema",positive,taglish,augmented
+"Nag-file ako ng complaint tungkol sa service outage, at resolved na yung concern!",positive,taglish,augmented
+Maayos na po yung serbisyo. 😭,positive,tagalog,augmented
+"nag-message ako tungkol sa account concern, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+"Sa ngayon, i am disappointed with the service. 😐",negative,english,augmented
+"nag-report ako ng unstable WiFi, at susundin ko muna yung instructions!!",neutral,tagalog,augmented
+"Same pa rin po, walang pagbabago. 😐",negative,tagalog,augmented
+"Hi, Salamat pooo at naayos agad.",positive,tagalog,augmented
+"Hi, I will monitor the connection. 😭",neutral,english,augmented
+"Hi,The internet is working now.",positive,english,augmented
+"nag-report ako ng mabagal naooo upload, pero mabagal pa rin",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, pero hindi pa rin bumabalik yung service!",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at naayos naman agad 😊",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero mabagal pa rin!",negative,taglish,augmented
+"nag-request ako ng plan change, pero hndi pa rin bumabalik yung service",negative,taglish,augmented
+"Hi, Still slow pa rin po yung internet. 👍",negative,taglish,augmented
+"Hi, Naayos na po yung problem, thank you. 👍",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin naayos...",negative,taglish,augmented
+"Sa ngayon, I am disappointed with the service.",negative,english,augmented
+"nag-report ako ng mabagal na upload, pero mabagal pa rin",negative,tagalog,augmented
+"Until now, Still slow pa rin po yung internet. 🙏",negative,taglish,augmented
+"Until now, The connection is still unstable. 😭",negative,english,augmented
+"nag-report ako tungkol sa wrong charge, at iche-check ko muna 😊",neutral,tagalog,augmented
+"nag-report ako ng red light sa modem, at susundin ko muna yung instructions",neutral,tagalog,augmented
+"Sa ngayon, Still slow pa rin po yung internt.",negative,taglish,augmented
+"Hi, Sige poo.",neutral,tagalog,augmented
+nag-report ako tungkol sa walang connection pero hindi pa rin bumabalik yung service,negative,taglish,augmented
+"Nag-report ako ng mahinang signal, at nakakapag-work na ulit ako 😤",positive,tagalog,augmented
+"Sa ngayon, Still slow pa rin poooo yung internet.",negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at susundin ko muna yung instructions",neutral,taglish,augmented
+"Hello, Naayos na pooo yung problem, thank you.",positive,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero wala pa ring connection",negative,taglish,augmented
+"nag-report ako ng mahinang signal, pero nagdi-disconnect pa rin",negative,tagalog,augmented
+"nag-contact ako ng customer support, at naayos naman agad",positive,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero hindi pa rin gumagana. 😐",negative,taglish,augmented
+"Hello,Naayos na po yung problema.",positive,tagalog,augmented
+"Hi, Sige po, I'll wait. 🙄",neutral,taglish,augmented
+"Hello, Naayos na poooo yung problema.",positive,tagalog,augmented
+"Hello, Thank you for the update. 😩",neutral,english,augmented
+The internet is working now. 😊,positive,english,augmented
+"nag-request ako ng installation, pero same problem pa rin",negative,taglish,augmented
+"nag-request ako ng plan change, pero hindi pa rin gumagana!!",negative,tagalog,augmented
+"nag-report ako ng red light sa modem, pero hindi pa rin naayos... 🙄",negative,tagalog,augmented
+Maayos na po yung serbisyo. ❤️,positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero unresolved pa rin",negative,taglish,augmented
+"nag-report ako ng mabagal na upload, at nakakapag-browse na ulit ako",positive,tagalog,augmented
+Okay na po ang signal.,positive,tagalog,natural
+"NAG-MESSAGE AKO TUNGKOL SA ACCOUNT CONCERN, AT NAKAKAPAG-ONLINE CLASS NA AKO",positive,tagalog,augmented
+"nag-report ako ng mabagal na upload, at resolved na yung concern 👍",positive,taglish,augmented
+"Until now, Still slow pa rin po yung internet. 😭",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at babalik ako kapag may update...",neutral,taglish,augmented
+"Sa ngayon, The connection is still unstable.",negative,english,augmented
+"nag-follow up ako tungkol sa installation delay, at stable na ulit...",positive,tagalog,augmented
+"Sa ngayon, The connection is still unstable. 😐",negative,english,augmented
+"nag-report ako ng mabagal na upload, at wala nang problema!!",positive,tagalog,augmented
+"nag-request ako ng plan change, pero nagdi-disconnect pa rin...",negative,tagalog,augmented
+"Sa ngayon,Still slow pa rin po yung internet.",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at stable na ulit",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at maghihintay muna ako",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at iche-check ko muna",neutral,taglish,augmented
+"nag-request ako ng installation,pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-message ako tungkol sa account concern, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"nag-request ako ng plan change, at iche-check ko muna",neutral,tagalog,augmented
+"Sige poo, I'll wait.",neutral,taglish,augmented
+"nag-report ako tungkol sa walang connection, at mabilis na ulit",positive,taglish,augmented
+"Sa ngayon, Naayos na pooo yung problem, thank you. 😩",positive,taglish,augmented
+"nag-report ako ng red light sa modem, pero same problem pa rin. 😤",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at nakakapag-online class nao ako",positive,taglish,augmented
+"Hello, thanko you for the update.",neutral,english,augmented
+"nag-report ako tungkol sa walang connection, at nakakapag-work na ulit ako!",positive,taglish,augmented
+"nag-contact ako ng customer support, at gumagana na ngayon.",positive,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at resolved na yung concern",positive,taglish,augmented
+"Sa ngayon, Naayos na po yung problema.",positive,tagalog,augmented
+"Hello, Naayos na poo yung problem, thank you.",positive,taglish,augmented
+"Hello,The internet is still very slow.",negative,english,augmented
+"nag-report ako tungkol sa wrong charge, pero hindi pa rin gumagana!!",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at resolved na yung concern",positive,taglish,augmented
+"nag-message ako tungkol sa account concern, pero hindi pa rin gumagana",negative,tagalog,augmented
+"nag-report ako ng mahinang signal, at naayos naman agad",positive,tagalog,augmented
+"nag-follow up ako tungkol sa router problem,pero hindi pa rin gumagana...",negative,taglish,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-browse na ulit ako 😤",positive,tagalog,augmented
+"Until now, The internet is still very slow. ❤️",negative,english,augmented
+"Sa ngayon, Maayos na po yung serbisyo. 😩",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero nagdi-disconnect pa rin. 😭",negative,taglish,augmented
+"Hello, the internet is still very slow. 😤",negative,english,augmented
+"nag-report ako ng unstable WiFi, at iche-check ko muna!",neutral,tagalog,augmented
+"For now, The internet is working now. 😊",positive,english,augmented
+"nag-contact ako ng customer support, at nakakapag-browse na ulit ako",positive,taglish,augmented
+nag-report ako tungkol sa slow internet pero mabagal pa rin,negative,taglish,augmented
+"nag-follow up ako tungkol sa intermittent connection, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-request ako ng installation, pero unresolved pa rin",negative,tagalog,augmented
+"Hello, The internet is working now. 👍",positive,english,augmented
+"Hello, Sige po. 😭",neutral,tagalog,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero nagdi-disconnect pa rin... 😐",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, pero hindi pa rin bumabalik yung service...",negative,taglish,augmented
+"nag-contact ako ng customer support, at hihintayin ko yung technician",neutral,taglish,augmented
+"nag-request ako ng installation, at wala nang problema",positive,tagalog,augmented
+"nag-contact ako ng customer support, at iche-check ko muna!",neutral,taglish,augmented
+"Hi, The internet is working now.",positive,english,augmented
+"For now, Naayos na pooo yung problem, thank you. 👍",positive,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring improvement 😭",negative,tagalog,augmented
+"nag-request ako ng technician dahil sa modem issue, at mabilis na ulit!",positive,taglish,augmented
+"Noted, I'll wait for further instructions. 😊",neutral,english,augmented
+"nag-follow up ako tungkol sa router problem, pero mabagal pa rin",negative,taglish,augmented
+"nag-contact ako ng customer support, pero hndi pa rin bumabalik yung service",negative,taglish,augmented
+Naayos na po yung problema. 😐,positive,tagalog,augmented
+"Hello, Sige po, I'll wait. 🙏",neutral,taglish,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-browse na ulit ako!!",positive,tagalog,augmented
+"nag-report ako tungkol sa wrong charge, pero wala pa ring connection!!",negative,taglish,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, pero same problem pa rin.",negative,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue,pero wala pa ring improvement",negative,taglish,augmented
+"nag-report ako tungkol sa walang connection, at monitor ko muna yung connection!",neutral,taglish,augmented
+"For now, Okay na po ang signal. ❤️",positive,taglish,augmented
+"nag-file ako ng complaint tungkol sa service outage, at hihintayin ko yung technician!!",neutral,taglish,augmented
+"nag-contact ako ng customer support, pero mabagal pa rin",negative,taglish,augmented
+Working siya kanina pero down na naman ngayon. 👍,negative,taglish,augmented
+"nag-contact ako ng customer support, pero hindi pa rin naayos!",negative,taglish,augmented
+"nag-follow up ako tungkol sa router problem, pero wala pa ring connection!!",negative,taglish,augmented
+"Sa ngayon, Maayos na po yung serbisyo. 👍",positive,tagalog,augmented
+"nag-request ako ng plan change, pero hindi pa rin bumabalik yung service",negative,taglish,augmented
+"nag-request ako ng installation, at nakakapag-browse na ulit ako!!",positive,tagalog,augmented
+"nag-follow up ako tungkol sa putol-putol na connection, at susundin ko muna yung instructions ❤️",neutral,taglish,augmented
+"Hello,The internt keeps going offline.",negative,english,augmented
+"Hello, I will monitor the connection. 🙄",neutral,english,augmented
+"Sa ngayon, The internet is still very slow. 😤",negative,english,augmented
+"nag-message ako tungkol sa billing concern, at resolved na yung concern",positive,taglish,augmented
+"nag-report ako ng mabagal na upload, at gumagana na ngayon",positive,tagalog,augmented
+"nag-file ako ng complaint tungkol sa service outage, pero unresolved pa rin...",negative,taglish,augmented
+"Until now,Same pa rin po,walang pagbabago.",negative,taglish,augmented
+"Hi, I will monitor the connection. 😩",neutral,english,augmented
+"Until now, I am disappointed with the service. 👍",negative,english,augmented
+"Sa ngayon, The connection is still unstable. 😤",negative,english,augmented
+"Hello,The connection is still unstable.",negative,english,augmented
+"nag-file ako ng complaint tungkol sa service outage, at mabilis na ulit 🙄",positive,taglish,augmented
+"Hello, Salamat po at naayos agad. 😭",positive,tagalog,augmented
+"Hi, The intenet is working now.",positive,english,augmented
+"nag-request ako ng technician dahil sa modem issue, at babalik ako kapag may update",neutral,taglish,augmented
+"nag-follow up ako tungkol sa router problem, at hihintayin ko yung technician!",neutral,taglish,augmented
+"Hello, Salamat sa update, maghihintay ako ng technician. ❤️",neutral,taglish,augmented
+"nag-request ako ng technician dahil sa modem issue, at iche-check ko muna",neutral,taglish,augmented
+"nag-report ako ng unstable WiFi, at nakakapag-online class na ako.",positive,tagalog,augmented
+"Sa ngayon, The internet keeps going offline.",negative,english,augmented
+"nag-follow up ako tungkol sa intermittent connection, pero nagdi-disconnect pa rin 🙏",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero hndi pa rin naayos",negative,tagalog,augmented
+"nag-follow up ako tungkol sa installation delay, at nakakapag-work na ulit ako",positive,tagalog,augmented
+"nag-contact ako ng customer support,pero nagdi-disconnect pa rin",negative,taglish,augmented
+"nag-report ako ng red light sa modem, pero wala pa ring improvement",negative,tagalog,augmented

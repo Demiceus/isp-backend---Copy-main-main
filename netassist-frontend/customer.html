@@ -1,0 +1,278 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer Support — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg portal"><header class="pro-nav"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><a class="pbtn ghost" href="customer-portal.html">My portal</a></header><main class="portal-grid"><section class="glass portal-chat"><div class="preview-head"><div><h1 style="font-size:22px;margin:0">Support chat</h1><p style="color:#718096;font-size:12px;margin-top:4px">AI-assisted support with human escalation when required.</p></div><span class="pill">AI assisted</span></div><div id="status-bar" class="status-bar" data-state="idle" role="status" aria-live="polite"><span class="sdot" aria-hidden="true"></span><span id="status-text">No active session</span><span id="status-ref" class="sref"></span></div><div id="chat-window" class="chat-window" role="log" aria-live="polite" aria-label="Conversation"><div class="chat-msg ai">Welcome to NetAssist. Choose the issue type and send your first message.</div></div><div class="chat-input"><label class="sr-only" for="message">Your message</label><input class="pinput" id="message" placeholder="Describe your issue…" autocomplete="off" disabled><button class="pbtn primary" id="send" disabled>Send</button></div><div class="chat-actions"><button class="pbtn ghost" id="resolve" disabled>My issue is resolved</button><button class="pbtn danger" id="escalate" disabled>Escalate to human</button></div></section><aside class="glass portal-form"><h2>Start your session</h2><p>Your conversation is attached to your account automatically.</p><label style="display:block;margin-top:22px;font-size:12px;font-weight:750">Account number<input id="account" class="pinput" readonly></label><label style="display:block;margin-top:16px;font-size:12px;font-weight:750">Issue type<select id="type" class="pinput"><option value="slow_internet">Slow Internet</option><option value="no_internet">No Internet</option><option value="intermittent_connection">Intermittent Connection</option><option value="router_modem">Router / Modem</option><option value="service_outage">Service Outage</option><option value="billing">Billing</option><option value="installation">Installation</option><option value="plan_change">Plan Change</option><option value="technical_support">Technical Support</option><option value="account">Account</option></select></label><button class="pbtn primary" id="start" style="width:100%;margin-top:20px">Start support</button><div id="notice" role="alert" class="form-error"></div><div id="session-info" class="session-info" hidden></div><div style="margin-top:30px;padding:15px;border-radius:18px;background:rgba(37,99,235,.06);font-size:12px;color:#64748b;line-height:1.6"><b style="color:#334155">What happens next?</b><br>NetAssist classifies your concern, responds with the available support flow, and keeps unresolved cases available for human escalation.</div></aside></main><script src="js/api.js"></script>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+let sid = null;
+let ended = false;
+let escalated = false;
+let pollTimer = null;
+let lastMessageCount = 0;
+
+const STATES = {
+    idle: "No active session",
+    ready: "Unresolved",
+    thinking: "AI is thinking…",
+    responding: "AI is responding…",
+    resolved: "Resolved",
+    unresolved: "Unresolved",
+    escalated: "Escalated to human support"
+};
+
+function setStatus(state, ref) {
+    $("status-bar").dataset.state = state;
+    $("status-text").textContent = STATES[state] || state;
+    $("status-ref").textContent = ref || "";
+}
+
+function setBusy(busy) {
+    $("message").disabled = busy || ended;
+    $("send").disabled = busy || ended;
+    $("resolve").disabled = busy || ended || !sid;
+    $("escalate").disabled = busy || ended || !sid;
+}
+
+function setEscalated(ticket, assignedTo) {
+    escalated = true;
+    const ref = ticket || (sid ? "Session #" + sid : "");
+    setStatus("escalated", ref + (assignedTo ? " · " + assignedTo : ""));
+    $("session-info").hidden = false;
+    $("session-info").innerHTML =
+        "<b>Reference</b> " + esc(ticket || ("Session #" + sid)) +
+        (assignedTo ? "<br><b>Assigned agent</b> " + esc(assignedTo) : "") +
+        "<br><b>Status</b> Escalated to human support";
+    startPolling();
+}
+
+function esc(v) {
+    return String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+}
+
+function endSession(state, ref) {
+    ended = true;
+    stopPolling();
+    setBusy(false);
+    setStatus(state, ref);
+}
+
+function add(who, text) {
+    const d = document.createElement("div");
+    d.className = "chat-msg " + (who === "error" ? "ai error" : who === "agent" ? "ai agent" : who);
+    d.textContent = who === "agent" ? "Support agent: " + text : text;
+    $("chat-window").appendChild(d);
+    $("chat-window").scrollTop = $("chat-window").scrollHeight;
+    return d;
+}
+
+function renderMessages(messages) {
+    $("chat-window").innerHTML = "";
+    const map = { customer: "user", bot: "ai", agent: "agent" };
+    (messages || []).forEach(m => add(map[m.sender] || "ai", m.content));
+    lastMessageCount = (messages || []).length;
+}
+
+function showTypingIndicator() {
+    if ($("typing-indicator")) return;
+    const typing = document.createElement("div");
+    typing.id = "typing-indicator";
+    typing.setAttribute("role", "status");
+    typing.setAttribute("aria-label", "NetAssist AI is typing");
+    typing.className = "typing-bubble";
+    typing.innerHTML = `<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>`;
+    $("chat-window").appendChild(typing);
+    $("chat-window").scrollTop = $("chat-window").scrollHeight;
+}
+
+function hideTypingIndicator() {
+    const typing = $("typing-indicator");
+    if (typing) typing.remove();
+}
+
+async function refreshStatus() {
+    if (!sid) return;
+    const r = await NetAssistAPI.getChatStatus(sid);
+    if (!r.ok) return;
+    const d = r.data || {};
+    if (d.escalation) {
+        if (d.escalation.status === "closed") {
+            endSession("resolved", d.escalation.ticket_number || ("Session #" + sid));
+        } else {
+            setEscalated(d.escalation.ticket_number, d.escalation.assigned_to);
+        }
+    } else if (d.session_status === "resolved" || d.ended) {
+        endSession("resolved", "Session #" + sid);
+    }
+}
+
+function startPolling() {
+    if (pollTimer) return;
+    pollTimer = setInterval(async () => {
+        if (!sid || ended) return;
+        const r = await NetAssistAPI.getChatHistory();
+        if (!r.ok) return;
+        const msgs = r.data.messages || [];
+        if (msgs.length !== lastMessageCount) {
+            renderMessages(msgs);
+        }
+        const e = r.data.latest_escalation;
+        if (e) {
+            if (e.status === "closed") {
+                endSession("resolved", e.ticket_number);
+            } else {
+                setEscalated(e.ticket_number, e.assigned_to);
+            }
+        }
+    }, 3000);
+}
+
+function stopPolling() {
+    if (pollTimer) clearInterval(pollTimer);
+    pollTimer = null;
+}
+
+$("start").onclick = async () => {
+    const account = $("account").value.trim();
+    if (!account) {
+        $("notice").textContent = "Your account is not loaded. Please sign in again.";
+        return;
+    }
+    $("notice").textContent = "";
+    $("start").disabled = true;
+    $("start").textContent = "Starting…";
+
+    const result = await NetAssistAPI.startChat(account, $("type").value);
+    if (!result.ok) {
+        $("notice").textContent = result.error;
+        $("start").disabled = false;
+        $("start").textContent = "Start support";
+        return;
+    }
+
+    sid = result.data.session_id;
+    ended = false;
+    escalated = false;
+    $("account").disabled = true;
+    $("type").disabled = true;
+    $("start").style.display = "none";
+    setBusy(false);
+    setStatus("ready", "Session #" + sid);
+    $("session-info").hidden = false;
+    $("session-info").innerHTML = "<b>Account</b> " + esc(account) + "<br><b>Issue</b> " + esc($("type").selectedOptions[0].textContent) + "<br><b>Reference</b> Session #" + sid;
+    add("ai", "Your support session is ready. Tell me what is happening.");
+    $("message").focus();
+};
+
+async function send() {
+    const text = $("message").value.trim();
+    if (!text || !sid || ended) return;
+
+    add("user", text);
+    $("message").value = "";
+    setBusy(true);
+    setStatus(escalated ? "escalated" : "thinking", escalated ? $("status-ref").textContent : "Session #" + sid);
+    showTypingIndicator();
+
+    try {
+        let aiBubble = null;
+        const result = await NetAssistAPI.streamMessage(sid, text, (chunk, full) => {
+            hideTypingIndicator();
+            if (!aiBubble) aiBubble = add("ai", "");
+            aiBubble.textContent = full;
+            $("chat-window").scrollTop = $("chat-window").scrollHeight;
+            setStatus(escalated ? "escalated" : "responding", escalated ? $("status-ref").textContent : "Session #" + sid);
+        });
+        hideTypingIndicator();
+
+        if (!result.ok) {
+            add("error", result.error);
+            setBusy(false);
+            return;
+        }
+
+        if (!aiBubble && result.data.reply) add("ai", result.data.reply);
+
+        const status = await NetAssistAPI.getChatStatus(sid);
+        if (status.ok && status.data && status.data.escalation) {
+            const e = status.data.escalation;
+            if (e.status === "closed") {
+                endSession("resolved", e.ticket_number);
+            } else {
+                setEscalated(e.ticket_number, e.assigned_to);
+                setBusy(false);
+            }
+        } else {
+            setBusy(false);
+            setStatus("ready", "Session #" + sid);
+            $("message").focus();
+        }
+    } catch (error) {
+        hideTypingIndicator();
+        console.error(error);
+        add("error", "Could not connect to the backend.");
+        setBusy(false);
+    }
+}
+
+async function closeSession(resolved) {
+    if (!sid || ended) return;
+    setBusy(true);
+    const result = await NetAssistAPI.confirmClosure(sid, resolved);
+    if (!result.ok) {
+        add("error", result.error);
+        setBusy(false);
+        return;
+    }
+    add("ai", result.data.message || (resolved ? "Marked as resolved." : "Forwarded to a human agent."));
+    if (result.data.escalated) {
+        setEscalated(result.data.ticket_number || (result.data.escalation_id ? "NA-CASE-" + String(result.data.escalation_id).padStart(6, "0") : "Session #" + sid));
+        setBusy(false);
+    } else {
+        endSession(resolved ? "resolved" : "unresolved", result.data.ticket_number || "Session #" + sid);
+    }
+}
+
+$("resolve").onclick = () => closeSession(true);
+$("escalate").onclick = () => closeSession(false);
+$("send").onclick = send;
+$("message").addEventListener("keydown", event => {
+    if (event.key === "Enter") { event.preventDefault(); send(); }
+});
+
+async function loadHistory(resume) {
+    const r = await NetAssistAPI.getChatHistory();
+    if (!r.ok || !r.data) return;
+
+    const msgs = r.data.messages || [];
+    if (msgs.length) renderMessages(msgs);
+
+    if (resume && r.data.latest_session_id && !r.data.latest_session_ended) {
+        sid = r.data.latest_session_id;
+        $("account").disabled = true;
+        $("type").disabled = true;
+        $("start").style.display = "none";
+        setBusy(false);
+        const e = r.data.latest_escalation;
+        if (e) setEscalated(e.ticket_number, e.assigned_to);
+        else setStatus("ready", "Session #" + sid);
+    }
+}
+
+const cust = JSON.parse(localStorage.getItem("netassist_customer") || "null");
+if (!cust || !cust.token) {
+    window.location.href = "customer-login.html";
+} else {
+    $("account").value = cust.account_number || cust.account || "";
+    const pending = sessionStorage.getItem("netassist_pending");
+    loadHistory(!pending);
+    if (pending) {
+        sessionStorage.removeItem("netassist_pending");
+        const p = JSON.parse(pending);
+        $("type").value = p.type;
+        $("start").onclick().then(() => { if (sid) { $("message").value = p.text; send(); } });
+    }
+}
+</script>
+</script>
+
+</body>
+</html>

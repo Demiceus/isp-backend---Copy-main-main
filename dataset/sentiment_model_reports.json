@@ -1,0 +1,200 @@
+{
+  "Logistic Regression|test": {
+    "negative": {
+      "precision": 1.0,
+      "recall": 0.8925,
+      "f1-score": 0.9431968295904888,
+      "support": 800.0
+    },
+    "neutral": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 400.0
+    },
+    "positive": {
+      "precision": 0.9029345372460497,
+      "recall": 1.0,
+      "f1-score": 0.9489916963226572,
+      "support": 800.0
+    },
+    "accuracy": 0.957,
+    "macro avg": {
+      "precision": 0.9676448457486831,
+      "recall": 0.9641666666666667,
+      "f1-score": 0.9640628419710486,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9611738148984199,
+      "recall": 0.957,
+      "f1-score": 0.9568754103652584,
+      "support": 2000.0
+    }
+  },
+  "Logistic Regression|hard": {
+    "negative": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 40.0
+    },
+    "neutral": {
+      "precision": 0.9696969696969697,
+      "recall": 0.8,
+      "f1-score": 0.8767123287671232,
+      "support": 40.0
+    },
+    "positive": {
+      "precision": 0.8604651162790697,
+      "recall": 0.925,
+      "f1-score": 0.891566265060241,
+      "support": 40.0
+    },
+    "accuracy": 0.9083333333333333,
+    "macro avg": {
+      "precision": 0.9130843316889828,
+      "recall": 0.9083333333333333,
+      "f1-score": 0.9068865154027721,
+      "support": 120.0
+    },
+    "weighted avg": {
+      "precision": 0.9130843316889828,
+      "recall": 0.9083333333333333,
+      "f1-score": 0.9068865154027723,
+      "support": 120.0
+    }
+  },
+  "Linear SVM|test": {
+    "negative": {
+      "precision": 1.0,
+      "recall": 0.9025,
+      "f1-score": 0.9487516425755584,
+      "support": 800.0
+    },
+    "neutral": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 400.0
+    },
+    "positive": {
+      "precision": 0.9111617312072893,
+      "recall": 1.0,
+      "f1-score": 0.9535160905840286,
+      "support": 800.0
+    },
+    "accuracy": 0.961,
+    "macro avg": {
+      "precision": 0.9703872437357631,
+      "recall": 0.9674999999999999,
+      "f1-score": 0.9674225777198623,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9644646924829158,
+      "recall": 0.961,
+      "f1-score": 0.9609070932638348,
+      "support": 2000.0
+    }
+  },
+  "Linear SVM|hard": {
+    "negative": {
+      "precision": 0.9302325581395349,
+      "recall": 1.0,
+      "f1-score": 0.963855421686747,
+      "support": 40.0
+    },
+    "neutral": {
+      "precision": 0.9696969696969697,
+      "recall": 0.8,
+      "f1-score": 0.8767123287671232,
+      "support": 40.0
+    },
+    "positive": {
+      "precision": 0.8409090909090909,
+      "recall": 0.925,
+      "f1-score": 0.8809523809523809,
+      "support": 40.0
+    },
+    "accuracy": 0.9083333333333333,
+    "macro avg": {
+      "precision": 0.9136128729151984,
+      "recall": 0.9083333333333333,
+      "f1-score": 0.907173377135417,
+      "support": 120.0
+    },
+    "weighted avg": {
+      "precision": 0.9136128729151985,
+      "recall": 0.9083333333333333,
+      "f1-score": 0.907173377135417,
+      "support": 120.0
+    }
+  },
+  "Complement Naive Bayes|test": {
+    "negative": {
+      "precision": 1.0,
+      "recall": 0.86875,
+      "f1-score": 0.9297658862876255,
+      "support": 800.0
+    },
+    "neutral": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 400.0
+    },
+    "positive": {
+      "precision": 0.8839779005524862,
+      "recall": 1.0,
+      "f1-score": 0.9384164222873901,
+      "support": 800.0
+    },
+    "accuracy": 0.9475,
+    "macro avg": {
+      "precision": 0.9613259668508287,
+      "recall": 0.9562499999999999,
+      "f1-score": 0.9560607695250051,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9535911602209944,
+      "recall": 0.9475,
+      "f1-score": 0.9472729234300062,
+      "support": 2000.0
+    }
+  },
+  "Complement Naive Bayes|hard": {
+    "negative": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 40.0
+    },
+    "neutral": {
+      "precision": 0.9459459459459459,
+      "recall": 0.875,
+      "f1-score": 0.9090909090909091,
+      "support": 40.0
+    },
+    "positive": {
+      "precision": 0.9428571428571428,
+      "recall": 0.825,
+      "f1-score": 0.88,
+      "support": 40.0
+    },
+    "accuracy": 0.9,
+    "macro avg": {
+      "precision": 0.9073788073788074,
+      "recall": 0.9,
+      "f1-score": 0.8993939393939394,
+      "support": 120.0
+    },
+    "weighted avg": {
+      "precision": 0.9073788073788075,
+      "recall": 0.9,
+      "f1-score": 0.8993939393939393,
+      "support": 120.0
+    }
+  }
+}

@@ -1,0 +1,35 @@
+review_text,sentiment,language,source_type,predicted,model
+Down kahapon pero bumalik na yung service.,positive,taglish,synthetic_hard_case,negative,Logistic Regression
+I haven't confirmed whether the issue is fixed.,neutral,english,synthetic_hard_case,positive,Logistic Regression
+Pwede po bang i-confirm yung appointment?,neutral,taglish,synthetic_hard_case,positive,Logistic Regression
+Ano po yung next step?,neutral,taglish,synthetic_hard_case,positive,Logistic Regression
+Nawala saglit pero bumalik naman.,positive,taglish,synthetic_hard_case,negative,Logistic Regression
+I thought it wouldn't be fixed but it works now.,positive,english,synthetic_hard_case,neutral,Logistic Regression
+Please let me know when the technician is scheduled.,neutral,english,synthetic_hard_case,positive,Logistic Regression
+Wala pa po akong nakikitang confirmation.,neutral,taglish,synthetic_hard_case,negative,Logistic Regression
+Wala pa akong confirmation kung resolved na.,neutral,taglish,synthetic_hard_case,negative,Logistic Regression
+Pwede po bang malaman yung status ng report?,neutral,taglish,synthetic_hard_case,positive,Logistic Regression
+Hindi pa po ako sigurado kung okay na.,neutral,taglish,synthetic_hard_case,positive,Logistic Regression
+Down kahapon pero bumalik na yung service.,positive,taglish,synthetic_hard_case,negative,Linear SVM
+I haven't confirmed whether the issue is fixed.,neutral,english,synthetic_hard_case,positive,Linear SVM
+Pwede po bang i-confirm yung appointment?,neutral,taglish,synthetic_hard_case,positive,Linear SVM
+Ano po yung next step?,neutral,taglish,synthetic_hard_case,positive,Linear SVM
+Nawala saglit pero bumalik naman.,positive,taglish,synthetic_hard_case,negative,Linear SVM
+I thought it wouldn't be fixed but it works now.,positive,english,synthetic_hard_case,neutral,Linear SVM
+Please let me know when the technician is scheduled.,neutral,english,synthetic_hard_case,positive,Linear SVM
+Wala pa po akong nakikitang confirmation.,neutral,taglish,synthetic_hard_case,negative,Linear SVM
+Wala pa akong confirmation kung resolved na.,neutral,taglish,synthetic_hard_case,positive,Linear SVM
+Pwede po bang malaman yung status ng report?,neutral,taglish,synthetic_hard_case,positive,Linear SVM
+Hindi pa po ako sigurado kung okay na.,neutral,taglish,synthetic_hard_case,positive,Linear SVM
+Down kahapon pero bumalik na yung service.,positive,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+I haven't confirmed whether the issue is fixed.,neutral,english,synthetic_hard_case,negative,Complement Naive Bayes
+Pwede po bang i-confirm yung appointment?,neutral,taglish,synthetic_hard_case,positive,Complement Naive Bayes
+"Slow earlier but working now, salamat.",positive,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+Nawala saglit pero bumalik naman.,positive,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+I thought it wouldn't be fixed but it works now.,positive,english,synthetic_hard_case,neutral,Complement Naive Bayes
+Wala pa po akong nakikitang confirmation.,neutral,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+Gumagana na kahit nag-restart lang ako.,positive,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+Pwede po bang malaman yung status ng report?,neutral,taglish,synthetic_hard_case,positive,Complement Naive Bayes
+It was down yesterday but it's working now.,positive,english,synthetic_hard_case,neutral,Complement Naive Bayes
+Gumagana na kahit putol-putol dati.,positive,taglish,synthetic_hard_case,negative,Complement Naive Bayes
+Hindi pa po ako sigurado kung okay na.,neutral,taglish,synthetic_hard_case,negative,Complement Naive Bayes

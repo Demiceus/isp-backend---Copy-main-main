@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer login — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg">
+<header class="pro-nav"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><div class="nav-actions"><a class="pbtn ghost" href="landing.html">Back to home</a></div></header>
+<main style="max-width:440px;margin:56px auto;padding:0 18px"><form id="login" class="glass" style="padding:30px" novalidate>
+<div class="eyebrow"><span class="dot"></span> Customer portal</div><h1 style="font-size:26px;margin:10px 0 6px">Log in to your account</h1>
+<p style="font-size:13.5px;color:#667085;line-height:1.6">Log in with your NetAssist account number and PIN to contact support and leave feedback.</p>
+<label style="display:block;margin-top:22px;font-size:12px;font-weight:750">Account number<input id="acc" class="pinput" placeholder="e.g. ISP-10023" autocomplete="username" required></label>
+<label style="display:block;margin-top:14px;font-size:12px;font-weight:750">PIN / password<input id="pin" type="password" class="pinput" autocomplete="current-password" required></label><div id="err" class="form-error" role="alert"></div>
+<button id="go" type="submit" class="pbtn primary" style="width:100%;margin-top:8px">Log in</button><p style="font-size:12.5px;color:#667085;margin-top:16px;text-align:center">No account yet? <a href="customer-register.html" style="color:#2563eb;font-weight:750">Request one</a></p></form></main>
+<script src="js/api.js"></script><script>
+const c0=JSON.parse(localStorage.getItem('netassist_customer')||'null');if(c0&&c0.token)location.href='customer-portal.html';
+document.getElementById('login').addEventListener('submit',async e=>{e.preventDefault();
+ const a=document.getElementById('acc').value.trim(),p=document.getElementById('pin').value,err=document.getElementById('err'),b=document.getElementById('go');
+ if(!a||!p){err.textContent='Enter your account number and PIN.';return}
+ err.textContent='';b.disabled=true;b.innerHTML='<span class="spin"></span>Logging in…';
+ const r=await NetAssistAPI.customerLogin(a,p);
+ if(!r.ok){err.textContent=r.error;b.disabled=false;b.textContent='Log in';return}
+ localStorage.setItem('netassist_customer',JSON.stringify({account:r.data.account_number,name:r.data.name,token:r.data.token}));location.href='customer-portal.html'});
+</script></body></html>

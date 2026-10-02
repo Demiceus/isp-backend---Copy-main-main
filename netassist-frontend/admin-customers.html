@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer accounts — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="admin-bg"><div class="admin-shell"><aside class="admin-side"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><nav class="admin-nav" aria-label="Admin"><a href="admin-dashboard.html">Overview</a><a href="admin-escalations.html">Escalation queue</a><a href="admin-issues.html">Customers by issue</a><a href="admin-customers.html" class="active" aria-current="page">Customer accounts</a><a href="admin-assistant.html">AI assistant</a></nav><div class="side-foot"><button id="logout" class="pbtn ghost" style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)">Log out</button></div></aside><main class="admin-main"><header class="admin-top"><div><div style="font-size:11px;color:#718096;font-weight:750">ACCOUNTS</div><h1 style="font-size:21px;margin-top:3px">Customer accounts</h1></div><div id="admin-name" style="font-size:13px;font-weight:750;color:#475569"></div></header>
+<div class="admin-content"><div class="admin-grid">
+<section class="a-card" style="grid-column:span 7"><div class="issue-tools"><h2 style="font-size:18px;flex:1">Accounts</h2><label class="f2">Status<select id="f" class="pinput"><option value="all">All</option><option value="pending">Pending approval</option><option value="active">Active</option><option value="disabled">Disabled</option></select></label></div>
+<div id="list" aria-busy="true" style="margin-top:12px;overflow-x:auto"><div class="empty">Loading accounts…</div></div></section>
+<section class="a-card" style="grid-column:span 5"><h2 style="font-size:18px">Add a customer</h2>
+<form id="add" novalidate><label class="f" style="display:block;margin-top:12px;font-size:12px;font-weight:750">Name<input id="n" class="pinput"></label><label style="display:block;margin-top:10px;font-size:12px;font-weight:750">Email<input id="e" class="pinput" type="email"></label><label style="display:block;margin-top:10px;font-size:12px;font-weight:750">Account number (optional, auto if blank)<input id="a" class="pinput"></label><label style="display:block;margin-top:10px;font-size:12px;font-weight:750">PIN (4+ characters)<input id="p" class="pinput" type="password" autocomplete="new-password"></label><div id="add-out" role="status" style="margin-top:10px"></div><button class="pbtn primary" type="submit" style="margin-top:10px;width:100%">Create account</button></form>
+<h2 style="font-size:18px;margin-top:28px">Import from CSV</h2><p style="font-size:12px;color:#667085;margin:4px 0 8px">Columns: account_number (optional), name, email, pin</p>
+<textarea id="csv" class="pinput" rows="5" aria-label="CSV data" placeholder="account_number,name,email,pin"></textarea><div id="imp-out" role="status" style="margin-top:10px"></div><button id="imp" class="pbtn ghost" type="button" style="margin-top:10px;width:100%">Import</button></section>
+</div></div></main></div>
+<script src="js/api.js"></script><script src="js/app.js"></script><script>
+initAdmin();const $=id=>document.getElementById(id);
+const TC={active:'green',pending:'',disabled:'red'};
+async function load(){const b=$('list');b.setAttribute('aria-busy','true');const r=await NetAssistAPI.listCustomers($('f').value);b.removeAttribute('aria-busy');
+ if(!r.ok){b.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}
+ const d=r.data||[];
+ b.innerHTML=d.length?'<table class="admin-table"><thead><tr><th>Account</th><th>Name</th><th>Email</th><th>Status</th><th>Chats</th><th></th></tr></thead><tbody>'+d.map(x=>'<tr><td><b>'+escHtml(x.account_number)+'</b></td><td>'+escHtml(x.name||'—')+'</td><td>'+escHtml(x.email||'—')+'</td><td><span class="tag '+(TC[x.status]||'')+'">'+escHtml(x.status)+'</span></td><td>'+x.sessions+'</td><td style="white-space:nowrap">'+(x.status!=='active'?'<button class="pbtn primary" data-a="approve" data-id="'+x.id+'">Approve</button> ':'')+(x.status!=='disabled'?'<button class="pbtn danger" data-a="disable" data-id="'+x.id+'">Disable</button>':'')+'</td></tr>').join('')+'</tbody></table>':'<div class="empty"><b>No accounts</b>Nothing matches this filter.</div>'}
+$('list').addEventListener('click',async e=>{const t=e.target.closest('button[data-a]');if(!t)return;t.disabled=true;
+ const r=await (t.dataset.a==='approve'?NetAssistAPI.approveCustomer(t.dataset.id):NetAssistAPI.disableCustomer(t.dataset.id));
+ if(!r.ok)toast(r.error,'error');load()});
+$('f').onchange=load;
+$('add').addEventListener('submit',async e=>{e.preventDefault();const o=$('add-out');
+ const r=await NetAssistAPI.createCustomer({name:$('n').value,email:$('e').value,account_number:$('a').value,pin:$('p').value});
+ if(!r.ok){o.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}
+ o.innerHTML='<div class="alert success">Created '+escHtml(r.data.account_number)+'.</div>';$('add').reset();load()});
+$('imp').onclick=async()=>{const o=$('imp-out');if(!$('csv').value.trim()){o.innerHTML='<div class="alert error" role="alert">Paste CSV rows first.</div>';return}
+ const r=await NetAssistAPI.importCustomers($('csv').value);
+ if(!r.ok){o.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}
+ const d=r.data;o.innerHTML='<div class="alert '+(d.errors.length?'warning':'success')+'">'+d.created+' created, '+d.skipped+' skipped.'+(d.errors.length?' '+escHtml(d.errors.join('; ')):'')+'</div>';load()};
+load();
+</script></body></html>
