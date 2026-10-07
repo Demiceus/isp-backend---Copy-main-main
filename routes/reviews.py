@@ -15,24 +15,27 @@ from services.sentiment import score_sentiment
 reviews_bp = Blueprint("reviews", __name__)
 
 
-def find_matching_session(customer_id: int):
+def find_matching_session(customer_id):
     """
-    Find the customer's most recent unresolved session.
+    Find the customer's most recent chat session that can be associated
+    with a customer review.
 
-    This includes sessions that have already ended because of
-    inactivity, as long as their status is still unresolved.
+    A review may be submitted after the chat has already been escalated,
+    so do not restrict this to only "unresolved" sessions.
     """
-
     return (
         ChatSession.query
-        .filter_by(
-            customer_id=customer_id,
-            session_status="unresolved"
+        .filter(
+            ChatSession.customer_id == customer_id,
+            ChatSession.session_status.in_([
+                "unresolved",
+                "escalated",
+                "resolved",
+            ]),
         )
         .order_by(ChatSession.started_at.desc())
         .first()
     )
-
 
 @reviews_bp.route("/", methods=["POST"])
 def submit_review():
@@ -187,6 +190,14 @@ def submit_review():
 
         if existing_escalation:
 
+            # Attach the customer review to the existing escalation
+            # if that escalation does not already have a review.
+            if existing_escalation.review_id is None:
+                existing_escalation.review_id = review.id
+
+            session.session_status = "escalated"
+            session.ended_at = None
+
             db.session.commit()
 
             return jsonify({
@@ -194,8 +205,8 @@ def submit_review():
                 "sentiment": sentiment,
                 "confidence": confidence,
                 "message": (
-                    "Your concern is already being handled "
-                    "by a human support agent."
+                    "Your review has been attached to your "
+                    "human support case."
                 ),
                 "resolved": False,
                 "escalated": True,

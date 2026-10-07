@@ -96,6 +96,7 @@ const NetAssistAPI = {
   getEscalations: (status = "open") => apiRequest(`/api/escalations/?status=${encodeURIComponent(status)}`),
   getAdminAnalytics: () => apiRequest("/api/admin/analytics"),
   getEscalation: (id) => apiRequest(`/api/escalations/${id}`),
+  summarizeEscalation: (id) => apiRequest(`/api/escalations/${id}/summarize`, {method: 'POST' }), 
   updateEscalationStatus: (id, status) =>
     apiRequest(`/api/escalations/${id}/status`, {
       method: "PATCH",
@@ -109,8 +110,15 @@ const NetAssistAPI = {
   processBatch: (payload) =>
     apiRequest("/api/batch/process", { method: "POST", body: JSON.stringify(payload) }),
   getBatchHistory: () => apiRequest("/api/batch/history"),
-  customerLogin: (accountNumber, pin) =>
-    apiRequest("/api/auth/customer/login", { method: "POST", body: JSON.stringify({ account_number: accountNumber, pin }) }),
+  customerLogin: (identifier, pin, loginType = "email") =>
+  apiRequest("/api/auth/customer/login", {
+    method: "POST",
+    body: JSON.stringify(
+      loginType === "account"
+        ? { account_number: identifier, pin }
+        : { email: identifier, pin }
+    ),
+  }),
   customerRegister: (payload) =>
     apiRequest("/api/auth/customer/register", { method: "POST", body: JSON.stringify(payload) }),
   adminLogin: (username, password) =>

@@ -14,11 +14,113 @@ const $=id=>document.getElementById(id);
 const cust=JSON.parse(localStorage.getItem('netassist_customer')||'null');
 if(!cust||!cust.token){location.href='customer-login.html'}else{$('acc').value=cust.account}
 $('txt').oninput=()=>$('cnt').textContent=$('txt').value.length+' / 1000';
-$('rv').addEventListener('submit',async e=>{e.preventDefault();
- const a=$('acc').value.trim(),t=$('txt').value.trim(),o=$('out'),b=$('sub');
- if(!a||!t){o.innerHTML='<div class="alert error" role="alert">Please enter your account number and a review.</div>';return}
- b.disabled=true;b.innerHTML='<span class="spin"></span>Submitting…';o.innerHTML='';
- const r=await NetAssistAPI.submitReview(a,t);b.disabled=false;b.textContent='Submit review';
- if(!r.ok){o.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}
- o.innerHTML='<div class="alert success">Thank you! Your review has been received.</div>';$('txt').value='';$('cnt').textContent='0 / 1000'});
+$('rv').addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const a = $('acc').value.trim();
+    const t = $('txt').value.trim();
+    const o = $('out');
+    const b = $('sub');
+
+    if (!a || !t) {
+        o.innerHTML = `
+            <div class="alert error" role="alert">
+                Please enter your account number and a review.
+            </div>`;
+        return;
+    }
+
+    b.disabled = true;
+    b.innerHTML = '<span class="spin"></span> Submitting...';
+    o.innerHTML = '';
+
+    try {
+        const r = await NetAssistAPI.submitReview(a, t);
+
+        b.disabled = false;
+        b.textContent = 'Submit review';
+
+        if (!r.ok) {
+            o.innerHTML = `
+                <div class="alert error" role="alert">
+                    ${escHtml(r.error || 'Unable to submit your review.')}
+                </div>`;
+            return;
+        }
+
+        console.log('Review response:', r.data);
+
+        const data = r.data || {};
+
+        let html = `
+            <div class="alert success">
+                <strong>Thank you! Your review has been received.</strong>
+            </div>
+        `;
+
+        /*
+         * If the backend created an escalation,
+         * show the customer the ticket/reference number.
+         */
+        if (data.escalated || data.ticket_number || data.escalation_id) {
+            const ticket =
+                data.ticket_number ||
+                ('NA-CASE-' + String(data.escalation_id).padStart(6, '0'));
+
+            html += `
+                <div class="glass" style="margin-top:14px;padding:18px">
+                    <div style="font-size:12px;font-weight:700;color:#667085">
+                        HUMAN SUPPORT CASE
+                    </div>
+
+                    <div style="font-size:22px;font-weight:800;margin-top:6px">
+                        ${escHtml(ticket)}
+                    </div>
+
+                    <p style="font-size:13px;line-height:1.6;color:#667085;margin:10px 0 0">
+                        Your review has been attached to a support case.
+                        Our support team can now review your conversation and feedback.
+                    </p>
+
+                    <div style="margin-top:12px">
+                        <a href="customer-portal.html"
+                           class="pbtn primary"
+                           style="display:inline-block">
+                            View my case
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        /*
+         * Show sentiment when the backend provides it.
+         */
+        if (data.sentiment) {
+            html += `
+                <div style="margin-top:12px;font-size:12px;color:#667085">
+                    Review sentiment:
+                    <strong>${escHtml(data.sentiment)}</strong>
+                </div>
+            `;
+        }
+
+        o.innerHTML = html;
+
+        $('txt').value = '';
+        $('cnt').textContent = '0 / 1000';
+
+    } catch (err) {
+        console.error('Review submission error:', err);
+
+        b.disabled = false;
+        b.textContent = 'Submit review';
+
+        o.innerHTML = `
+            <div class="alert error" role="alert">
+                Something went wrong while submitting your review.
+                Please try again.
+            </div>`;
+    }
+});
 </script></body></html>

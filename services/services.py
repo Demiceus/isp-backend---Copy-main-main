@@ -68,6 +68,84 @@ def get_ai_reply(session: ChatSession) -> str:
 
 
 # ==========================================================
+# AI CHAT SUMMARIZER FOR ADMIN
+# ==========================================================
+
+def generate_chat_summary(session: ChatSession) -> str:
+
+    messages = (
+        Message.query
+        .filter_by(session_id=session.id)
+        .order_by(Message.created_at.asc())
+        .all()
+    )
+
+    if not messages:
+        return "No conversation messages are available to summarize."
+
+    conversation = []
+
+    for msg in messages:
+        sender = "Customer" if msg.sender == "customer" else "Agent"
+
+        conversation.append(
+            f"{sender}: {msg.content}"
+        )
+
+    conversation_text = "\n".join(conversation)
+
+    summary_prompt = (
+        "You are an internal support assistant for an ISP.\n\n"
+        "Summarize the following customer support conversation for a human "
+        "support administrator.\n\n"
+        "Do not invent information that is not present in the conversation.\n"
+        "Keep the summary concise but useful.\n\n"
+        "Include:\n"
+        "1. Customer issue\n"
+        "2. Important details mentioned\n"
+        "3. Troubleshooting or actions already taken\n"
+        "4. Current status of the issue\n"
+        "5. What the human support agent should know or do next\n\n"
+        "CONVERSATION:\n"
+        f"{conversation_text}"
+    )
+
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You create concise internal summaries of ISP customer "
+                "support conversations. Only use information provided "
+                "in the conversation."
+            )
+        },
+        {
+            "role": "user",
+            "content": summary_prompt
+        }
+    ]
+
+    try:
+        response = requests.post(
+            OLLAMA_URL,
+            json={
+                "model": OLLAMA_MODEL,
+                "messages": messages,
+                "stream": False
+            },
+            timeout=120,
+        )
+
+        response.raise_for_status()
+
+        return response.json()["message"]["content"].strip()
+
+    except requests.RequestException as e:
+        print(f"Ollama summarizer error: {e}")
+
+        return "Unable to generate the AI summary right now."
+
+# ==========================================================
 # NEW STREAMING AI RESPONSE
 # ==========================================================
 

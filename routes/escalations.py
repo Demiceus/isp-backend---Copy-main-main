@@ -3,6 +3,7 @@ from datetime import datetime
 from flask import Blueprint, request, jsonify, g
 
 from app.models import db, Escalation, ChatSession, Review, Customer, Message
+from services.services import generate_chat_summary
 
 escalations_bp = Blueprint("escalations", __name__)
 
@@ -55,7 +56,11 @@ def get_escalation(escalation_id):
     customer = Customer.query.get(session.customer_id) if session else None
 
     messages = [
-        {"sender": m.sender, "content": m.content, "created_at": m.created_at.isoformat()}
+        {
+            "sender": m.sender,
+            "content": m.content,
+            "created_at": m.created_at.isoformat()
+        }
         for m in sorted(session.messages, key=lambda m: m.created_at)
     ] if session else []
 
@@ -69,12 +74,108 @@ def get_escalation(escalation_id):
         "customer_account": customer.account_number if customer else None,
         "session_id": session.id if session else None,
         "complaint_type": session.complaint_type if session else None,
+        "chat_summary": session.chat_summary if session else None,
         "messages": messages,
         "review_text": review.review_text if review else None,
         "sentiment_label": review.sentiment_label if review else None,
         "sentiment_score": review.sentiment_score if review else None,
     }), 200
 
+
+@escalations_bp.route("/<int:escalation_id>/summarize", methods=["POST"])
+def summarize_escalation(escalation_id):
+    """Generate an AI summary of the full customer-agent conversation."""
+    esc = Escalation.query.get_or_404(escalation_id)
+
+    session = ChatSession.query.get_or_404(esc.session_id)
+
+    try:
+        summary = generate_chat_summary(session)
+
+        if not summary:
+            return jsonify({
+                "error": "AI summarizer returned an empty response."
+            }), 502
+
+        if summary == "No conversation messages are available to summarize.":
+            return jsonify({
+                "error": summary
+            }), 400
+
+        session.chat_summary = summary.strip()
+
+        db.session.commit()
+
+        return jsonify({
+            "ok": True,
+            "escalation_id": esc.id,
+            "session_id": session.id,
+            "summary": session.chat_summary
+        }), 200
+
+    except Exception as exc:
+        db.session.rollback()
+
+        print(f"AI summarizer error: {exc}")
+
+        return jsonify({
+            "error": "Unable to generate AI summary right now."
+        }), 500
+    prompt = f"""
+You are an ISP customer-support assistant helping a human support agent.
+
+Summarize the following customer support conversation.
+
+Give the human agent a concise and useful summary with exactly these sections:
+
+CUSTOMER ISSUE:
+What problem is the customer experiencing?
+
+CONVERSATION SUMMARY:
+Briefly describe what happened during the conversation.
+
+CUSTOMER CONCERN:
+What is the customer's main concern or frustration?
+
+CURRENT STATUS:
+Explain why the conversation was escalated and what state the case is currently in.
+
+RECOMMENDED ACTION:
+Suggest practical next steps for the human support agent.
+
+Do not invent facts.
+Only use information contained in the conversation.
+
+Conversation:
+{conversation}
+"""
+
+    try:
+        from services.services import ollama_chat
+
+        result = ollama_chat(prompt)
+
+        if not result:
+            return jsonify({
+                "error": "AI summarizer returned an empty response."
+            }), 502
+
+        session.chat_summary = result.strip()
+        db.session.commit()
+
+        return jsonify({
+            "ok": True,
+            "escalation_id": esc.id,
+            "session_id": session.id,
+            "summary": session.chat_summary
+        }), 200
+
+    except Exception as exc:
+        db.session.rollback()
+
+        return jsonify({
+            "error": f"Unable to generate AI summary: {str(exc)}"
+        }), 500
 
 @escalations_bp.route("/<int:escalation_id>/status", methods=["PATCH"])
 def update_status(escalation_id):

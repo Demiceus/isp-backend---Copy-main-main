@@ -28,22 +28,53 @@ def _fail(key):
 @auth_bp.route("/customer/login", methods=["POST"])
 def customer_login():
     d = request.get_json() or {}
+
+    email = (d.get("email") or "").strip().lower()
     acct = (d.get("account_number") or "").strip()
     pin = d.get("pin") or ""
-    key = "c:" + acct.lower()
+
+    # Primary login: email
+    # Reserve login: account number
+    if email:
+        key = "c:e:" + email
+        lookup = Customer.query.filter_by(email=email).first()
+        invalid_message = "Invalid email or PIN."
+    elif acct:
+        key = "c:a:" + acct.lower()
+        lookup = Customer.query.filter_by(account_number=acct).first()
+        invalid_message = "Invalid account number or PIN."
+    else:
+        return jsonify({"error": "Enter your email or account number and PIN."}), 400
+
     if _locked(key):
-        return jsonify({"error": "Too many failed attempts. Try again in a few minutes."}), 429
-    c = Customer.query.filter_by(account_number=acct).first()
+        return jsonify({
+            "error": "Too many failed attempts. Try again in a few minutes."
+        }), 429
+
+    c = lookup
+
     if not c or not c.pin_hash or not check_password_hash(c.pin_hash, pin):
         _fail(key)
-        return jsonify({"error": "Invalid account number or PIN."}), 401
-    if c.status == "pending":
-        return jsonify({"error": "Your account is awaiting approval by NetAssist."}), 403
-    if c.status != "active":
-        return jsonify({"error": "This account is disabled. Please contact NetAssist."}), 403
-    _fails.pop(key, None)
-    return jsonify({"token": make_token("customer", c.id), "account_number": c.account_number, "name": c.name}), 200
+        return jsonify({"error": invalid_message}), 401
 
+    if c.status == "pending":
+        return jsonify({
+            "error": "Your account is awaiting approval by NetAssist."
+        }), 403
+
+    if c.status != "active":
+        return jsonify({
+            "error": "This account is disabled. Please contact NetAssist."
+        }), 403
+
+    _fails.pop(key, None)
+
+    return jsonify({
+        "token": make_token("customer", c.id),
+        "account_number": c.account_number,
+        "name": c.name,
+        "email": c.email
+    }), 200
 
 @auth_bp.route("/customer/register", methods=["POST"])
 def customer_register():

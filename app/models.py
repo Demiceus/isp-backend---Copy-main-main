@@ -10,7 +10,7 @@ class Customer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     account_number = db.Column(db.String(50), unique=True, nullable=False)
     name = db.Column(db.String(120))
-    email = db.Column(db.String(120))
+    email = db.Column(db.String(120), unique=True, nullable=False)
     pin_hash = db.Column(db.String(255))
     status = db.Column(db.String(20), default="active", nullable=False)  # active | pending | disabled
     created_at = db.Column(db.DateTime, default=datetime.utcnow)

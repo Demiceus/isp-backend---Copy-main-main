@@ -1,18 +1,310 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer login — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg">
-<header class="pro-nav"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><div class="nav-actions"><a class="pbtn ghost" href="landing.html">Back to home</a></div></header>
-<main style="max-width:440px;margin:56px auto;padding:0 18px"><form id="login" class="glass" style="padding:30px" novalidate>
-<div class="eyebrow"><span class="dot"></span> Customer portal</div><h1 style="font-size:26px;margin:10px 0 6px">Log in to your account</h1>
-<p style="font-size:13.5px;color:#667085;line-height:1.6">Log in with your NetAssist account number and PIN to contact support and leave feedback.</p>
-<label style="display:block;margin-top:22px;font-size:12px;font-weight:750">Account number<input id="acc" class="pinput" placeholder="e.g. ISP-10023" autocomplete="username" required></label>
-<label style="display:block;margin-top:14px;font-size:12px;font-weight:750">PIN / password<input id="pin" type="password" class="pinput" autocomplete="current-password" required></label><div id="err" class="form-error" role="alert"></div>
-<button id="go" type="submit" class="pbtn primary" style="width:100%;margin-top:8px">Log in</button><p style="font-size:12.5px;color:#667085;margin-top:16px;text-align:center">No account yet? <a href="customer-register.html" style="color:#2563eb;font-weight:750">Request one</a></p></form></main>
-<script src="js/api.js"></script><script>
-const c0=JSON.parse(localStorage.getItem('netassist_customer')||'null');if(c0&&c0.token)location.href='customer-portal.html';
-document.getElementById('login').addEventListener('submit',async e=>{e.preventDefault();
- const a=document.getElementById('acc').value.trim(),p=document.getElementById('pin').value,err=document.getElementById('err'),b=document.getElementById('go');
- if(!a||!p){err.textContent='Enter your account number and PIN.';return}
- err.textContent='';b.disabled=true;b.innerHTML='<span class="spin"></span>Logging in…';
- const r=await NetAssistAPI.customerLogin(a,p);
- if(!r.ok){err.textContent=r.error;b.disabled=false;b.textContent='Log in';return}
- localStorage.setItem('netassist_customer',JSON.stringify({account:r.data.account_number,name:r.data.name,token:r.data.token}));location.href='customer-portal.html'});
-</script></body></html>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Customer login — NetAssist AI</title>
+  <link rel="stylesheet" href="css/pro.css">
+</head>
+
+<body class="pro-bg">
+
+<header class="pro-nav">
+  <a class="logo" href="landing.html">
+    <div class="logo-mark">N</div>
+    NetAssist <span>AI</span>
+  </a>
+
+  <div class="nav-actions">
+    <a class="pbtn ghost" href="landing.html">Back to home</a>
+  </div>
+</header>
+
+<main style="max-width:440px;margin:56px auto;padding:0 18px">
+
+  <form id="login" class="glass" style="padding:30px" novalidate>
+
+```
+<div class="eyebrow">
+  <span class="dot"></span>
+  Customer portal
+</div>
+
+<h1 style="font-size:26px;margin:10px 0 6px">
+  Log in to your account
+</h1>
+
+<p id="loginDescription"
+   style="font-size:13.5px;color:#667085;line-height:1.6">
+  Log in with your email and PIN / password to contact support and leave feedback.
+</p>
+
+<!-- Email login -->
+<div id="emailLogin">
+
+  <label style="display:block;margin-top:22px;font-size:12px;font-weight:750">
+    Email
+
+    <input
+      id="email"
+      type="email"
+      class="pinput"
+      placeholder="you@example.com"
+      autocomplete="username"
+      required
+    >
+  </label>
+
+</div>
+
+<!-- Account number login -->
+<div id="accountLogin" style="display:none">
+
+  <label style="display:block;margin-top:22px;font-size:12px;font-weight:750">
+    Account number
+
+    <input
+      id="acc"
+      class="pinput"
+      placeholder="e.g. ISP-10023"
+      autocomplete="username"
+    >
+  </label>
+
+</div>
+
+<label style="display:block;margin-top:14px;font-size:12px;font-weight:750">
+  PIN / password
+
+  <input
+    id="pin"
+    type="password"
+    class="pinput"
+    autocomplete="current-password"
+    required
+  >
+</label>
+
+<div
+  id="err"
+  class="form-error"
+  role="alert"
+  aria-live="polite"
+></div>
+
+<button
+  id="go"
+  type="submit"
+  class="pbtn primary"
+  style="width:100%;margin-top:8px"
+>
+  Log in
+</button>
+
+<div style="text-align:center;margin-top:18px">
+
+  <button
+    id="switchLogin"
+    type="button"
+    style="
+      border:0;
+      background:none;
+      padding:0;
+      color:#2563eb;
+      font-size:12.5px;
+      font-weight:750;
+      cursor:pointer;
+    "
+  >
+    Having trouble? Log in with account number
+  </button>
+
+</div>
+
+<p style="
+  font-size:12.5px;
+  color:#667085;
+  margin-top:18px;
+  text-align:center
+">
+  No account yet?
+  <a
+    href="customer-register.html"
+    style="color:#2563eb;font-weight:750"
+  >
+    Request one
+  </a>
+</p>
+```
+
+  </form>
+
+</main>
+
+<script src="js/api.js"></script>
+
+<script>
+const existingCustomer = JSON.parse(
+  localStorage.getItem("netassist_customer") || "null"
+);
+
+if (existingCustomer && existingCustomer.token) {
+  location.href = "customer-portal.html";
+}
+
+const form = document.getElementById("login");
+const emailLogin = document.getElementById("emailLogin");
+const accountLogin = document.getElementById("accountLogin");
+
+const emailInput = document.getElementById("email");
+const accountInput = document.getElementById("acc");
+const pinInput = document.getElementById("pin");
+
+const errorBox = document.getElementById("err");
+const loginButton = document.getElementById("go");
+const switchLoginButton = document.getElementById("switchLogin");
+const description = document.getElementById("loginDescription");
+
+let loginType = "email";
+
+/*
+ * Switch between:
+ * 1. Email + PIN/password (primary)
+ * 2. Account number + PIN/password (reserve)
+ */
+switchLoginButton.addEventListener("click", () => {
+  errorBox.textContent = "";
+
+  if (loginType === "email") {
+    loginType = "account";
+
+    emailLogin.style.display = "none";
+    accountLogin.style.display = "block";
+
+    emailInput.required = false;
+    accountInput.required = true;
+
+    description.textContent =
+      "Use your NetAssist account number and PIN / password as an alternative login method.";
+
+    switchLoginButton.textContent =
+      "← Log in with email instead";
+
+    accountInput.focus();
+
+  } else {
+    loginType = "email";
+
+    emailLogin.style.display = "block";
+    accountLogin.style.display = "none";
+
+    emailInput.required = true;
+    accountInput.required = false;
+
+    description.textContent =
+      "Log in with your email and PIN / password to contact support and leave feedback.";
+
+    switchLoginButton.textContent =
+      "Having trouble? Log in with account number";
+
+    emailInput.focus();
+  }
+});
+
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = emailInput.value.trim().toLowerCase();
+  const accountNumber = accountInput.value.trim();
+  const pin = pinInput.value;
+
+  errorBox.textContent = "";
+
+  /*
+   * Validate the selected login method.
+   */
+  if (loginType === "email" && !email) {
+    errorBox.textContent = "Enter your email address.";
+    emailInput.focus();
+    return;
+  }
+
+  if (loginType === "email" && !email.includes("@")) {
+    errorBox.textContent = "Enter a valid email address.";
+    emailInput.focus();
+    return;
+  }
+
+  if (loginType === "account" && !accountNumber) {
+    errorBox.textContent = "Enter your account number.";
+    accountInput.focus();
+    return;
+  }
+
+  if (!pin) {
+    errorBox.textContent = "Enter your PIN / password.";
+    pinInput.focus();
+    return;
+  }
+
+  /*
+   * Prevent duplicate submissions.
+   */
+  loginButton.disabled = true;
+  loginButton.innerHTML = '<span class="spin"></span>Logging in…';
+
+  let result;
+
+  if (loginType === "email") {
+    result = await NetAssistAPI.customerLogin(
+      email,
+      pin,
+      "email"
+    );
+  } else {
+    result = await NetAssistAPI.customerLogin(
+      accountNumber,
+      pin,
+      "account"
+    );
+  }
+
+  /*
+   * Login failed.
+   */
+  if (!result.ok) {
+    errorBox.textContent =
+      result.error || "Unable to log in. Please check your credentials.";
+
+    loginButton.disabled = false;
+    loginButton.textContent = "Log in";
+    return;
+  }
+
+  /*
+   * Successful login.
+   *
+   * The backend returns the customer's account number even
+   * when they logged in using their email. This means the
+   * rest of the customer portal can continue using the
+   * account number internally without asking the customer
+   * for it.
+   */
+  localStorage.setItem(
+    "netassist_customer",
+    JSON.stringify({
+      account: result.data.account_number,
+      name: result.data.name,
+      email: result.data.email || email,
+      token: result.data.token
+    })
+  );
+
+  location.href = "customer-portal.html";
+});
+</script>
+
+</body>
+</html>
