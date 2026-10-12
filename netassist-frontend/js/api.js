@@ -103,6 +103,16 @@ const NetAssistAPI = {
       body: JSON.stringify({ status }),
     }),
   getAdminStats: () => apiRequest("/api/admin/stats"),
+  getMLFeedback: () =>
+    apiRequest("/api/admin/ml/feedback"),
+
+  reviewMLFeedback: (id, correctedCategory) =>
+    apiRequest(`/api/admin/ml/feedback/${id}`, {
+      method: "POST",
+      body: JSON.stringify({
+        corrected_category: correctedCategory,
+      }),
+    }),
   askAdminAI: (question) =>
     apiRequest("/api/admin/ai", { method: "POST", body: JSON.stringify({ question }) }),
   previewBatch: (filters) =>

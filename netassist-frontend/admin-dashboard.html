@@ -1,6 +1,1418 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NetAssist AI — Operations Dashboard</title><link rel="stylesheet" href="css/pro.css"></head><body class="admin-bg"><div class="admin-shell"><aside class="admin-side"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><nav class="admin-nav" aria-label="Admin"><a href="admin-dashboard.html" class="active" aria-current="page">Overview</a><a href="admin-escalations.html">Escalation queue</a><a href="admin-issues.html">Customers by issue</a><a href="admin-customers.html">Customer accounts</a><a href="admin-assistant.html">AI assistant</a></nav><div class="side-foot"><button id="logout" class="pbtn ghost" style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)">Log out</button></div></aside><main class="admin-main"><header class="admin-top"><div><div style="font-size:11px;color:#718096;font-weight:750">OPERATIONS</div><h1 style="font-size:21px;margin-top:3px">Service intelligence</h1></div><div id="admin-name" style="font-size:13px;font-weight:750;color:#475569"></div></header><div class="admin-content"><div class="admin-grid"><section class="a-card kpi"><div class="a-label">Total conversations</div><div id="total" class="a-number" style="">—</div><div class="delta">All chat sessions</div></section><section class="a-card kpi"><div class="a-label">Open escalations</div><div id="open" class="a-number" style="color:#c2410c">—</div><div class="delta">Need agent attention</div></section><section class="a-card kpi"><div class="a-label">Resolved conversations</div><div id="resolved" class="a-number" style="color:#15803d">—</div><div class="delta">Customer-confirmed</div></section><section class="a-card kpi"><div class="a-label">Unresolved conversations</div><div id="active" class="a-number" style="">—</div><div class="delta">Awaiting resolution</div></section><section class="a-card kpi"><div class="a-label">Total reviews</div><div id="reviews" class="a-number" style="">—</div><div class="delta">Submitted feedback</div></section><section class="a-card kpi"><div class="a-label">Negative reviews</div><div id="negative" class="a-number" style="color:#b91c1c">—</div><div class="delta">ML sentiment signal</div></section><section class="a-card wide"><div class="a-label">7-day operational trend</div><div id="trend" class="chart"></div><div id="trend-axis" class="axis"></div></section><section class="a-card side"><div class="a-label">Sentiment mix</div><div id="donut" class="donut"></div><div id="legend"></div></section><section class="a-card wide"><div class="a-label">Complaint categories</div><div id="categories" style="margin-top:16px"></div></section><section class="a-card side"><div class="a-label">Escalation queue</div><div id="queue" style="margin-top:8px"></div></section><section class="a-card full"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px"><div><div class="a-label">Recent escalations</div><h2 style="font-size:18px;margin-top:3px">Cases requiring attention</h2></div><a class="pbtn primary" href="admin-escalations.html">Open queue</a></div><div style="overflow:auto"><table class="admin-table"><thead><tr><th>Case</th><th>Account</th><th>Issue</th><th>Sentiment</th><th>Status</th></tr></thead><tbody id="recent"></tbody></table></div></section></div></div></main></div><script src="js/api.js"></script><script src="js/app.js"></script><script>
-initAdmin();
-const LAB={open:'Open',in_progress:'In progress',closed:'Closed'},TC=t=>t==='closed'?'green':t==='in_progress'?'':'red';function num(v){return v==null?'—':v.toLocaleString()}function esc(s){return (s??'').toString().replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
-(async()=>{const [a,e]=await Promise.all([NetAssistAPI.getAdminAnalytics(),NetAssistAPI.getEscalations('all')]);if(a.ok){const d=a.data.data||a.data;const sn=d.sentiment||{};document.getElementById('total').textContent=num(d.total_sessions);document.getElementById('resolved').textContent=num(d.resolved_complaints);document.getElementById('reviews').textContent=num(d.total_reviews);document.getElementById('active').textContent=num(d.unresolved_complaints);document.getElementById('open').textContent=num(d.open_escalations);document.getElementById('negative').textContent=num(sn.negative);const sent=d.sentiment||{};const total=(sent.positive||0)+(sent.neutral||0)+(sent.negative||0)||1;document.getElementById('donut').style.background=`conic-gradient(#16a34a 0 ${(sent.positive||0)/total*100}%,#94a3b8 ${(sent.positive||0)/total*100}% ${((sent.positive||0)+(sent.neutral||0))/total*100}%,#dc2626 ${((sent.positive||0)+(sent.neutral||0))/total*100}% 100%)`;document.getElementById('legend').innerHTML=[['Positive',sent.positive||0,'positive'],['Neutral',sent.neutral||0,'neutral'],['Negative',sent.negative||0,'negative']].map(x=>`<div class="mini-row"><span>${x[0]}</span><b class="badge ${x[2]}">${x[1]}</b></div>`).join('');const cats=d.categories||{};const vals=Object.entries(cats).sort((x,y)=>y[1]-x[1]).slice(0,8);const mx=Math.max(...vals.map(x=>x[1]),1);document.getElementById('categories').innerHTML=vals.length?vals.map(x=>`<div style="display:grid;grid-template-columns:150px 1fr 45px;gap:10px;align-items:center;margin:10px 0;font-size:12px"><span>${esc(x[0].replaceAll('_',' '))}</span><div style="height:9px;background:#edf2f7;border-radius:99px;overflow:hidden"><div style="height:100%;width:${x[1]/mx*100}%;background:linear-gradient(90deg,#06b6d4,#2563eb);border-radius:99px"></div></div><b>${x[1]}</b></div>`).join(''):'<div style="color:#94a3b8;font-size:12px">No categorized sessions yet.</div>';const tr=d.daily||[];const max=Math.max(...tr.map(x=>x.total),1);document.getElementById('trend').innerHTML=tr.map(x=>`<div class="bar" style="height:${Math.max(8,x.total/max*100)}%"><span>${x.total}</span></div>`).join('');document.getElementById('trend-axis').innerHTML=tr.map(x=>`<span>${esc(x.day)}</span>`).join('')}else{document.getElementById('trend').innerHTML='<div class="alert error" role="alert" style="width:100%">'+esc(a.error)+'</div>'}
-if(e.ok){const items=Array.isArray(e.data)?e.data:(e.data.escalations||[]);document.getElementById('queue').innerHTML=items.slice(0,4).map(x=>`<div class="queue-item"><div><div class="queue-title">Case #${x.escalation_id}</div><div class="queue-meta">${esc(x.customer_account||'Unknown')} · ${esc(x.complaint_type||'Unclassified')}</div></div><span class="tag ${TC(x.status)}">${LAB[x.status]||esc(x.status||'Open')}</span></div>`).join('')||'<div style="color:#94a3b8;font-size:12px">Queue is clear.</div>';document.getElementById('recent').innerHTML=items.slice(0,8).map(x=>`<tr><td>#${x.escalation_id}</td><td>${esc(x.customer_account||'—')}</td><td>${esc((x.complaint_type||'—').replaceAll('_',' '))}</td><td>${x.sentiment_label?`<span class="badge ${esc(x.sentiment_label)}">${esc(x.sentiment_label)}</span>`:'—'}</td><td><span class="tag ${TC(x.status)}">${LAB[x.status]||esc(x.status||'Open')}</span></td></tr>`).join('')||'<tr><td colspan="5" style="text-align:center;color:#94a3b8">No escalations found.</td></tr>'}})();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NetAssist AI — Operations Dashboard</title>
+
+  <link rel="stylesheet" href="css/pro.css">
+</head>
+
+<body class="admin-bg">
+
+  <div class="admin-shell">
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+    <aside class="admin-side">
+
+      <a class="logo" href="landing.html">
+        <div class="logo-mark">N</div>
+        NetAssist <span>AI</span>
+      </a>
+
+      <nav class="admin-nav" aria-label="Admin">
+
+        <a
+          href="admin-dashboard.html"
+          class="active"
+          aria-current="page"
+        >
+          Overview
+        </a>
+
+        <a href="admin-escalations.html">
+          Escalation queue
+        </a>
+
+        <a href="admin-issues.html">
+          Customers by issue
+        </a>
+
+        <a href="admin-customers.html">
+          Customer accounts
+        </a>
+
+        <a href="admin-assistant.html">
+          AI assistant
+        </a>
+
+      </nav>
+
+      <div class="side-foot">
+
+        <button
+          id="logout"
+          class="pbtn ghost"
+          style="
+            width:100%;
+            background:rgba(255,255,255,.06);
+            color:#dbe7ff;
+            border-color:rgba(255,255,255,.1);
+          "
+        >
+          Log out
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+    <main class="admin-main">
+
+      <!-- =======================================================
+           TOP HEADER
+      ======================================================== -->
+      <header class="admin-top">
+
+        <div>
+          <div
+            style="
+              font-size:11px;
+              color:#718096;
+              font-weight:750;
+            "
+          >
+            OPERATIONS
+          </div>
+
+          <h1 style="font-size:21px;margin-top:3px">
+            Service intelligence
+          </h1>
+        </div>
+
+        <div
+          id="admin-name"
+          style="
+            font-size:13px;
+            font-weight:750;
+            color:#475569;
+          "
+        ></div>
+
+      </header>
+
+
+      <!-- =======================================================
+           DASHBOARD CONTENT
+      ======================================================== -->
+      <div class="admin-content">
+
+        <div class="admin-grid">
+
+
+          <!-- ===================================================
+               KPI CARDS
+          ==================================================== -->
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Total conversations
+            </div>
+
+            <div id="total" class="a-number">
+              —
+            </div>
+
+            <div class="delta">
+              All chat sessions
+            </div>
+          </section>
+
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Open escalations
+            </div>
+
+            <div
+              id="open"
+              class="a-number"
+              style="color:#c2410c"
+            >
+              —
+            </div>
+
+            <div class="delta">
+              Need agent attention
+            </div>
+          </section>
+
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Resolved conversations
+            </div>
+
+            <div
+              id="resolved"
+              class="a-number"
+              style="color:#15803d"
+            >
+              —
+            </div>
+
+            <div class="delta">
+              Customer-confirmed
+            </div>
+          </section>
+
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Unresolved conversations
+            </div>
+
+            <div id="active" class="a-number">
+              —
+            </div>
+
+            <div class="delta">
+              Awaiting resolution
+            </div>
+          </section>
+
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Total reviews
+            </div>
+
+            <div id="reviews" class="a-number">
+              —
+            </div>
+
+            <div class="delta">
+              Submitted feedback
+            </div>
+          </section>
+
+
+          <section class="a-card kpi">
+            <div class="a-label">
+              Negative reviews
+            </div>
+
+            <div
+              id="negative"
+              class="a-number"
+              style="color:#b91c1c"
+            >
+              —
+            </div>
+
+            <div class="delta">
+              ML sentiment signal
+            </div>
+          </section>
+
+
+          <!-- ===================================================
+               7-DAY TREND
+          ==================================================== -->
+
+          <section class="a-card wide">
+
+            <div class="a-label">
+              7-day operational trend
+            </div>
+
+            <div
+              id="trend"
+              class="chart"
+            ></div>
+
+            <div
+              id="trend-axis"
+              class="axis"
+            ></div>
+
+          </section>
+
+
+          <!-- ===================================================
+               SENTIMENT
+          ==================================================== -->
+
+          <section class="a-card side">
+
+            <div class="a-label">
+              Sentiment mix
+            </div>
+
+            <div
+              id="donut"
+              class="donut"
+            ></div>
+
+            <div id="legend"></div>
+
+          </section>
+
+
+          <!-- ===================================================
+               COMPLAINT CATEGORIES
+          ==================================================== -->
+
+          <section class="a-card wide">
+
+            <div class="a-label">
+              Complaint categories
+            </div>
+
+            <div
+              id="categories"
+              style="margin-top:16px"
+            ></div>
+
+          </section>
+
+
+          <!-- ===================================================
+               ESCALATION QUEUE
+          ==================================================== -->
+
+          <section class="a-card side">
+
+            <div class="a-label">
+              Escalation queue
+            </div>
+
+            <div
+              id="queue"
+              style="margin-top:8px"
+            ></div>
+
+          </section>
+
+
+          <!-- ===================================================
+               RECENT ESCALATIONS
+          ==================================================== -->
+
+          <section class="a-card full">
+
+            <div
+              style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:15px;
+              "
+            >
+
+              <div>
+
+                <div class="a-label">
+                  Recent escalations
+                </div>
+
+                <h2
+                  style="
+                    font-size:18px;
+                    margin-top:3px;
+                  "
+                >
+                  Cases requiring attention
+                </h2>
+
+              </div>
+
+              <a
+                class="pbtn primary"
+                href="admin-escalations.html"
+              >
+                Open queue
+              </a>
+
+            </div>
+
+
+            <div style="overflow:auto">
+
+              <table class="admin-table">
+
+                <thead>
+                  <tr>
+                    <th>Case</th>
+                    <th>Account</th>
+                    <th>Issue</th>
+                    <th>Sentiment</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+
+                <tbody id="recent"></tbody>
+
+              </table>
+
+            </div>
+
+          </section>
+
+
+          <!-- ===================================================
+               ML FEEDBACK REVIEW
+          ==================================================== -->
+
+          <section class="a-card full">
+
+            <div
+              style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:15px;
+              "
+            >
+
+              <div>
+
+                <div class="a-label">
+                  MACHINE LEARNING
+                </div>
+
+                <h2
+                  style="
+                    font-size:18px;
+                    margin-top:3px;
+                  "
+                >
+                  ML Feedback Review
+                </h2>
+
+                <div
+                  style="
+                    font-size:12px;
+                    color:#718096;
+                    margin-top:5px;
+                  "
+                >
+                  Review incorrect complaint classifications
+                  and provide the corrected category.
+                </div>
+
+              </div>
+
+
+              <button
+                id="refresh-ml-feedback"
+                class="pbtn ghost"
+                type="button"
+              >
+                Refresh
+              </button>
+
+            </div>
+
+
+            <!-- Status message -->
+            <div
+              id="ml-feedback-status"
+              style="margin-bottom:12px"
+            ></div>
+
+
+            <!-- Feedback table -->
+            <div style="overflow:auto">
+
+              <table class="admin-table">
+
+                <thead>
+
+                  <tr>
+                    <th>Feedback</th>
+                    <th>Customer message</th>
+                    <th>AI prediction</th>
+                    <th>Confidence</th>
+                    <th>Correct category</th>
+                    <th>Action</th>
+                  </tr>
+
+                </thead>
+
+
+                <tbody id="ml-feedback-body">
+
+                  <tr>
+
+                    <td
+                      colspan="6"
+                      style="
+                        text-align:center;
+                        color:#94a3b8;
+                        padding:20px;
+                      "
+                    >
+                      Loading ML feedback...
+
+                    </td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </section>
+
+
+        </div>
+        <!-- /.admin-grid -->
+
+      </div>
+      <!-- /.admin-content -->
+
+    </main>
+    <!-- /.admin-main -->
+
+  </div>
+  <!-- /.admin-shell -->
+
+
+  <!-- =========================================================
+       JAVASCRIPT FILES
+  ========================================================== -->
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+
+
+  <!-- =========================================================
+       DASHBOARD JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    /*
+     * ---------------------------------------------------------
+     * ADMIN INITIALIZATION
+     * ---------------------------------------------------------
+     */
+
+    initAdmin();
+
+
+    /*
+     * ---------------------------------------------------------
+     * HELPERS
+     * ---------------------------------------------------------
+     */
+
+    const LAB = {
+      open: "Open",
+      in_progress: "In progress",
+      closed: "Closed"
+    };
+
+
+    function escalationTagClass(status) {
+
+      if (status === "closed") {
+        return "green";
+      }
+
+      if (status === "in_progress") {
+        return "";
+      }
+
+      return "red";
+    }
+
+
+    function num(value) {
+
+      if (value == null) {
+        return "—";
+      }
+
+      return Number(value).toLocaleString();
+    }
+
+
+    function esc(value) {
+
+      return (value ?? "")
+        .toString()
+        .replace(
+          /[&<>]/g,
+          character => ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;"
+          })[character]
+        );
+
+    }
+
+
+    function formatCategory(category) {
+
+      return (category || "—")
+        .replaceAll("_", " ");
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * MAIN DASHBOARD DATA
+     * ---------------------------------------------------------
+     */
+
+    async function loadDashboard() {
+
+      const [
+        analyticsResult,
+        escalationsResult
+      ] = await Promise.all([
+        NetAssistAPI.getAdminAnalytics(),
+        NetAssistAPI.getEscalations("all")
+      ]);
+
+
+      /*
+       * -------------------------------------------------------
+       * ANALYTICS
+       * -------------------------------------------------------
+       */
+
+      if (analyticsResult.ok) {
+
+        const data =
+          analyticsResult.data.data ||
+          analyticsResult.data;
+
+
+        const sentiment =
+          data.sentiment || {};
+
+
+        document.getElementById("total").textContent =
+          num(data.total_sessions);
+
+
+        document.getElementById("resolved").textContent =
+          num(data.resolved_complaints);
+
+
+        document.getElementById("reviews").textContent =
+          num(data.total_reviews);
+
+
+        document.getElementById("active").textContent =
+          num(data.unresolved_complaints);
+
+
+        document.getElementById("open").textContent =
+          num(data.open_escalations);
+
+
+        document.getElementById("negative").textContent =
+          num(sentiment.negative);
+
+
+        /*
+         * SENTIMENT DONUT
+         */
+
+        const sentimentTotal =
+          (sentiment.positive || 0) +
+          (sentiment.neutral || 0) +
+          (sentiment.negative || 0) ||
+          1;
+
+
+        const positivePercent =
+          (sentiment.positive || 0) /
+          sentimentTotal *
+          100;
+
+
+        const neutralPercent =
+          (
+            (sentiment.positive || 0) +
+            (sentiment.neutral || 0)
+          ) /
+          sentimentTotal *
+          100;
+
+
+        document.getElementById("donut").style.background =
+          `conic-gradient(
+            #16a34a 0 ${positivePercent}%,
+            #94a3b8 ${positivePercent}% ${neutralPercent}%,
+            #dc2626 ${neutralPercent}% 100%
+          )`;
+
+
+        document.getElementById("legend").innerHTML = [
+
+          [
+            "Positive",
+            sentiment.positive || 0,
+            "positive"
+          ],
+
+          [
+            "Neutral",
+            sentiment.neutral || 0,
+            "neutral"
+          ],
+
+          [
+            "Negative",
+            sentiment.negative || 0,
+            "negative"
+          ]
+
+        ].map(item => `
+
+          <div class="mini-row">
+
+            <span>
+              ${item[0]}
+            </span>
+
+            <b class="badge ${item[2]}">
+              ${item[1]}
+            </b>
+
+          </div>
+
+        `).join("");
+
+
+        /*
+         * COMPLAINT CATEGORIES
+         */
+
+        const categories =
+          data.categories || {};
+
+
+        const categoryValues =
+          Object
+            .entries(categories)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 8);
+
+
+        const maxCategory =
+          Math.max(
+            ...categoryValues.map(item => item[1]),
+            1
+          );
+
+
+        document.getElementById("categories").innerHTML =
+          categoryValues.length
+
+            ? categoryValues.map(item => `
+
+                <div
+                  style="
+                    display:grid;
+                    grid-template-columns:150px 1fr 45px;
+                    gap:10px;
+                    align-items:center;
+                    margin:10px 0;
+                    font-size:12px;
+                  "
+                >
+
+                  <span>
+                    ${esc(formatCategory(item[0]))}
+                  </span>
+
+                  <div
+                    style="
+                      height:9px;
+                      background:#edf2f7;
+                      border-radius:99px;
+                      overflow:hidden;
+                    "
+                  >
+
+                    <div
+                      style="
+                        height:100%;
+                        width:${item[1] / maxCategory * 100}%;
+                        background:linear-gradient(
+                          90deg,
+                          #06b6d4,
+                          #2563eb
+                        );
+                        border-radius:99px;
+                      "
+                    ></div>
+
+                  </div>
+
+                  <b>
+                    ${item[1]}
+                  </b>
+
+                </div>
+
+              `).join("")
+
+            : `
+                <div
+                  style="
+                    color:#94a3b8;
+                    font-size:12px;
+                  "
+                >
+                  No categorized sessions yet.
+                </div>
+              `;
+
+
+        /*
+         * 7-DAY TREND
+         */
+
+        const trend =
+          data.daily || [];
+
+
+        const maxTrend =
+          Math.max(
+            ...trend.map(item => item.total),
+            1
+          );
+
+
+        document.getElementById("trend").innerHTML =
+          trend.map(item => `
+
+            <div
+              class="bar"
+              style="
+                height:${Math.max(
+                  8,
+                  item.total / maxTrend * 100
+                )}%;
+              "
+            >
+              <span>
+                ${item.total}
+              </span>
+            </div>
+
+          `).join("");
+
+
+        document.getElementById("trend-axis").innerHTML =
+          trend.map(item => `
+
+            <span>
+              ${esc(item.day)}
+            </span>
+
+          `).join("");
+
+
+      } else {
+
+        document.getElementById("trend").innerHTML = `
+
+          <div
+            class="alert error"
+            role="alert"
+            style="width:100%"
+          >
+            ${esc(analyticsResult.error)}
+          </div>
+
+        `;
+
+      }
+
+
+      /*
+       * -------------------------------------------------------
+       * ESCALATIONS
+       * -------------------------------------------------------
+       */
+
+      if (escalationsResult.ok) {
+
+        const items =
+          Array.isArray(escalationsResult.data)
+            ? escalationsResult.data
+            : (
+                escalationsResult.data.escalations ||
+                []
+              );
+
+
+        /*
+         * QUEUE
+         */
+
+        document.getElementById("queue").innerHTML =
+          items
+            .slice(0, 4)
+            .map(item => `
+
+              <div class="queue-item">
+
+                <div>
+
+                  <div class="queue-title">
+                    Case #${item.escalation_id}
+                  </div>
+
+                  <div class="queue-meta">
+                    ${esc(item.customer_account || "Unknown")}
+                    ·
+                    ${esc(item.complaint_type || "Unclassified")}
+                  </div>
+
+                </div>
+
+                <span
+                  class="tag ${escalationTagClass(item.status)}"
+                >
+                  ${
+                    LAB[item.status] ||
+                    esc(item.status || "Open")
+                  }
+                </span>
+
+              </div>
+
+            `)
+            .join("")
+
+          || `
+              <div
+                style="
+                  color:#94a3b8;
+                  font-size:12px;
+                "
+              >
+                Queue is clear.
+              </div>
+            `;
+
+
+        /*
+         * RECENT ESCALATIONS TABLE
+         */
+
+        document.getElementById("recent").innerHTML =
+          items
+            .slice(0, 8)
+            .map(item => `
+
+              <tr>
+
+                <td>
+                  #${item.escalation_id}
+                </td>
+
+                <td>
+                  ${esc(item.customer_account || "—")}
+                </td>
+
+                <td>
+                  ${esc(
+                    formatCategory(
+                      item.complaint_type || "—"
+                    )
+                  )}
+                </td>
+
+                <td>
+
+                  ${
+                    item.sentiment_label
+
+                      ? `
+                          <span
+                            class="badge ${esc(
+                              item.sentiment_label
+                            )}"
+                          >
+                            ${esc(item.sentiment_label)}
+                          </span>
+                        `
+
+                      : "—"
+                  }
+
+                </td>
+
+                <td>
+
+                  <span
+                    class="tag ${escalationTagClass(
+                      item.status
+                    )}"
+                  >
+                    ${
+                      LAB[item.status] ||
+                      esc(item.status || "Open")
+                    }
+                  </span>
+
+                </td>
+
+              </tr>
+
+            `)
+            .join("")
+
+          || `
+              <tr>
+
+                <td
+                  colspan="5"
+                  style="
+                    text-align:center;
+                    color:#94a3b8;
+                  "
+                >
+                  No escalations found.
+                </td>
+
+              </tr>
+            `;
+
+      }
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * ML FEEDBACK
+     * ---------------------------------------------------------
+     */
+
+    async function loadMLFeedback() {
+
+      const body =
+        document.getElementById(
+          "ml-feedback-body"
+        );
+
+
+      const status =
+        document.getElementById(
+          "ml-feedback-status"
+        );
+
+
+      body.innerHTML = `
+
+        <tr>
+
+          <td
+            colspan="6"
+            style="
+              text-align:center;
+              color:#94a3b8;
+              padding:20px;
+            "
+          >
+            Loading ML feedback...
+          </td>
+
+        </tr>
+
+      `;
+
+
+      status.innerHTML = "";
+
+
+      /*
+       * Use the existing apiRequest() from api.js.
+       * This means we do NOT need to modify api.js.
+       */
+
+      const result =
+        await apiRequest(
+          "/api/admin/ml/feedback"
+        );
+
+
+      if (!result.ok) {
+
+        body.innerHTML = `
+
+          <tr>
+
+            <td colspan="6">
+
+              <div
+                class="alert error"
+                role="alert"
+              >
+                ${esc(result.error)}
+              </div>
+
+            </td>
+
+          </tr>
+
+        `;
+
+        return;
+      }
+
+
+      const feedback =
+        result.data.data || [];
+
+
+      if (!feedback.length) {
+
+        body.innerHTML = `
+
+          <tr>
+
+            <td
+              colspan="6"
+              style="
+                text-align:center;
+                color:#94a3b8;
+                padding:20px;
+              "
+            >
+              No pending ML feedback.
+            </td>
+
+          </tr>
+
+        `;
+
+        return;
+      }
+
+
+      body.innerHTML =
+        feedback.map(row => `
+
+          <tr>
+
+            <!-- Feedback ID -->
+            <td>
+              #${row.id}
+            </td>
+
+
+            <!-- Customer message -->
+            <td
+              style="
+                min-width:280px;
+                max-width:420px;
+              "
+            >
+              ${esc(row.message || "—")}
+            </td>
+
+
+            <!-- AI prediction -->
+            <td>
+
+              <span class="tag">
+                ${esc(
+                  formatCategory(
+                    row.predicted_category
+                  )
+                )}
+              </span>
+
+            </td>
+
+
+            <!-- Confidence -->
+            <td>
+
+              ${(
+                Number(row.confidence || 0) * 100
+              ).toFixed(2)}%
+
+            </td>
+
+
+            <!-- Correct category -->
+            <td>
+
+              <select
+                id="ml-category-${row.id}"
+                style="
+                  padding:8px 10px;
+                  border:1px solid #cbd5e1;
+                  border-radius:6px;
+                  min-width:190px;
+                  background:#fff;
+                "
+              >
+
+                <option value="">
+                  Select category
+                </option>
+
+                <option value="billing">
+                  Billing
+                </option>
+
+                <option value="installation">
+                  Installation
+                </option>
+
+                <option value="intermittent_connection">
+                  Intermittent connection
+                </option>
+
+                <option value="no_internet">
+                  No internet
+                </option>
+
+                <option value="plan_change">
+                  Plan change
+                </option>
+
+                <option value="router_modem">
+                  Router / modem
+                </option>
+
+                <option value="service_outage">
+                  Service outage
+                </option>
+
+                <option value="slow_internet">
+                  Slow internet
+                </option>
+
+                <option value="technical_support">
+                  Technical support
+                </option>
+
+              </select>
+
+            </td>
+
+
+            <!-- Approve -->
+            <td>
+
+              <button
+                type="button"
+                class="pbtn primary ml-approve-btn"
+                data-feedback-id="${row.id}"
+              >
+                Approve
+              </button>
+
+            </td>
+
+          </tr>
+
+        `).join("");
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * APPROVE ML FEEDBACK
+     * ---------------------------------------------------------
+     */
+
+    async function approveMLFeedback(feedbackId) {
+
+      const select =
+        document.getElementById(
+          `ml-category-${feedbackId}`
+        );
+
+
+      if (!select || !select.value) {
+
+        alert(
+          "Please select the corrected category first."
+        );
+
+        return;
+      }
+
+
+      const correctedCategory =
+        select.value;
+
+
+      const button =
+        document.querySelector(
+          `.ml-approve-btn[data-feedback-id="${feedbackId}"]`
+        );
+
+
+      if (button) {
+
+        button.disabled = true;
+        button.textContent = "Saving...";
+
+      }
+
+
+      const result =
+        await apiRequest(
+          `/api/admin/ml/feedback/${feedbackId}`,
+          {
+            method: "POST",
+
+            body: JSON.stringify({
+              corrected_category:
+                correctedCategory
+            })
+          }
+        );
+
+
+      if (!result.ok) {
+
+        alert(
+          result.error ||
+          "Failed to approve ML feedback."
+        );
+
+
+        if (button) {
+
+          button.disabled = false;
+          button.textContent = "Approve";
+
+        }
+
+        return;
+      }
+
+
+      /*
+       * Show success message
+       */
+
+      document.getElementById(
+        "ml-feedback-status"
+      ).innerHTML = `
+
+        <div
+          class="alert success"
+          role="status"
+        >
+          Feedback #${feedbackId}
+          approved as
+          <strong>
+            ${esc(
+              formatCategory(
+                correctedCategory
+              )
+            )}
+          </strong>.
+        </div>
+
+      `;
+
+
+      /*
+       * Reload pending feedback.
+       * The approved row should disappear because
+       * the backend filters approved=False.
+       */
+
+      await loadMLFeedback();
+
+    }
+
+
+    /*
+     * ---------------------------------------------------------
+     * ML REFRESH BUTTON
+     * ---------------------------------------------------------
+     */
+
+    document
+      .getElementById("refresh-ml-feedback")
+      .addEventListener(
+        "click",
+        loadMLFeedback
+      );
+
+
+    /*
+     * ---------------------------------------------------------
+     * ML APPROVE BUTTONS
+     *
+     * Event delegation means we don't need inline
+     * onclick attributes inside the generated table.
+     * ---------------------------------------------------------
+     */
+
+    document
+      .getElementById("ml-feedback-body")
+      .addEventListener(
+        "click",
+        event => {
+
+          const button =
+            event.target.closest(
+              ".ml-approve-btn"
+            );
+
+
+          if (!button) {
+            return;
+          }
+
+
+          const feedbackId =
+            button.dataset.feedbackId;
+
+
+          approveMLFeedback(
+            feedbackId
+          );
+
+        }
+      );
+
+
+    /*
+     * ---------------------------------------------------------
+     * INITIAL LOAD
+     * ---------------------------------------------------------
+     */
+
+    loadDashboard();
+
+    loadMLFeedback();
+
+  </script>
+
+</body>
+</html>

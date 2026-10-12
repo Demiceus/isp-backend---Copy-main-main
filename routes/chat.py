@@ -1,9 +1,17 @@
 from flask import Blueprint, request, jsonify, Response, stream_with_context, g
 from datetime import datetime, timedelta
 
+from app.models import (
+    db,
+    ChatSession,
+    Message,
+    Escalation,
+    MLFeedback,
+)
+
 from services.classifier import classify_complaint
 from services.escalation_rules import detect_human_needed
-from app.models import db, Customer, ChatSession, Message, Escalation
+
 from services.services import (
     get_ai_reply,
     get_ai_reply_stream,
@@ -12,7 +20,6 @@ from services.services import (
 )
 
 chat_bp = Blueprint("chat", __name__)
-
 
 def _ticket_number(escalation):
     return f"NA-CASE-{escalation.id:06d}"
@@ -146,12 +153,21 @@ def send_message(session_id):
     # --------------------------------------------------
 
     customer_msg = Message(
-        session_id=session.id,
-        sender="customer",
-        content=content
+    session_id=session.id,
+    sender="customer",
+    content=content
     )
 
     db.session.add(customer_msg)
+    db.session.flush()  
+    
+    feedback = MLFeedback(
+    message_id=customer_msg.id,
+    predicted_category=category,
+    confidence=confidence
+)
+
+    db.session.add(feedback)
 
     # Update detected complaint category
     session.complaint_type = category
@@ -227,71 +243,169 @@ def send_message_stream(session_id):
     check_and_mark_stale(session)
 
     if session.ended_at:
-        return jsonify({"error": "This session has ended. Please start a new one."}), 409
+        return jsonify({
+            "error": "This session has ended. Please start a new one."
+        }), 409
 
     if is_rate_limited(session):
-        return jsonify({"error": "Please wait a moment before sending another message."}), 429
+        return jsonify({
+            "error": "Please wait a moment before sending another message."
+        }), 429
 
     data = request.get_json() or {}
+
     content = data.get("content", "").strip()
+
     if not content:
-        return jsonify({"error": "content is required"}), 400
+        return jsonify({
+            "error": "content is required"
+        }), 400
+
+    # --------------------------------------------------
+    # 1. CLASSIFY CUSTOMER COMPLAINT
+    # --------------------------------------------------
 
     classification = classify_complaint(content)
+
     category = classification["category"]
     confidence = classification["confidence"]
 
-    db.session.add(Message(session_id=session.id, sender="customer", content=content))
+    # --------------------------------------------------
+    # 2. SAVE CUSTOMER MESSAGE
+    # --------------------------------------------------
+
+    customer_msg = Message(
+        session_id=session.id,
+        sender="customer",
+        content=content
+    )
+
+    db.session.add(customer_msg)
+
+    # Flush so customer_msg.id is available
+    db.session.flush()
+
+    # --------------------------------------------------
+    # 3. SAVE ML FEEDBACK
+    # --------------------------------------------------
+
+    feedback = MLFeedback(
+        message_id=customer_msg.id,
+        predicted_category=category,
+        confidence=confidence
+    )
+
+    db.session.add(feedback)
+
+    # --------------------------------------------------
+    # 4. UPDATE SESSION
+    # --------------------------------------------------
+
     session.complaint_type = category
     session.last_activity_at = datetime.utcnow()
+
     db.session.commit()
 
+    # --------------------------------------------------
+    # 5. CHECK HUMAN ESCALATION
+    # --------------------------------------------------
+
     active_escalation = _active_escalation(session)
-    handoff = detect_human_needed(session, content) if not active_escalation else None
+
+    handoff = (
+        detect_human_needed(session, content)
+        if not active_escalation
+        else None
+    )
+
+    # --------------------------------------------------
+    # 6. CREATE ESCALATION IF NEEDED
+    # --------------------------------------------------
 
     if handoff and not active_escalation:
+
         active_escalation = Escalation(
             session_id=session.id,
             reason="AI detected: " + handoff,
             source="ai_detected",
             status="open"
         )
+
         db.session.add(active_escalation)
+
         session.session_status = "escalated"
+
         db.session.commit()
 
+    # --------------------------------------------------
+    # 7. STREAM RESPONSE
+    # --------------------------------------------------
+
     def generate():
+
         full_reply = ""
 
         if active_escalation:
+
             reply = (
                 "I'm connecting you with a human support agent. "
                 "They have been notified and will review your case."
                 if handoff
-                else "Your message has been sent to your human support agent."
+                else
+                "Your message has been sent to your human support agent."
             )
-            # Yield in small word groups so the UI visibly streams even for
-            # a handoff acknowledgement, without involving Ollama.
+
+            # Stream the handoff response in small chunks
             words = reply.split(" ")
+
             for i, word in enumerate(words):
-                chunk = word + (" " if i < len(words) - 1 else "")
+
+                chunk = word + (
+                    " "
+                    if i < len(words) - 1
+                    else ""
+                )
+
                 full_reply += chunk
-                yield chunk
-        else:
-            for chunk in get_ai_reply_stream(session):
-                full_reply += chunk
+
                 yield chunk
 
-        db.session.add(Message(session_id=session.id, sender="bot", content=full_reply))
+        else:
+
+            for chunk in get_ai_reply_stream(session):
+
+                full_reply += chunk
+
+                yield chunk
+
+        # --------------------------------------------------
+        # 8. SAVE BOT RESPONSE
+        # --------------------------------------------------
+
+        db.session.add(
+            Message(
+                session_id=session.id,
+                sender="bot",
+                content=full_reply
+            )
+        )
+
         session.last_activity_at = datetime.utcnow()
+
         db.session.commit()
+
+    # --------------------------------------------------
+    # 9. RETURN STREAM
+    # --------------------------------------------------
 
     return Response(
         stream_with_context(generate()),
         mimetype="text/plain",
-        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"}
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no"
+        }
     )
-
 
 @chat_bp.route("/<int:session_id>/status", methods=["GET"])
 def session_status(session_id):
@@ -401,3 +515,5 @@ def confirm_closure(session_id):
         "escalated": True,
         "escalation_id": escalation.id
     }), 200
+    
+    

@@ -46,7 +46,57 @@ class Message(db.Model):
     sender = db.Column(db.String(10))  # 'customer' | 'bot'
     content = db.Column(db.Text, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    
+class MLFeedback(db.Model):
+    __tablename__ = "ml_feedback"
 
+    id = db.Column(
+        db.Integer,
+        primary_key=True
+    )
+
+    message_id = db.Column(
+        db.Integer,
+        db.ForeignKey("messages.id"),
+        nullable=False
+    )
+
+    predicted_category = db.Column(
+        db.String(50),
+        nullable=False
+    )
+
+    confidence = db.Column(
+        db.Float,
+        nullable=False
+    )
+
+    corrected_category = db.Column(
+        db.String(50),
+        nullable=True
+    )
+
+    approved = db.Column(
+        db.Boolean,
+        default=False,
+        nullable=False
+    )
+
+    reviewed_by = db.Column(
+        db.Integer,
+        db.ForeignKey("admin_users.id"),
+        nullable=True
+    )
+
+    created_at = db.Column(
+        db.DateTime,
+        default=datetime.utcnow
+    )
+
+    reviewed_at = db.Column(
+        db.DateTime,
+        nullable=True
+    )
 
 class Review(db.Model):
     __tablename__ = "reviews"
@@ -191,3 +241,5 @@ class AdminUser(db.Model):
     name = db.Column(db.String(80))
     password_hash = db.Column(db.String(255), nullable=False)
     role = db.Column(db.String(20), default="admin", nullable=False)  # admin | agent
+
+
