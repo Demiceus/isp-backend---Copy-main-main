@@ -1,7 +1,7 @@
 # NetAssist AI — Professional UI
 
 ## Customer experience
-- `landing.html` — public marketing / support landing page
+- `index.html` — public marketing / support landing page
 - `customer.html` — customer support chat portal
 
 ## Admin experience
@@ -15,7 +15,7 @@
 ## Run
 1. Start the Flask API as usual.
 2. Serve `netassist-frontend/` from a local/static web server rather than opening HTML directly from `file://`.
-3. Open `landing.html` for customers.
+3. Open `index.html` for customers.
 4. Open `admin-login.html` for the operations console.
 
 ## Important

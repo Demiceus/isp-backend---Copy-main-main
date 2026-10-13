@@ -1,22 +1,310 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customers by issue — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="admin-bg"><div class="admin-shell"><aside class="admin-side"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><nav class="admin-nav" aria-label="Admin"><a href="admin-dashboard.html">Overview</a><a href="admin-escalations.html">Escalation queue</a><a href="admin-issues.html" class="active" aria-current="page">Customers by issue</a><a href="admin-customers.html">Customer accounts</a><a href="admin-assistant.html">AI assistant</a></nav><div class="side-foot"><button id="logout" class="pbtn ghost" style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)">Log out</button></div></aside><main class="admin-main"><header class="admin-top"><div><div style="font-size:11px;color:#718096;font-weight:750">OPERATIONS</div><h1 style="font-size:21px;margin-top:3px">Customers by issue</h1></div><div id="admin-name" style="font-size:13px;font-weight:750;color:#475569"></div></header>
-<div class="admin-content"><div class="glass" style="padding:22px">
-<div class="issue-tools"><label class="f2">Status<select id="f-status" class="pinput"><option value="unresolved">Unresolved</option><option value="resolved">Resolved</option><option value="">Any</option></select></label><label class="f2" style="flex:1;min-width:200px">Search account or name<input id="f-q" class="pinput" type="search" placeholder="e.g. ISP-10023" autocomplete="off"></label></div>
-<p id="summary" aria-live="polite" style="font-size:13px;color:#667085;margin:14px 0"></p>
-<div id="groups" aria-busy="true"><div class="empty">Loading customers…</div></div></div></div></main></div>
-<script src="js/api.js"></script><script src="js/app.js"></script><script>
-initAdmin();
-const $=id=>document.getElementById(id);let all=[];
-const label=t=>t?(COMPLAINT_TYPE_LABELS[t]||t.replace(/_/g,' ')):'Unclassified';
-async function load(){$('groups').setAttribute('aria-busy','true');$('groups').innerHTML='<div class="empty">Loading customers…</div>';
- const st=$('f-status').value,r=await NetAssistAPI.previewBatch({complaint_type:null,session_status:st||null});
- $('groups').removeAttribute('aria-busy');
- if(!r.ok){$('summary').textContent='';$('groups').innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}
- all=(r.data&&r.data.data&&r.data.data.targets)||[];render()}
-function render(){const q=$('f-q').value.trim().toLowerCase();
- const rows=all.filter(x=>!q||(x.account_number||'').toLowerCase().includes(q)||(x.name||'').toLowerCase().includes(q));
- const g={};rows.forEach(x=>{(g[x.complaint_type||'']=g[x.complaint_type||'']||[]).push(x)});
- const keys=Object.keys(g).sort((a,b)=>g[b].length-g[a].length);
- $('summary').textContent=rows.length?rows.length+' customer'+(rows.length>1?'s':'')+' across '+keys.length+' issue'+(keys.length>1?'s':'')+'. Each customer appears once, under their latest conversation.':'';
- $('groups').innerHTML=keys.length?keys.map(k=>'<details class="issue-group"><summary><span class="ig-name">'+escHtml(label(k))+'</span><span class="badge">'+g[k].length+' customer'+(g[k].length>1?'s':'')+'</span></summary><div class="ig-body">'+(k?'<a class="pbtn primary" href="admin-escalations.html?batch='+encodeURIComponent(k)+'">Message this group</a>':'')+'<table class="admin-table"><thead><tr><th>Account</th><th>Name</th><th>Email</th><th>Status</th></tr></thead><tbody>'+g[k].map(x=>'<tr><td><b>'+escHtml(x.account_number)+'</b></td><td>'+escHtml(x.name||'—')+'</td><td>'+escHtml(x.email||'—')+'</td><td><span class="tag '+(x.session_status==='resolved'?'green':'red')+'">'+escHtml(x.session_status==='resolved'?'Resolved':'Unresolved')+'</span></td></tr>').join('')+'</tbody></table></div></details>').join(''):'<div class="empty"><b>No customers found</b>Try another status or clear the search.</div>'}
-$('f-status').onchange=load;$('f-q').oninput=render;load();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Customers by issue — NetAssist AI</title>
+  <link rel="stylesheet" href="css/pro.css">
+</head>
+
+<body class="admin-bg">
+
+  <div class="admin-shell">
+
+    <aside class="admin-side">
+
+      <a class="logo" href="index.html">
+        <div class="logo-mark">N</div>
+        NetAssist <span>AI</span>
+      </a>
+
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin-dashboard.html">Overview</a>
+        <a href="admin-escalations.html">Escalation queue</a>
+        <a
+          href="admin-issues.html"
+          class="active"
+          aria-current="page"
+        >
+          Customers by issue
+        </a>
+        <a href="admin-customers.html">Customer accounts</a>
+        <a href="admin-assistant.html">AI assistant</a>
+      </nav>
+
+      <div class="side-foot">
+        <button
+          id="logout"
+          class="pbtn ghost"
+          style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)"
+        >
+          Log out
+        </button>
+      </div>
+
+    </aside>
+
+    <main class="admin-main">
+
+      <header class="admin-top">
+
+        <div>
+          <div style="font-size:11px;color:#718096;font-weight:750">
+            OPERATIONS
+          </div>
+
+          <h1 style="font-size:21px;margin-top:3px">
+            Customers by issue
+          </h1>
+        </div>
+
+        <div
+          id="admin-name"
+          style="font-size:13px;font-weight:750;color:#475569"
+        ></div>
+
+      </header>
+
+      <div class="admin-content">
+
+        <div class="glass" style="padding:22px">
+
+          <div class="issue-tools">
+
+            <label class="f2">
+              Status
+
+              <select id="f-status" class="pinput">
+                <option value="unresolved">Unresolved</option>
+                <option value="resolved">Resolved</option>
+                <option value="">Any</option>
+              </select>
+            </label>
+
+            <label
+              class="f2"
+              style="flex:1;min-width:200px"
+            >
+              Search account or name
+
+              <input
+                id="f-q"
+                class="pinput"
+                type="search"
+                placeholder="e.g. ISP-10023"
+                autocomplete="off"
+              >
+            </label>
+
+          </div>
+
+          <p
+            id="summary"
+            aria-live="polite"
+            style="font-size:13px;color:#667085;margin:14px 0"
+          ></p>
+
+          <div id="groups" aria-busy="true">
+            <div class="empty">
+              Loading customers…
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    initAdmin();
+
+    const $ = id => document.getElementById(id);
+    let all = [];
+
+    const label = t =>
+      t
+        ? (
+            COMPLAINT_TYPE_LABELS[t] ||
+            t.replace(/_/g, ' ')
+          )
+        : 'Unclassified';
+
+    async function load() {
+      $('groups').setAttribute(
+        'aria-busy',
+        'true'
+      );
+
+      $('groups').innerHTML =
+        '<div class="empty">Loading customers…</div>';
+
+      const st = $('f-status').value;
+
+      const r =
+        await NetAssistAPI.previewBatch({
+          complaint_type: null,
+          session_status: st || null
+        });
+
+      $('groups').removeAttribute(
+        'aria-busy'
+      );
+
+      if (!r.ok) {
+        $('summary').textContent = '';
+
+        $('groups').innerHTML =
+          '<div class="alert error" role="alert">' +
+          escHtml(r.error) +
+          '</div>';
+
+        return;
+      }
+
+      all =
+        (r.data &&
+          r.data.data &&
+          r.data.data.targets) ||
+        [];
+
+      render();
+    }
+
+    function render() {
+      const q =
+        $('f-q').value
+          .trim()
+          .toLowerCase();
+
+      const rows = all.filter(
+        x =>
+          !q ||
+          (x.account_number || '')
+            .toLowerCase()
+            .includes(q) ||
+          (x.name || '')
+            .toLowerCase()
+            .includes(q)
+      );
+
+      const g = {};
+
+      rows.forEach(x => {
+        (
+          g[x.complaint_type || ''] =
+            g[x.complaint_type || ''] || []
+        ).push(x);
+      });
+
+      const keys =
+        Object.keys(g).sort(
+          (a, b) =>
+            g[b].length - g[a].length
+        );
+
+      $('summary').textContent = rows.length
+        ? rows.length +
+          ' customer' +
+          (rows.length > 1 ? 's' : '') +
+          ' across ' +
+          keys.length +
+          ' issue' +
+          (keys.length > 1 ? 's' : '') +
+          '. Each customer appears once, under their latest conversation.'
+        : '';
+
+      $('groups').innerHTML = keys.length
+        ? keys
+            .map(
+              k =>
+                '<details class="issue-group">' +
+                '<summary>' +
+                '<span class="ig-name">' +
+                escHtml(label(k)) +
+                '</span>' +
+                '<span class="badge">' +
+                g[k].length +
+                ' customer' +
+                (g[k].length > 1 ? 's' : '') +
+                '</span>' +
+                '</summary>' +
+                '<div class="ig-body">' +
+                (
+                  k
+                    ? '<a class="pbtn primary" href="admin-escalations.html?batch=' +
+                      encodeURIComponent(k) +
+                      '">Message this group</a>'
+                    : ''
+                ) +
+                '<table class="admin-table">' +
+                '<thead>' +
+                '<tr>' +
+                '<th>Account</th>' +
+                '<th>Name</th>' +
+                '<th>Email</th>' +
+                '<th>Status</th>' +
+                '</tr>' +
+                '</thead>' +
+                '<tbody>' +
+                g[k]
+                  .map(
+                    x =>
+                      '<tr>' +
+                      '<td><b>' +
+                      escHtml(
+                        x.account_number
+                      ) +
+                      '</b></td>' +
+                      '<td>' +
+                      escHtml(
+                        x.name || '—'
+                      ) +
+                      '</td>' +
+                      '<td>' +
+                      escHtml(
+                        x.email || '—'
+                      ) +
+                      '</td>' +
+                      '<td><span class="tag ' +
+                      (
+                        x.session_status ===
+                        'resolved'
+                          ? 'green'
+                          : 'red'
+                      ) +
+                      '">' +
+                      escHtml(
+                        x.session_status ===
+                        'resolved'
+                          ? 'Resolved'
+                          : 'Unresolved'
+                      ) +
+                      '</span></td>' +
+                      '</tr>'
+                  )
+                  .join('') +
+                '</tbody>' +
+                '</table>' +
+                '</div>' +
+                '</details>'
+            )
+            .join('')
+        : '<div class="empty"><b>No customers found</b>Try another status or clear the search.</div>';
+    }
+
+    $('f-status').onchange = load;
+    $('f-q').oninput = render;
+
+    load();
+  </script>
+
+</body>
+
+</html>

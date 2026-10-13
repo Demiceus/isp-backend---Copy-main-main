@@ -265,7 +265,7 @@ function initAdmin() {
   const admin = JSON.parse(raw);
   if (!admin.token) { localStorage.removeItem("netassist_admin"); window.location.href = "admin-login.html"; return null; }
   const btn = document.getElementById("logout");
-  if (btn) btn.onclick = () => { localStorage.removeItem("netassist_admin"); window.location.href = "admin-login.html"; };
+  if (btn) btn.onclick = () => { localStorage.removeItem("netassist_admin"); window.location.href = "index.html"; };
   const nm = document.getElementById("admin-name");
   if (nm) nm.textContent = admin.name || "Operations Admin";
   startNotifications();
