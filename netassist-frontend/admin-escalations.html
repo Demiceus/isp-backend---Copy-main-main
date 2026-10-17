@@ -1,15 +1,131 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Escalation Queue — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="admin-bg"><div class="admin-shell"><aside class="admin-side"><a class="logo" href="admin-dashboard.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><nav class="admin-nav" aria-label="Admin"><a href="admin-dashboard.html">Overview</a><a href="admin-escalations.html" class="active" aria-current="page">Escalation queue</a><a href="admin-issues.html">Customers by issue</a><a href="admin-customers.html">Customer accounts</a><a href="admin-assistant.html">AI assistant</a></nav><div class="side-foot"><button id="logout" class="pbtn ghost" style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)">Log out</button></div></aside><main class="admin-main"><header class="admin-top"><div><div style="font-size:11px;color:#718096;font-weight:750">OPERATIONS</div><h1 style="font-size:21px;margin-top:3px">Escalation queue</h1></div><div class="top-actions"><button id="batch-open" class="pbtn primary" type="button">Batch message</button><a class="pbtn ghost" href="admin-dashboard.html">Dashboard</a></div></header><div class="admin-content"><div class="glass" style="padding:22px"><div style="display:flex;gap:8px;margin-bottom:18px"><button class="pbtn primary" data-status="open">Open</button><button class="pbtn ghost" data-status="in_progress">In progress</button><button class="pbtn ghost" data-status="closed">Closed</button><button class="pbtn ghost" data-status="all">All</button></div><div id="cases"></div><div id="detail" style="margin-top:18px"></div></div></div></main></div><dialog id="batch-dlg" class="modal" aria-labelledby="batch-title"><div class="modal-body">
-<h2 id="batch-title">Send a batch message</h2>
-<p class="lead">Send one message to every customer whose latest chat matches the same issue. Preview the recipients first. Messages are recorded in the system; they are not sent by SMS or email yet.</p>
-<div class="row2"><label class="f">Issue type<select id="b-type" class="pinput"><option value="">Choose an issue…</option></select></label>
-<label class="f">Conversation status<select id="b-status" class="pinput"><option value="unresolved">Unresolved</option><option value="resolved">Resolved</option><option value="">Any</option></select></label></div>
-<div class="modal-actions" style="margin-top:14px"><button id="b-preview" type="button" class="pbtn ghost">Preview recipients</button></div>
-<div id="b-preview-out" aria-live="polite"></div>
-<label class="f" for="b-msg">Message</label><textarea id="b-msg" class="pinput" rows="4" maxlength="1000" placeholder="e.g. We are aware of an outage in your area and expect service to be restored by 6 PM."></textarea>
-<div id="b-result" role="status" aria-live="polite" style="margin-top:12px"></div>
-<div class="modal-actions"><button id="b-close" type="button" class="pbtn ghost">Close</button><button id="b-send" type="button" class="pbtn primary" disabled>Send to recipients</button></div>
-<details class="hist" id="b-hist"><summary>Previous batches</summary><div id="b-hist-out"><div class="empty">Open to load history.</div></div></details>
-</div></dialog><script src="js/api.js"></script><script src="js/app.js"></script><script>initAdmin();function lab(s){return({open:'Open',in_progress:'In progress',closed:'Closed'})[s]||s||'Open'}function tagc(s){return s==='closed'?'green':s==='in_progress'?'':'red'}function fmt(d){return d?new Date(d).toLocaleString():''}let current='open';const cases=document.getElementById('cases');async function load(){cases.setAttribute('aria-busy','true');cases.innerHTML='<div class="empty">Loading cases…</div>';const r=await NetAssistAPI.getEscalations(current);if(!r.ok){cases.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}const items=Array.isArray(r.data)?r.data:(r.data.escalations||[]);cases.removeAttribute('aria-busy');cases.innerHTML=items.length?items.map(x=>`<div style="padding:18px 4px;border-top:1px solid rgba(15,23,42,.08);display:grid;grid-template-columns:1fr auto;gap:16px"><div><div style="font-size:16px;font-weight:800">${escHtml(x.ticket_number||('NA-CASE-'+String(x.escalation_id).padStart(6,'0')))} · ${escHtml(x.customer_account||'Unknown')}</div><div style="font-size:12px;color:#718096;margin-top:5px">${escHtml((x.complaint_type||'Unclassified').replaceAll('_',' '))} · ${fmt(x.created_at)}${x.sentiment_label?' · <span class="badge '+escHtml(x.sentiment_label)+'">'+escHtml(x.sentiment_label)+'</span>':''}</div><p style="font-size:13px;line-height:1.55;color:#475569;margin:10px 0">${escHtml(x.review_text||x.reason||x.chat_summary||'No summary available.')}</p></div><div><span class="tag ${tagc(x.status)}">${lab(x.status)}</span><button class="pbtn ghost" style="display:block;margin-top:10px" onclick="openCase(${x.escalation_id})">Review</button></div></div>`).join(''):'<div class="empty"><b>No cases in this queue</b>Try another status filter.</div>'}async function openCase(id){const r=await NetAssistAPI.getEscalation(id);if(r.ok)NetAssistAPI.acknowledgeEscalation(id);if(!r.ok){document.getElementById('detail').innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}const d=r.data;document.getElementById('detail').innerHTML=`<div class="a-card full" style="box-shadow:none"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><div><div class="a-label">${escHtml(d.ticket_number||('NA-CASE-'+String(d.escalation_id).padStart(6,'0')))}</div><h2 style="font-size:21px;margin-top:4px">${escHtml(d.customer_account||'Unknown customer')}</h2><div style="font-size:12px;color:#64748b;margin-top:5px">${escHtml((d.complaint_type||'Unclassified').replaceAll('_',' '))} · ${escHtml(d.source||'')}${d.assigned_to?' · Assigned to '+escHtml(d.assigned_to):''}</div></div><select id="case-status" aria-label="Case status" class="pinput" style="width:180px;margin:0"><option value="open" ${d.status==='open'?'selected':''}>Open</option><option value="in_progress" ${d.status==='in_progress'?'selected':''}>In progress</option><option value="closed" ${d.status==='closed'?'selected':''}>Closed</option></select></div><div class="a-label" style="margin-top:18px">Escalation reason</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escalation Queue — NetAssist AI</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pro.css">
+</head>
+<body class="admin-bg">
+  <div class="admin-shell">
+    <aside class="admin-side">
+      <a class="logo" href="admin-dashboard.html">
+        <img src="netassistaillogo.png" alt="NetAssist AI Logo" class="admin-logo">
+        <span class="logo-text">NetAssist <span>AI</span></span>
+      </a>
+
+      <nav class="admin-nav" aria-label="Admin">
+        <a href="admin-dashboard.html">Overview</a>
+        <a href="admin-escalations.html" class="active" aria-current="page">Escalation Queue</a>
+        <a href="admin-issues.html">Customers by Issue</a>
+        <a href="admin-customers.html">Customer Accounts</a>
+        <a href="admin-assistant.html">AI Assistant</a>
+      </nav>
+
+      <div class="side-foot">
+        <button id="logout" class="pbtn ghost" style="width:100%;background:rgba(255,255,255,.06);color:#dbe7ff;border-color:rgba(255,255,255,.1)">
+          Log Out
+        </button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-top">
+        <div>
+          <div style="font-size:11px;color:#718096;font-weight:750">OPERATIONS</div>
+          <h1 style="font-size:21px;margin-top:3px">Escalation Queue</h1>
+        </div>
+
+        <div class="top-actions">
+          <button id="batch-open" class="pbtn primary" type="button">Batch Message</button>
+          <a class="pbtn ghost" href="admin-dashboard.html">Dashboard</a>
+        </div>
+      </header>
+
+      <div class="admin-content">
+        <div class="glass" style="padding:22px">
+          <div style="display:flex;gap:8px;margin-bottom:18px">
+            <button class="pbtn primary" data-status="open">Open</button>
+            <button class="pbtn ghost" data-status="in_progress">In Progress</button>
+            <button class="pbtn ghost" data-status="closed">Closed</button>
+            <button class="pbtn ghost" data-status="all">All</button>
+          </div>
+
+          <div id="cases"></div>
+          <div id="detail" style="margin-top:18px"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="batch-dlg" class="modal" aria-labelledby="batch-title">
+    <div class="modal-body">
+      <h2 id="batch-title">Send a Batch Message</h2>
+
+      <p class="lead">
+        Send one message to every customer whose latest chat matches the same issue.
+        Preview the recipients first. Messages are recorded in the system; they are
+        not sent by SMS or email yet.
+      </p>
+
+      <div class="row2">
+        <label class="f">
+          Issue Type
+          <select id="b-type" class="pinput">
+            <option value="">Choose an issue…</option>
+          </select>
+        </label>
+
+        <label class="f">
+          Conversation Status
+          <select id="b-status" class="pinput">
+            <option value="unresolved">Unresolved</option>
+            <option value="resolved">Resolved</option>
+            <option value="">Any</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="modal-actions" style="margin-top:14px">
+        <button id="b-preview" type="button" class="pbtn ghost">
+          Preview Recipients
+        </button>
+      </div>
+
+      <div id="b-preview-out" aria-live="polite"></div>
+
+      <label class="f" for="b-msg">Message</label>
+      <textarea
+        id="b-msg"
+        class="pinput"
+        rows="4"
+        maxlength="1000"
+        placeholder="e.g. We are aware of an outage in your area and expect service to be restored by 6 PM."
+      ></textarea>
+
+      <div id="b-result" role="status" aria-live="polite" style="margin-top:12px"></div>
+
+      <div class="modal-actions">
+        <button id="b-close" type="button" class="pbtn ghost">Close</button>
+        <button id="b-send" type="button" class="pbtn primary" disabled>
+          Send to Recipients
+        </button>
+      </div>
+
+      <details class="hist" id="b-hist">
+        <summary>Previous Batches</summary>
+        <div id="b-hist-out">
+          <div class="empty">Open to load history.</div>
+        </div>
+      </details>
+    </div>
+  </dialog><script src="js/api.js"></script><script src="js/app.js"></script><script>initAdmin();function lab(s){return({open:'Open',in_progress:'In progress',closed:'Closed'})[s]||s||'Open'}function tagc(s){return s==='closed'?'green':s==='in_progress'?'':'red'}function fmt(d){return d?new Date(d).toLocaleString():''}let current='open';const cases=document.getElementById('cases');async function load(){cases.setAttribute('aria-busy','true');cases.innerHTML='<div class="empty">Loading cases…</div>';const r=await NetAssistAPI.getEscalations(current);if(!r.ok){cases.innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}const items=Array.isArray(r.data)?r.data:(r.data.escalations||[]);cases.removeAttribute('aria-busy');cases.innerHTML=items.length?items.map(x=>`<div style="padding:18px 4px;border-top:1px solid rgba(15,23,42,.08);display:grid;grid-template-columns:1fr auto;gap:16px"><div><div style="font-size:16px;font-weight:800">${escHtml(x.ticket_number||('NA-CASE-'+String(x.escalation_id).padStart(6,'0')))} · ${escHtml(x.customer_account||'Unknown')}</div><div style="font-size:12px;color:#718096;margin-top:5px">${escHtml((x.complaint_type||'Unclassified').replaceAll('_',' '))} · ${fmt(x.created_at)}${x.sentiment_label?' · <span class="badge '+escHtml(x.sentiment_label)+'">'+escHtml(x.sentiment_label)+'</span>':''}</div><p style="font-size:13px;line-height:1.55;color:#475569;margin:10px 0">${escHtml(x.review_text||x.reason||x.chat_summary||'No summary available.')}</p></div><div><span class="tag ${tagc(x.status)}">${lab(x.status)}</span><button class="pbtn ghost" style="display:block;margin-top:10px" onclick="openCase(${x.escalation_id})">Review</button></div></div>`).join(''):'<div class="empty"><b>No cases in this queue</b>Try another status filter.</div>'}async function openCase(id){const r=await NetAssistAPI.getEscalation(id);if(r.ok)NetAssistAPI.acknowledgeEscalation(id);if(!r.ok){document.getElementById('detail').innerHTML='<div class="alert error" role="alert">'+escHtml(r.error)+'</div>';return}const d=r.data;document.getElementById('detail').innerHTML=`<div class="a-card full" style="box-shadow:none"><div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap"><div><div class="a-label">${escHtml(d.ticket_number||('NA-CASE-'+String(d.escalation_id).padStart(6,'0')))}</div><h2 style="font-size:21px;margin-top:4px">${escHtml(d.customer_account||'Unknown customer')}</h2><div style="font-size:12px;color:#64748b;margin-top:5px">${escHtml((d.complaint_type||'Unclassified').replaceAll('_',' '))} · ${escHtml(d.source||'')}${d.assigned_to?' · Assigned to '+escHtml(d.assigned_to):''}</div></div><select id="case-status" aria-label="Case status" class="pinput" style="width:180px;margin:0"><option value="open" ${d.status==='open'?'selected':''}>Open</option><option value="in_progress" ${d.status==='in_progress'?'selected':''}>In progress</option><option value="closed" ${d.status==='closed'?'selected':''}>Closed</option></select></div><div class="a-label" style="margin-top:18px">Escalation reason</div>
 <p style="line-height:1.6;font-size:13px">${escHtml(d.reason||'No reason recorded.')}</p>
 
 <div class="a-label" style="margin-top:18px">AI conversation summary</div>

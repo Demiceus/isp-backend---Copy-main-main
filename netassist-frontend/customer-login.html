@@ -1,146 +1,103 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Customer login — NetAssist AI</title>
-  <link rel="stylesheet" href="css/pro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Customer Login — NetAssist AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pro.css">
+  <link rel="stylesheet" href="css/customer-login.css">
 </head>
 
-<body class="pro-bg">
+<body>
+  <header class="login-header">
+    <a class="brand" href="landing.html">
+      <img src="netassistaillogo.png" alt="NetAssist AI Logo">
+      <span>NetAssist <strong>AI</strong></span>
+    </a>
 
-<header class="pro-nav">
-  <a class="logo" href="landing.html">
-    <div class="logo-mark">N</div>
-    NetAssist <span>AI</span>
-  </a>
+    <a class="back-home" href="landing.html">
+      Back to Home
+    </a>
+  </header>
 
-  <div class="nav-actions">
-    <a class="pbtn ghost" href="landing.html">Back to home</a>
-  </div>
-</header>
+  <main class="login-main">
+    <form id="login" class="login-card" novalidate>
 
-<main style="max-width:440px;margin:56px auto;padding:0 18px">
+      <div class="portal-badge">
+        <span class="status-dot"></span>
+        Customer Portal
+      </div>
 
-  <form id="login" class="glass" style="padding:30px" novalidate>
+      <h1>Log In to Your Account</h1>
 
-```
-<div class="eyebrow">
-  <span class="dot"></span>
-  Customer portal
-</div>
+      <p id="loginDescription" class="description">
+        Log in with your email and PIN or password to contact support and leave feedback.
+      </p>
 
-<h1 style="font-size:26px;margin:10px 0 6px">
-  Log in to your account
-</h1>
+      <div id="emailLogin">
+        <label for="email">
+          Email
+          <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="username"
+            required
+          >
+        </label>
+      </div>
 
-<p id="loginDescription"
-   style="font-size:13.5px;color:#667085;line-height:1.6">
-  Log in with your email and PIN / password to contact support and leave feedback.
-</p>
+      <div id="accountLogin" style="display: none;">
+        <label for="acc">
+          Account Number
+          <input
+            id="acc"
+            type="text"
+            placeholder="e.g. ISP-10023"
+            autocomplete="username"
+          >
+        </label>
+      </div>
 
-<!-- Email login -->
-<div id="emailLogin">
+      <label for="pin">
+        PIN / Password
+        <input
+          id="pin"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+      </label>
 
-  <label style="display:block;margin-top:22px;font-size:12px;font-weight:750">
-    Email
+      <div
+        id="err"
+        class="form-error"
+        role="alert"
+        aria-live="polite"
+      ></div>
 
-    <input
-      id="email"
-      type="email"
-      class="pinput"
-      placeholder="you@example.com"
-      autocomplete="username"
-      required
-    >
-  </label>
+      <button id="go" type="submit">
+        Log In
+      </button>
 
-</div>
+      <button id="switchLogin" type="button">
+        Having Trouble? Log In with Account Number
+      </button>
 
-<!-- Account number login -->
-<div id="accountLogin" style="display:none">
+      <p class="request-account">
+        Don't have an account yet?
+        <a href="customer-register.html">Request an Account</a>
+      </p>
 
-  <label style="display:block;margin-top:22px;font-size:12px;font-weight:750">
-    Account number
-
-    <input
-      id="acc"
-      class="pinput"
-      placeholder="e.g. ISP-10023"
-      autocomplete="username"
-    >
-  </label>
-
-</div>
-
-<label style="display:block;margin-top:14px;font-size:12px;font-weight:750">
-  PIN / password
-
-  <input
-    id="pin"
-    type="password"
-    class="pinput"
-    autocomplete="current-password"
-    required
-  >
-</label>
-
-<div
-  id="err"
-  class="form-error"
-  role="alert"
-  aria-live="polite"
-></div>
-
-<button
-  id="go"
-  type="submit"
-  class="pbtn primary"
-  style="width:100%;margin-top:8px"
->
-  Log in
-</button>
-
-<div style="text-align:center;margin-top:18px">
-
-  <button
-    id="switchLogin"
-    type="button"
-    style="
-      border:0;
-      background:none;
-      padding:0;
-      color:#2563eb;
-      font-size:12.5px;
-      font-weight:750;
-      cursor:pointer;
-    "
-  >
-    Having trouble? Log in with account number
-  </button>
-
-</div>
-
-<p style="
-  font-size:12.5px;
-  color:#667085;
-  margin-top:18px;
-  text-align:center
-">
-  No account yet?
-  <a
-    href="customer-register.html"
-    style="color:#2563eb;font-weight:750"
-  >
-    Request one
-  </a>
-</p>
-```
-
-  </form>
-
-</main>
+    </form>
+  </main>
 
 <script src="js/api.js"></script>
 

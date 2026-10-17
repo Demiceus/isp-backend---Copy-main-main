@@ -1,4 +1,115 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Customer Support — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg portal"><header class="pro-nav"><a class="logo" href="landing.html"><div class="logo-mark">N</div>NetAssist <span>AI</span></a><a class="pbtn ghost" href="customer-portal.html">My portal</a></header><main class="portal-grid"><section class="glass portal-chat"><div class="preview-head"><div><h1 style="font-size:22px;margin:0">Support chat</h1><p style="color:#718096;font-size:12px;margin-top:4px">AI-assisted support with human escalation when required.</p></div><span class="pill">AI assisted</span></div><div id="status-bar" class="status-bar" data-state="idle" role="status" aria-live="polite"><span class="sdot" aria-hidden="true"></span><span id="status-text">No active session</span><span id="status-ref" class="sref"></span></div><div id="chat-window" class="chat-window" role="log" aria-live="polite" aria-label="Conversation"><div class="chat-msg ai">Welcome to NetAssist. Choose the issue type and send your first message.</div></div><div class="chat-input"><label class="sr-only" for="message">Your message</label><input class="pinput" id="message" placeholder="Describe your issue…" autocomplete="off" disabled><button class="pbtn primary" id="send" disabled>Send</button></div><div class="chat-actions"><button class="pbtn ghost" id="resolve" disabled>My issue is resolved</button><button class="pbtn danger" id="escalate" disabled>Escalate to human</button></div></section><aside class="glass portal-form"><h2>Start your session</h2><p>Your conversation is attached to your account automatically.</p><label style="display:block;margin-top:22px;font-size:12px;font-weight:750">Account number<input id="account" class="pinput" readonly></label><label style="display:block;margin-top:16px;font-size:12px;font-weight:750">Issue type<select id="type" class="pinput"><option value="slow_internet">Slow Internet</option><option value="no_internet">No Internet</option><option value="intermittent_connection">Intermittent Connection</option><option value="router_modem">Router / Modem</option><option value="service_outage">Service Outage</option><option value="billing">Billing</option><option value="installation">Installation</option><option value="plan_change">Plan Change</option><option value="technical_support">Technical Support</option><option value="account">Account</option></select></label><button class="pbtn primary" id="start" style="width:100%;margin-top:20px">Start support</button><div id="notice" role="alert" class="form-error"></div><div id="session-info" class="session-info" hidden></div><div style="margin-top:30px;padding:15px;border-radius:18px;background:rgba(37,99,235,.06);font-size:12px;color:#64748b;line-height:1.6"><b style="color:#334155">What happens next?</b><br>NetAssist classifies your concern, responds with the available support flow, and keeps unresolved cases available for human escalation.</div></aside></main><script src="js/api.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Support — NetAssist AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/pro.css">
+</head>
+
+<body class="pro-bg portal">
+
+  <header class="pro-nav">
+    <a class="logo" href="landing.html">
+      <img src="netassistaillogo.png" alt="NetAssist AI Logo" class="admin-logo">
+      <span class="logo-text">NetAssist <span>AI</span></span>
+    </a>
+
+    <a class="pbtn ghost" href="customer-portal.html">My Portal</a>
+  </header>
+
+  <main class="portal-grid">
+
+    <section class="glass portal-chat">
+      <div class="preview-head">
+        <div>
+          <h1 style="font-size:22px;margin:0">Support Chat</h1>
+          <p style="color:#718096;font-size:12px;margin-top:4px">
+            AI-assisted support with human escalation when required.
+          </p>
+        </div>
+        <span class="pill">AI Assisted</span>
+      </div>
+
+      <div id="status-bar" class="status-bar" data-state="idle"
+           role="status" aria-live="polite">
+        <span class="sdot" aria-hidden="true"></span>
+        <span id="status-text">No Active Session</span>
+        <span id="status-ref" class="sref"></span>
+      </div>
+
+      <div id="chat-window" class="chat-window" role="log"
+           aria-live="polite" aria-label="Conversation">
+        <div class="chat-msg ai">
+          Welcome to NetAssist. Choose the issue type and send your first message.
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <label class="sr-only" for="message">Your Message</label>
+        <input class="pinput" id="message"
+               placeholder="Describe your issue…"
+               autocomplete="off" disabled>
+        <button class="pbtn primary" id="send" disabled>Send</button>
+      </div>
+
+      <div class="chat-actions">
+        <button class="pbtn ghost" id="resolve" disabled>
+          My Issue Is Resolved
+        </button>
+        <button class="pbtn danger" id="escalate" disabled>
+          Escalate to Human
+        </button>
+      </div>
+    </section>
+
+    <aside class="glass portal-form">
+      <h2>Start Your Session</h2>
+      <p>Your conversation is attached to your account automatically.</p>
+
+      <label style="display:block;margin-top:22px;font-size:12px;font-weight:750">
+        Account Number
+        <input id="account" class="pinput" readonly>
+      </label>
+
+      <label style="display:block;margin-top:16px;font-size:12px;font-weight:750">
+        Issue Type
+        <select id="type" class="pinput">
+          <option value="slow_internet">Slow Internet</option>
+          <option value="no_internet">No Internet</option>
+          <option value="intermittent_connection">Intermittent Connection</option>
+          <option value="router_modem">Router / Modem</option>
+          <option value="service_outage">Service Outage</option>
+          <option value="billing">Billing</option>
+          <option value="installation">Installation</option>
+          <option value="plan_change">Plan Change</option>
+          <option value="technical_support">Technical Support</option>
+          <option value="account">Account</option>
+        </select>
+      </label>
+
+      <button class="pbtn primary" id="start"
+              style="width:100%;margin-top:20px">
+        Start Support
+      </button>
+
+      <div id="notice" role="alert" class="form-error"></div>
+      <div id="session-info" class="session-info" hidden></div>
+
+      <div style="margin-top:30px;padding:15px;border-radius:18px;background:rgba(37,99,235,.06);font-size:12px;color:#64748b;line-height:1.6">
+        <b style="color:#334155">What Happens Next?</b><br>
+        NetAssist classifies your concern, responds with the available support flow, and keeps unresolved cases available for human escalation.
+      </div>
+    </aside>
+
+  </main>
+  
+  <script src="js/api.js"></script>
 
 <script>
 const $ = (id) => document.getElementById(id);

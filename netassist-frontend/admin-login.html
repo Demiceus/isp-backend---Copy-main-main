@@ -1,4 +1,102 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin login — NetAssist AI</title><link rel="stylesheet" href="css/pro.css"></head><body class="pro-bg"><main style="min-height:100vh;display:grid;place-items:center;padding:24px"><form id="login" class="glass" style="width:min(430px,100%);padding:32px"><div class="logo"><div class="logo-mark">N</div>NetAssist <span>AI</span></div><h1 style="font-size:30px;letter-spacing:-.04em;margin:30px 0 8px">Operations console</h1><p style="color:#667085;font-size:13px;line-height:1.6">Access the escalation and service analytics workspace.</p><label style="display:block;margin-top:24px;font-size:12px;font-weight:750">Username<input id="name" class="pinput" placeholder="admin" autocomplete="username" required></label><label style="display:block;margin-top:14px;font-size:12px;font-weight:750">Password<input id="pass" type="password" class="pinput" placeholder="••••••••" autocomplete="current-password" required></label><div id="err" class="form-error" role="alert"></div><button id="go" type="submit" class="pbtn primary" style="width:100%;margin-top:20px">Enter console</button><p style="font-size:11px;color:#94a3b8;margin-top:16px">Current backend authentication is not enabled; this portal gate is local UI session state only.</p></form></main><script src="js/api.js"></script><script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Login — NetAssist AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/pro.css">
+  <link rel="stylesheet" href="css/admin-login.css">
+</head>
+
+<body class="admin-login-page">
+
+  <!-- Header -->
+  <header class="login-header">
+    <a class="brand" href="landing.html">
+      <img src="netassistaillogo.png" alt="NetAssist AI Logo">
+      <span>NetAssist <strong>AI</strong></span>
+    </a>
+
+    <a class="back-home" href="landing.html">
+      <span aria-hidden="true">←</span>
+      Back to Home
+    </a>
+  </header>
+
+  <!-- Main Login -->
+  <main class="login-main">
+
+    <form id="login" class="login-card" novalidate>
+
+      <div class="portal-badge">
+        <span class="status-dot"></span>
+        Admin Portal
+      </div>
+
+      <h1>Operations Console</h1>
+
+      <p class="description">
+        Access the escalation and service analytics workspace.
+      </p>
+
+      <!-- Username -->
+      <label for="name">Username</label>
+
+      <div class="input-wrap">
+        <input
+          id="name"
+          name="username"
+          type="text"
+          placeholder="admin"
+          autocomplete="username"
+          required
+        >
+      </div>
+
+      <!-- Password -->
+      <label for="pass">Password</label>
+
+      <div class="input-wrap">
+        <input
+          id="pass"
+          name="password"
+          type="password"
+          placeholder="Enter password"
+          autocomplete="current-password"
+          required
+        >
+      </div>
+
+      <!-- Error Message -->
+      <div
+        id="err"
+        class="form-error"
+        role="alert"
+        aria-live="polite"
+      ></div>
+
+      <!-- Submit Button -->
+      <button id="go" type="submit">
+        Enter Console
+      </button>
+
+      <p class="login-note">
+        Current backend authentication is not enabled;
+        this portal gate is local UI session state only.
+      </p>
+
+    </form>
+
+  </main>
+
+<script src="js/api.js"></script><script>
 if(localStorage.getItem('netassist_admin')&&JSON.parse(localStorage.getItem('netassist_admin')).token)location.href='admin-dashboard.html';
 document.getElementById('login').addEventListener('submit',async e=>{e.preventDefault();
 const n=document.getElementById('name').value.trim(),p=document.getElementById('pass').value,err=document.getElementById('err'),b=document.getElementById('go');
